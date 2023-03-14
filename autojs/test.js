@@ -1,0 +1,1 @@
+click(random(538, 540),random(956, 963))
