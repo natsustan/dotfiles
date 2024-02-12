@@ -1,5 +1,6 @@
 # OS generated files #
 ######################
+.gitattributes
 .DS_Store
 .DS_Store?
 ._*
@@ -7,5 +8,4 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-.gitattributes
 .env
