@@ -2,13 +2,17 @@
 
 My macOS Configuration Files
 
-
 ### Rime
 
 Rime, a powerful Chinese Input Method Engine.
 
-Use `control + ~` to adjust Traditional/Simplified Chinese.
+#### Symlink
 
 ```
-ln -s ~/dotfiles/rime/squirrel.yaml ~/Library/Rime/squirrel.yaml
+rm -rf ~/Library/Rime
+ln -s ~/dotfiles/rime ~/Library
 ```
+
+#### Tips
+
+Use `control + ~` to adjust Traditional/Simplified Chinese.

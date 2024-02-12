@@ -1,11 +1,13 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    squirrel: 1707739235
+    squirrel: 1707745716
     squirrel.custom: 0
 app_options:
   com.1password.1password:
     ascii_mode: true
+  com.apple.Notes:
+    ascii_mode: false
   com.apple.Safari:
     ascii_mode: false
   com.apple.Spotlight:
@@ -18,8 +20,6 @@ app_options:
   com.raycast.macos:
     ascii_mode: true
   "com.sequel-ace.sequel-ace":
-    ascii_mode: true
-  com.sequelpro.SequelPro:
     ascii_mode: true
   com.tencent.xinWeChat:
     ascii_mode: false

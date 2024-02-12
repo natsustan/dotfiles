@@ -1,14 +1,14 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    default: 1707183195
+    default: 1707684632
     default.custom: 0
     rime_ice.custom: 0
-    rime_ice.schema: 1707700898
-    symbols_v: 1705740664
+    rime_ice.schema: 1707684632
+    symbols_v: 1707684632
     symbols_v.custom: 0
     t9.custom: 0
-    t9.schema: 1707183195
+    t9.schema: 1707684632
 auto_commit_single_punct: "`"
 cn_en:
   comment_format:
