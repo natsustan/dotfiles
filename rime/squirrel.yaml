@@ -30,13 +30,17 @@ app_options:
   # com.apple.Spotlight:
   #   ascii_mode: true    # 开启默认英文
   #   ascii_mode: false   # 默认中文
-  #   ascii_punct: true # 开启英文标点
+  #   ascii_punct: true   # 开启英文标点
   com.apple.Safari:
     ascii_mode: false
   com.apple.Spotlight:
     ascii_mode: true
   com.apple.Notes:
     ascii_mode: false
+  com.apple.launchpad.launcher:
+    ascii_mode: true
+  com.apple.finder:
+    ascii_mode: true
   com.tencent.xinWeChat:
     ascii_mode: false
   com.microsoft.VSCode:
@@ -54,6 +58,7 @@ app_options:
     ascii_mode: true
   com.github.GitHubClient:
     ascii_mode: true
+
 
 style:
   # 选择皮肤，亮色与暗色主题
