@@ -2,4 +2,13 @@
 
 My macOS Configuration Files
 
-No .DS Store
+
+### Rime
+
+Rime, a powerful Chinese Input Method Engine.
+
+Use `control + ~` to adjust Traditional/Simplified Chinese.
+
+```
+ln -s ~/dotfiles/rime/squirrel.yaml ~/Library/Rime/squirrel.yaml
+```
