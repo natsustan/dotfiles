@@ -1,7 +1,7 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    squirrel: 1707747785
+    squirrel: 1707749095
     squirrel.custom: 0
 app_options:
   com.1password.1password:
@@ -11,6 +11,10 @@ app_options:
   com.apple.Safari:
     ascii_mode: false
   com.apple.Spotlight:
+    ascii_mode: true
+  com.apple.finder:
+    ascii_mode: true
+  com.apple.launchpad.launcher:
     ascii_mode: true
   com.github.GitHubClient:
     ascii_mode: true
