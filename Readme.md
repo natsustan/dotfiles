@@ -16,3 +16,11 @@ ln -s ~/dotfiles/rime ~/Library
 #### Tips
 
 Use `control + ~` to adjust Traditional/Simplified Chinese.
+
+### Alacritty
+
+#### Symlink
+
+```
+ln -s ~/dotfiles/rime ~/Library
+```

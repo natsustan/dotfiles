@@ -1,7 +1,7 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    squirrel: 1707749095
+    squirrel: 1708067262
     squirrel.custom: 0
 app_options:
   com.1password.1password:
@@ -30,6 +30,8 @@ app_options:
   com.tencent.xinWeChat:
     ascii_mode: false
   "dev.warp.Warp-Stable":
+    ascii_mode: true
+  org.alacritty:
     ascii_mode: true
 chord_duration: 0.1
 config_version: "2023-02-27"

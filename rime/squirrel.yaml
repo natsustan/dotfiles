@@ -58,7 +58,8 @@ app_options:
     ascii_mode: true
   com.github.GitHubClient:
     ascii_mode: true
-
+  org.alacritty:
+    ascii_mode: true
 
 style:
   # 选择皮肤，亮色与暗色主题
