@@ -24,3 +24,19 @@ Use `control + ~` to adjust Traditional/Simplified Chinese.
 ```
 ln -s ~/dotfiles/rime ~/Library
 ```
+
+### zsh
+
+#### Symlink
+
+```
+ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
+```
+
+### hammerspoon
+
+setting the location of configuration files
+
+```
+defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/dotfiles/hammerspoon/init.lua"
+```
