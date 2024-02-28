@@ -40,3 +40,11 @@ setting the location of configuration files
 ```
 defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/dotfiles/hammerspoon/init.lua"
 ```
+
+### Firefox
+
+
+```
+cd /Users/xxx/Library/Application Support/Firefox/Profiles/xxx.default-release
+ln -s ~/dotfiles/firefox/userChrome.css
+```
