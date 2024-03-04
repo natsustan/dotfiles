@@ -107,10 +107,18 @@ eval "$(starship init zsh)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# daliy
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
-alias icon="sudo fileicon set /Applications/Craft.app /Users/spkz/dotfiles/macOSicons/Craft.icns"
+export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
+# my alias
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+alias icon="fileicon set /Applications/Alacritty.app/ /Users/spkz/dotfiles/macOSicons/iTerm.icns"
+
+alias vz="vi ~/.zshrc"
+alias sz="source ~/.zshrc"
+alias gp="cd ~/Projects"
+
+
+#pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init --path)"
 eval "$(pyenv init -)"
