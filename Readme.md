@@ -48,3 +48,14 @@ defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/dotfiles/hammerspoon/
 cd /Users/xxx/Library/Application Support/Firefox/Profiles/xxx.default-release
 ln -s ~/dotfiles/firefox/userChrome.css
 ```
+
+### Tmux
+```
+ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
+```
+
+### kitty
+```
+ln -s ~/dotfiles/kitty ~/.config/
+```
+
