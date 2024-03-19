@@ -26,12 +26,9 @@ installation.yaml
 user.yaml
 # *.custom.yaml
 # !others/**/*.custom.yaml
-rime_ice.userdb/LOG
-/rime/rime_ice.userdb
-/rime/rime_ice.userdb
-/rime/build
 rime/user.yaml
 /rime/rime_ice.userdb
+/rime/build
 
 custom_phrase_double.txt
 others/script/scel2txt/out/*
