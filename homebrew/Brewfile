@@ -4,15 +4,12 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "owo-network/brew"
-brew "docker"
 brew "fileicon"
-brew "mas"
-brew "neofetch"
+brew "telnet"
 brew "owo-network/brew/deeplx"
 cask "1password"
 cask "1password-cli"
 cask "alacritty"
-cask "arc"
 cask "bartender"
 cask "betterdisplay"
 cask "bezel"
@@ -43,7 +40,6 @@ cask "only-switch"
 cask "opencat"
 cask "openineditor-lite"
 cask "openinterminal-lite"
-cask "orbstack"
 cask "pictureview"
 cask "pitch"
 cask "raycast"
@@ -60,11 +56,9 @@ mas "Bear", id: 1091189122
 mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
 mas "Compressor", id: 424390742
-mas "Cookie", id: 1559943673
 mas "DingTalk", id: 1435447041
 mas "Eagle for Safari", id: 1526651672
 mas "Final Cut Pro", id: 424389933
-mas "G App Launcher", id: 1543803459
 mas "GarageBand", id: 682658836
 mas "Immersive Translate", id: 6447957425
 mas "Infuse", id: 1136220934
@@ -72,9 +66,9 @@ mas "Keynote", id: 409183694
 mas "LocalSend", id: 1661733229
 mas "Logic Pro", id: 634148309
 mas "MainStage", id: 634159523
-mas "Maipo", id: 789066512
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Remote Desktop", id: 1295203466
 mas "Microsoft Word", id: 462054704
 mas "Minimal Theme for Twitter / X", id: 1668204600
 mas "Motion", id: 434290957
@@ -83,7 +77,6 @@ mas "Pages", id: 409201541
 mas "Parallels Desktop", id: 1085114709
 mas "Pixelmator Pro", id: 1289583905
 mas "Playgrounds", id: 1496833156
-mas "PopClip", id: 445189367
 mas "Reeder", id: 1529448980
 mas "RunCat", id: 1429033973
 mas "Sequel Ace", id: 1518036000
@@ -96,7 +89,6 @@ mas "Things", id: 904280696
 mas "Vimari", id: 1480933944
 mas "WeChat", id: 836500024
 mas "Wipr", id: 1320666476
-mas "Xcode", id: 497799835
 vscode "antfu.icons-carbon"
 vscode "antfu.theme-vitesse"
 vscode "arcticicestudio.nord-visual-studio-code"
