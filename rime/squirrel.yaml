@@ -62,6 +62,8 @@ app_options:
     ascii_mode: true
   net.kovidgoyal.kitty:
     ascii_mode: true
+  tech.baye.servercat:
+    ascii_mode: true
 
 
 style:

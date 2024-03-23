@@ -18,25 +18,5 @@ node_modules/
 alacritty/themes/
 
 # rime
-.vscode/
-build/
-sync/
-*.userdb/
-installation.yaml
-user.yaml
-# *.custom.yaml
-# !others/**/*.custom.yaml
-rime/user.yaml
 /rime/rime_ice.userdb
 /rime/build
-
-custom_phrase_double.txt
-others/script/scel2txt/out/*
-others/script/scel2txt/scel/*
-cn_dicts/temp.txt
-
-*private*
-
-rime_console
-rime_deployer
-rime_patch
