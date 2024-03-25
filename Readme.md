@@ -28,7 +28,7 @@ Use `control + ~` to adjust Traditional/Simplified Chinese.
 #### Symlink
 
 ```
-ln -s ~/dotfiles/rime ~/Library
+ln -s ~/dotfiles/alacritty ~/.config
 ```
 
 ### zsh
@@ -51,8 +51,7 @@ defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/dotfiles/hammerspoon/
 
 
 ```
-cd /Users/xxx/Library/Application Support/Firefox/Profiles/xxx.default-release
-ln -s ~/dotfiles/firefox/userChrome.css
+ln -s ~/dotfiles/firefox/chrome ~/Library/Application\ Support/Firefox/Profiles/xxx.default-release/
 ```
 
 ### Tmux
