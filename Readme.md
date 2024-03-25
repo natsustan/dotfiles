@@ -2,6 +2,12 @@
 
 My macOS Configuration Files
 
+### homebrew 
+
+```
+cd ~/dotfiles/homebrew && brew bundle
+```
+
 ### Rime
 
 Rime, a powerful Chinese Input Method Engine.

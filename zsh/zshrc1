@@ -1,0 +1,68 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="$HOME/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
+ZSH_THEME="random"
+
+# Uncomment one of the following lines to change the auto-update behavior
+# zstyle ':omz:update' mode disabled  # disable automatic updates
+# zstyle ':omz:update' mode auto      # update automatically without asking
+# zstyle ':omz:update' mode reminder  # just remind me to update when it's time
+
+# Standard plugins can be found in $ZSH/plugins/
+# Custom plugins may be added to $ZSH_CUSTOM/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-syntax-highlighting
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# Set up shell to use Starship
+eval "$(starship init zsh)"
+
+# User configuration
+
+# You may need to manually set your language environment
+# export LANG=en_US.UTF-8
+
+export HOMEBREW_NO_AUTO_UPDATE=1
+
+export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
+
+# my alias
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+alias icon="fileicon set /Applications/Alacritty.app/ /Users/spkz/dotfiles/macOSicons/iTerm.icns && fileicon set /Applications/Spotify.app /Users/spkz/dotfiles/macOSicons/Spotify.icns && fileicon set /Applications/Figma.app /Users/spkz/dotfiles/macOSicons/Figma.icns"
+
+
+alias bi='brew install'
+alias bu='brew uninstall'
+alias bs='brew search'
+alias bl='brew list'
+alias bbd='brew bundle dump --file=~/dotfiles/homebrew/Brewfile --force'
+
+alias df="df -h"
+alias cp='cp -i'
+alias mv="mv -i"
+alias rm='rm -i'
+
+alias vz="nvim ~/.zshrc"
+alias sz="source ~/.zshrc"
+alias gp="cd ~/Projects"
+
+alias vi="nvim"
+alias vim="nvim"
+
+#pyenv config
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"

@@ -1,8 +1,8 @@
 live_config_reload = true 
 
-import = [
-    "~/.config/alacritty/themes/themes/snazzy.toml"
-]
+#import = [
+#    "~/.config/alacritty/themes/themes/snazzy.toml"
+#]
 
 [env]
 TERM = "xterm-256color"
