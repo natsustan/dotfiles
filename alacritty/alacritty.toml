@@ -1,14 +1,17 @@
-live_config_reload = true 
+live_config_reload = true
 
-#import = [
-#    "~/.config/alacritty/themes/themes/snazzy.toml"
-#]
+# 指定 Alacritty 启动时使用 Fish Shell
+[shell]
+program = "/Users/spkz/.nix-profile/bin/fish"
+args = ["-l", "-c", "/Users/spkz/.nix-profile/bin/tmux"]
 
 [env]
 TERM = "xterm-256color"
+#TMUX_KILL_SERVER = "tmux kill-server"
+
 
 [font]
-size = 12.0
+size = 12.5
 normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
 
 [mouse]
@@ -18,5 +21,5 @@ hide_when_typing = true
 decorations = "buttonless"
 dynamic_padding = false
 opacity = 0.80
-padding = { x = 20, y = 20}
+padding = { x = 20, y = 20 }
 blur = true
