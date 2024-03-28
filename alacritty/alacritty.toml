@@ -1,14 +1,21 @@
 live_config_reload = true
 
+import = [
+    "~/.config/alacritty/themes/themes/snazzy.toml"
+]
+
 # 指定 Alacritty 启动时使用 Fish Shell
 [shell]
 program = "/Users/spkz/.nix-profile/bin/fish"
-args = ["-l", "-c", "/Users/spkz/.nix-profile/bin/tmux"]
+args = ["-l"]
+
+#[shell]
+#program = "/Users/spkz/.nix-profile/bin/fish"
+#args = ["-l", "-c", "/Users/spkz/.nix-profile/bin/tmux"]
 
 [env]
 TERM = "xterm-256color"
 #TMUX_KILL_SERVER = "tmux kill-server"
-
 
 [font]
 size = 12.5

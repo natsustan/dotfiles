@@ -21,3 +21,10 @@ alacritty/themes/
 /rime/rime_ice.userdb
 /rime/build
 /rime/luna_pinyin.userdb
+
+# fish
+/fish/conf.d
+/fish/functions
+/fish/completions
+/fish/fish_plugins
+/fish/fish_variables
