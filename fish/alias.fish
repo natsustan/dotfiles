@@ -17,5 +17,15 @@ alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
 alias gp="cd ~/Projects"
 
-# alias vi="nvim"
-# alias vim="nvim"
+#alias vi="nvim"
+#alias vim="nvim"
+
+
+# ls
+alias l='ls -l'
+alias la='ls -a'
+alias lla='ls -la'
+alias lt='ls --tree'
+
+# misc
+alias reload='exec fish'

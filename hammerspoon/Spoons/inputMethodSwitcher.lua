@@ -75,15 +75,24 @@ end
 -- helper hotkey to figure out the app path and name of current focused window
 -- ⌃ + ⌘ +.时会显示应用的路径等信息
 hs.hotkey.bind({'control', 'cmd'}, ".", function()
-    hs.alert.show("App Path:        "
-    ..hs.window.focusedWindow():application():path()
-    .."\n"
-    .."App Name:      "
-    ..hs.window.focusedWindow():application():name()
-    .."\n"
-    .."IM Source ID:  "
-    ..hs.keycodes.currentSourceID(),{textSize=20},3)
+    local appPath = hs.window.focusedWindow():application():path()
+    local appName = hs.window.focusedWindow():application():name()
+    local imSourceId = hs.keycodes.currentSourceID()
+
+    -- 组合信息字符串
+    local info = "App Path:        " .. appPath
+                 .. "\n"
+                 .. "App Name:      " .. appName
+                 .. "\n"
+                 .. "IM Source ID:  " .. imSourceId
+
+    -- 显示信息
+    hs.alert.show(info, 3)
+
+    -- 将信息复制到剪贴板
+    hs.pasteboard.setContents(info)
 end)
+
 
 -- Handle cursor focus and application's screen manage.
 -- 窗口激活时自动切换输入法

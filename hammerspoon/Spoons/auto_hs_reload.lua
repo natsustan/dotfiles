@@ -17,4 +17,8 @@ configWatcher = hs.pathwatcher.new(hs.configdir, reload)
 
 configWatcher:start()
 
+hs.alert.defaultStyle.strokeColor = {white = 0, alpha = 1} -- 边框颜色
+hs.alert.defaultStyle.textFont = "Menlo" -- 字体
+hs.alert.defaultStyle.textSize = 16 -- 文字大小
+hs.alert.defaultStyle.radius = 10 -- 圆角大小
 hs.alert.show("🔨 Hammerspoon Config Reloaded",1)
