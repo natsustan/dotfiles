@@ -13,7 +13,7 @@
     
     packages."aarch64-darwin".default = let
       system = "aarch64-darwin";
-      pkgs = (nixpkgs.legacyPackages.${system}.extend (import ./overlays.nix));
+      pkgs = (nixpkgs.legacyPackages.${system}.extend);
     in pkgs.buildEnv {
       name = "global-env";
       paths = with pkgs; [
