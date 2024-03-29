@@ -13,7 +13,7 @@
     
     packages."aarch64-darwin".default = let
       system = "aarch64-darwin";
-      pkgs = (nixpkgs.legacyPackages.${system}.extend);
+      pkgs = nixpkgs.legacyPackages.${system};
     in pkgs.buildEnv {
       name = "global-env";
       paths = with pkgs; [
