@@ -10,7 +10,7 @@
     };
   };
 
-+  outputs = { self, nixpkgs, darwin, ... }: {
+  outputs = { self, nixpkgs, darwin, ... }: {
 
     packages."aarch64-darwin".default = let
       system = "aarch64-darwin";
@@ -18,10 +18,6 @@
     in pkgs.buildEnv {
       name = "global-env";
       paths = with pkgs; [
--        # nodejs_20
--        # nodePackages.pnpm
--        # nodePackages.grunt-cli
--        # wget
         mas
         tmux
         neovim
