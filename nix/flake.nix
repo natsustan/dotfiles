@@ -17,10 +17,10 @@
     in pkgs.buildEnv {
       name = "global-env";
       paths = with pkgs; [
-        nodejs_20
+        # nodejs_20
         # nodePackages.pnpm
         # nodePackages.grunt-cli
-        wget
+        # wget
         mas
         tmux
         neovim
