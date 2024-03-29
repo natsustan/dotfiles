@@ -1,8 +1,8 @@
 {
-  description = "Nix for macOS configuration";
+  description = "my global env";
 
   inputs = {
-    # nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-unstable";
+-    # nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-unstable";
     nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-23.11-darwin";
     darwin = {
       url = "github:lnl7/nix-darwin";
@@ -10,34 +10,22 @@
     };
   };
 
-  outputs = inputs @ {
-    self,
-    nixpkgs,
-    darwin,
-    ...
-  }: let
-    # TODO replace with your own username and system
-    username = "spkz";
-    system = "aarch64-darwin"; # aarch64-darwin or x86_64-darwin
++  outputs = { self, nixpkgs, darwin, ... }: {
 
-    hostname = "${username}-macbook";
-    specialArgs =
-      inputs
-      // {
-        inherit username hostname;
-      };
-  in {
-    darwinConfigurations."${hostname}" = darwin.lib.darwinSystem {
-      inherit system specialArgs;
-      modules = [
-        ./modules/nix-core.nix
-        ./modules/system.nix
-        ./modules/apps.nix
-
-        ./modules/host-users.nix
+    packages."aarch64-darwin".default = let
+      system = "aarch64-darwin";
+      pkgs = nixpkgs.legacyPackages.${system};
+    in pkgs.buildEnv {
+      name = "global-env";
+      paths = with pkgs; [
+-        # nodejs_20
+-        # nodePackages.pnpm
+-        # nodePackages.grunt-cli
+-        # wget
+        mas
+        tmux
+        neovim
       ];
     };
-    # nix code formatter
-    formatter.${system} = nixpkgs.legacyPackages.${system}.alejandra;
   };
 }
