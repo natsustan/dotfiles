@@ -2,14 +2,14 @@
   description = "Nix for macOS configuration";
 
   inputs = {
-    nixpkgs-darwin.url = "github:nixos/nixpkgs/nixpkgs-23.11-darwin";
-    darwin = {
-      url = "github:lnl7/nix-darwin";
-      inputs.nixpkgs.follows = "nixpkgs-darwin";
-    };
+	  nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    devenv.url = "github:cachix/devenv/latest";
+    disko.url = "github:nix-community/disko";
+    disko.inputs.nixpkgs.follows = "nixpkgs";
+
   };
 
-  outputs = { self, nixpkgs, darwin, ... }: {
+  outputs = { self, nixpkgs,devenv,disko }: {
 
     packages."aarch64-darwin".default = let
       system = "aarch64-darwin";
@@ -20,6 +20,7 @@
         mas
         tmux
         neovim
+        neofetch
       ];
     };
   };
