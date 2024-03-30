@@ -15,12 +15,13 @@
       system = "aarch64-darwin";
       pkgs = nixpkgs.legacyPackages.${system};
     in pkgs.buildEnv {
-      name = "global-env";
+      name = "macOS";
       paths = with pkgs; [
+        fish
         mas
-        tmux
         neovim
         neofetch
+        peco
       ];
     };
   };
