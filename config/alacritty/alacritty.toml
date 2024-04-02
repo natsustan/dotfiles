@@ -1,8 +1,8 @@
 live_config_reload = true
 
-import = [
-    "~/.config/alacritty/themes/themes/snazzy.toml"
-]
+#import = [
+#    "~/.config/alacritty/themes/themes/snazzy.toml"
+#]
 
 # 指定 Alacritty 启动时使用 Fish Shell
 [shell]

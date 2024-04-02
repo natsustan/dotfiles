@@ -28,7 +28,7 @@ Use `control + ~` to adjust Traditional/Simplified Chinese.
 #### Symlink
 
 ```
-ln -s ~/dotfiles/alacritty ~/.config
+ln -s ~/dotfiles/config/alacritty ~/.config
 ```
 
 ### zsh
@@ -61,6 +61,21 @@ ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 
 ### kitty
 ```
-ln -s ~/dotfiles/kitty ~/.config/
+ln -s ~/dotfiles/config/kitty ~/.config/
 ```
 
+### git
+
+```
+git config --global core.excludesfile ~/dotfiles/git/gitignore_global
+```
+
+### Others
+
+#### 使用 Touch ID 认证 sudo
+
+```
+sudo cp /etc/pam.d/sudo_local.template /etc/pam.d/sudo_local
+sudo chmod +w /etc/pam.d/sudo_local
+sudo vim /etc/pam.d/sudo_local
+```
