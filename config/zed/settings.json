@@ -1,0 +1,36 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `open default settings` command
+// from the command palette or from `Zed` application menu.
+{
+  "project_panel": {
+    "dock": "right"
+  },
+  "base_keymap": "VSCode",
+  "theme": {
+    "light": "Ayu Dark",
+    "dark": "Ayu Mirage"
+  },
+  "tab_size": 2,
+  "telemetry": {
+    "diagnostics": false,
+    "metrics": false
+  },
+  "ui_font_size": 15,
+  "buffer_font_size": 13,
+  "cursor_blink": true,
+  "format_on_save": "on", /// 保存时自动格式化
+  "shell": "system",
+  "terminal": {
+    "shell": {
+      "program": "/Users/spkz/.nix-profile/bin/fish"
+    },
+    "font_family": "FiraCode Nerd Font Mono"
+  },
+  "dock": "right",
+  "assistant.openai_api_url": "https://oneapi.gptnb.me/v1" /// Default: https://api.openai.com/v1
+}

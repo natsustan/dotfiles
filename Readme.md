@@ -55,11 +55,13 @@ ln -s ~/dotfiles/firefox/chrome ~/Library/Application\ Support/Firefox/Profiles/
 ```
 
 ### Tmux
+
 ```
 ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
 ```
 
 ### kitty
+
 ```
 ln -s ~/dotfiles/config/kitty ~/.config/
 ```
