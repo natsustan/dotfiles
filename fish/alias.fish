@@ -5,7 +5,10 @@ fileicon set /Applications/Figma.app /Users/spkz/dotfiles/macOSicons/Figma.icns 
 fileicon set /Applications/Visual\ Studio\ Code.app/ /Users/spkz/dotfiles/macOSicons/Code.icns &&
 fileicon set /Applications/Notion.app/ /Users/spkz/dotfiles/macOSicons/Notion.icns &&
 fileicon set /Applications/HandBrake.app/ /Users/spkz/dotfiles/macOSicons/handbrake.icns &&
-sudo fileicon set /Applications/Bear.app/ /Users/spkz/dotfiles/macOSicons/bear.icns"
+fileicon set /Applications/Wineskin\ Winery.app/ /Users/spkz/dotfiles/macOSicons/Wine.icns &&
+sudo fileicon set /Applications/Bear.app/ /Users/spkz/dotfiles/macOSicons/bear.icns &&
+sudo fileicon set /Applications/Sequel\ Ace.app/ /Users/spkz/dotfiles/macOSicons/Sequel_Pro.icns &&
+sudo fileicon set /Applications/DingTalk.app/ /Users/spkz/dotfiles/macOSicons/Dingtalk.icns"
 
 
 alias bi='brew install'

@@ -21,7 +21,7 @@ keyboard_layout: default
 # for veteran chord-typist
 chord_duration: 0.1  # seconds
 # options: always | never | appropriate
-show_notifications_when: always
+show_notifications_when: appropriate
 
 
 # ascii_mode、inline、no_inline、vim_mode 等等设定
@@ -29,52 +29,14 @@ show_notifications_when: always
 app_options:
   # com.apple.Spotlight:
   #   ascii_mode: true    # 开启默认英文
-  #   ascii_mode: false   # 默认中文
-  #   ascii_punct: true   # 开启英文标点
-  # com.apple.Safari:
-  #   ascii_mode: false
-  # com.apple.Spotlight:
-  #   ascii_mode: true
-  # com.apple.Notes:
-  #   ascii_mode: false
-  # com.apple.launchpad.launcher:
-  #   ascii_mode: true
-  # com.apple.finder:
-  #   ascii_mode: true
-  # com.tencent.xinWeChat:
-  #   ascii_mode: false
   # com.microsoft.VSCode:
-  #   ascii_mode: true
-  #   sacii_punct: true
-  # com.lukilabs.lukiapp: # Craft
-  #   ascii_mode: false
-  # com.raycast.macos:
-  #   ascii_mode: true
-  # dev.warp.Warp-Stable:
-  #   ascii_mode: true
-  # com.1password.1password:
-  #   ascii_mode: true
-  # com.sequel-ace.sequel-ace:
-  #   ascii_mode: true
-  # com.github.GitHubClient:
-  #   ascii_mode: true
-  # org.alacritty:
-  #   ascii_mode: true
-  # net.kovidgoyal.kitty:
-  #   ascii_mode: true
-  # tech.baye.servercat:
-  #   ascii_mode: true
-  # org.mozilla.firefox:
-  #   ascii_mode: false
-  # dev.zed.Zed:
-  #   ascii_mode: true
-  # net.shinyfrog.bear:
-  #   ascii_mode: false
+  #   ascii_mode: false   # 关闭默认英文
+
 
 style:
   # 选择皮肤，亮色与暗色主题
-  color_scheme: mac_purple
-  color_scheme_dark: mac_purple_dark
+  color_scheme: purity_of_form_custom
+  color_scheme_dark: purity_of_form_custom
 
   # 预设选项。如果皮肤没写，则使用这些属性；如果皮肤写了，使用皮肤的。
   text_orientation: horizontal  # horizontal | vertical
@@ -88,7 +50,7 @@ style:
   #candidate_format: '%c. %@'
   #base_offset: 6
   font_face: 'Lucida Grande'
-  font_point: 18
+  font_point: 21
   #label_font_face: 'Lucida Grande'
   label_font_point: 18
   #comment_font_face: 'Lucida Grande'
@@ -423,87 +385,3 @@ preset_color_schemes:
     hilited_candidate_label_color: 0x2566C6 #Lab 55, 45, 65
     hilited_comment_text_color: 0x8144C2 #Lab 50, 65, -5
     hilited_text_color: 0x2C8BAE #Lab 60, 10, 65
-
-  nord_light:
-    name: 北方浅色
-    horizontal: true              # true横排，false竖排
-    candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-    font_point: 16                           # 候选文字大小
-    label_font_point: 14                     # 候选编号大小
-    corner_radius: 5                         # 窗口圆角
-    line_spacing: 10                         # 行间距(适用于竖排)
-    back_color: 0xF4EFEC                     # 候选条背景色
-    border_color: 0xF4EFEC                   # 边框色
-    candidate_text_color: 0xC1A181           # 第一候选项文字颜色
-    comment_text_color: 0xD0C088             # 拼音等提示文字颜色
-    hilited_back_color: 0xF0E9E5             # 第一候选项背景背景色
-    hilited_candidate_back_color: 0xE9DED8   # 候选文字背景色
-    hilited_candidate_text_color: 0xAC815E   # 第一候选项文字颜色
-    hilited_text_color: 0xAD8EB4             # 高亮拼音 (需要开启内嵌编码)
-    text_color: 0x7087D0                     # 拼音等提示文字颜色
-
-  nord_dark:
-    name: 北方深色
-    horizontal: true              # true横排，false竖排
-    candidate_format: "%c %@ "    # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-    font_point: 16                           # 候选文字大小
-    label_font_point: 14                     # 候选编号大小
-    corner_radius: 5                         # 窗口圆角
-    line_spacing: 10                         # 行间距(适用于竖排)
-    back_color: 0x473A33                     # 候选条背景色
-    border_color: 0x473A33                   # 边框色
-    candidate_text_color: 0xF5D887           # 第一候选项文字颜色
-    comment_text_color: 0xE6B687             # 拼音等提示文字颜色
-    hilited_back_color: 0x473A33             # 第一候选项背景背景色
-    hilited_candidate_back_color: 0x5D4C43   # 候选文字背景色
-    hilited_candidate_text_color: 0xC0E077   # 第一候选项文字颜色
-    hilited_text_color: 0x6EC8F5             # 高亮拼音 (需要开启内嵌编码)
-    text_color: 0x78E8F0                     # 拼音等提示文字颜色
-
-  mac_purple:
-    name: 紫色
-    horizontal: true             # true横排，false竖排
-    candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-    corner_radius: 5                             # 窗口圆角
-    hilited_corner_radius: 5                     # 高亮圆角
-    line_spacing: 10                             # 行间距(适用于竖排)
-    border_height: 4                             # 窗口上下高度，大于圆角半径才生效
-    border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-    font_face: "PingFangSC"                      # 候选词字体
-    font_point: 16                               # 候选字大小
-    label_font_point: 13                         # 候选编号大小
-    text_color: 0x424242                    # 拼音行文字颜色
-    back_color: 0xFFFFFF                    # 候选条背景色
-    border_color: 0xFFFFFF                  # 边框色
-    label_color: 0x999999                   # 预选栏编号颜色
-    candidate_text_color: 0x482C30          # 预选项文字颜色
-    comment_text_color: 0x999999            # 拼音等提示文字颜色
-    hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
-    hilited_candidate_back_color: 0xA94452  # 第一候选项背景色
-    hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
-    hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
-    hilited_comment_text_color: 0xD8A7AE    # 注解文字高亮
-
-  mac_purple_dark:
-    name: 紫色
-    horizontal: true             # true横排，false竖排
-    candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-    corner_radius: 5                             # 窗口圆角
-    hilited_corner_radius: 5                     # 高亮圆角
-    line_spacing: 10                             # 行间距(适用于竖排)
-    border_height: 4                             # 窗口上下高度，大于圆角半径才生效
-    border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-    font_face: "PingFangSC"                      # 候选词字体
-    font_point: 16                               # 候选字大小
-    label_font_point: 13                         # 候选编号大小
-    text_color: 0x424242                    # 拼音行文字颜色
-    back_color: 0x323434                    # 候选条背景色
-    border_color: 0x323434                  # 边框色
-    label_color: 0x999999                   # 预选栏编号颜色
-    candidate_text_color: 0xFFFFFF          # 预选项文字颜色
-    comment_text_color: 0x999999            # 拼音等提示文字颜色
-    hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
-    hilited_candidate_back_color: 0xA94452  # 第一候选项背景色
-    hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
-    hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
-    hilited_comment_text_color: 0xD8A7AE    # 注解文字高亮
