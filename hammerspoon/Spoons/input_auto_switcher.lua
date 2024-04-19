@@ -16,6 +16,7 @@ end
 local app2Ime = {
   -- System
   { '/System/Library/CoreServices/Spotlight.app', 'English' },
+  { '/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app', 'Chinese' },
   { '/System/Library/CoreServices/Finder.app',    'Chinese' },
   { '/System/Applications/Notes.app',             'Chinese' },
   { '/System/Applications/Calendar.app',          'Chinese' },
@@ -50,6 +51,7 @@ local app2Ime = {
   { '/Applications/Craft.app',                    'Chinese' },
   { '/Applications/OpenCat.app',                  'Chinese' },
   { '/Applications/ServerCat.app',                'English' },
+  { '/Applications/Arc.app',                      'Chinese' },
 }
 
 function updateFocusAppInputMethod()
