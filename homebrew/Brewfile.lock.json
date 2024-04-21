@@ -1,0 +1,462 @@
+{
+  "entries": {
+    "tap": {
+      "afutured/openai-translator": {
+        "revision": "8b4ff19f450c0ab95a896691d1a8d7b368abbcdf"
+      },
+      "buo/cask-upgrade": {
+        "revision": "e0a85dd3d0cf4f6e0abb712eb0806c332bd19e5d"
+      },
+      "deb-sig/tap": {
+        "revision": "50f8d4e3051deadd7104daa0e4de84ab5c34f16c"
+      },
+      "gcenx/wine": {
+        "revision": "99bd98a001c2534fed40c89c1d9f53f1a9a7233e"
+      },
+      "homebrew/bundle": {
+        "revision": "bfeed4463404184c561460dcd7edaa0f7fe497c0"
+      },
+      "homebrew/cask-fonts": {
+        "revision": "c14bf80205c63b5eb5bd213221e50f348c5e7d83"
+      },
+      "homebrew/services": {
+        "revision": "a6fcf4f1ce20c6e01a0ff051074e7e9d30a887e1"
+      },
+      "owo-network/brew": {
+        "revision": "789788924bcd2be18e61b91be5a65cfcd39f9600"
+      }
+    },
+    "brew": {
+      "fileicon": {
+        "version": "0.3.4",
+        "bottle": {
+          "rebuild": 0,
+          "root_url": "https://ghcr.io/v2/homebrew/core",
+          "files": {
+            "all": {
+              "cellar": ":any_skip_relocation",
+              "url": "https://ghcr.io/v2/homebrew/core/fileicon/blobs/sha256:98e8ac6732cde1d52e2579d3fddd9a87bd03547fb7a4188dd7f9c95498caf487",
+              "sha256": "98e8ac6732cde1d52e2579d3fddd9a87bd03547fb7a4188dd7f9c95498caf487"
+            }
+          }
+        }
+      },
+      "owo-network/brew/deeplx": {
+        "version": "0.9.3",
+        "bottle": false
+      }
+    },
+    "cask": {
+      "1password": {
+        "version": "8.10.30",
+        "options": {
+          "full_name": "1password"
+        }
+      },
+      "1password-cli": {
+        "version": "2.27.0",
+        "options": {
+          "full_name": "1password-cli"
+        }
+      },
+      "arc": {
+        "version": "1.39.0,48951",
+        "options": {
+          "full_name": "arc"
+        }
+      },
+      "bartender": {
+        "version": "5.0.49",
+        "options": {
+          "full_name": "bartender"
+        }
+      },
+      "betterdisplay": {
+        "version": "2.3.1",
+        "options": {
+          "full_name": "betterdisplay"
+        }
+      },
+      "bruno": {
+        "version": "1.13.1",
+        "options": {
+          "full_name": "bruno"
+        }
+      },
+      "cleanshot": {
+        "version": "4.6.2",
+        "options": {
+          "full_name": "cleanshot"
+        }
+      },
+      "downie": {
+        "version": "4.7.10,4713",
+        "options": {
+          "full_name": "downie"
+        }
+      },
+      "figma": {
+        "version": "116.17.11",
+        "options": {
+          "full_name": "figma"
+        }
+      },
+      "firefox": {
+        "version": "125.0.1",
+        "options": {
+          "full_name": "firefox"
+        }
+      },
+      "font-fira-code-nerd-font": {
+        "version": "3.2.1",
+        "options": {
+          "full_name": "font-fira-code-nerd-font"
+        }
+      },
+      "font-inconsolata": {
+        "version": "latest",
+        "options": {
+          "full_name": "font-inconsolata"
+        }
+      },
+      "font-jetbrains-mono": {
+        "version": "2.304",
+        "options": {
+          "full_name": "font-jetbrains-mono"
+        }
+      },
+      "font-lxgw-wenkai": {
+        "version": "1.320",
+        "options": {
+          "full_name": "font-lxgw-wenkai"
+        }
+      },
+      "font-sf-compact": {
+        "version": "latest",
+        "options": {
+          "full_name": "font-sf-compact"
+        }
+      },
+      "font-sf-mono": {
+        "version": "latest",
+        "options": {
+          "full_name": "font-sf-mono"
+        }
+      },
+      "font-sf-pro": {
+        "version": "latest",
+        "options": {
+          "full_name": "font-sf-pro"
+        }
+      },
+      "font-smiley-sans": {
+        "version": "2.0.1",
+        "options": {
+          "full_name": "font-smiley-sans"
+        }
+      },
+      "github": {
+        "version": "3.3.14-b6c1402e",
+        "options": {
+          "full_name": "github"
+        }
+      },
+      "hammerspoon": {
+        "version": "0.9.100",
+        "options": {
+          "full_name": "hammerspoon"
+        }
+      },
+      "handbrake": {
+        "version": "1.7.3",
+        "options": {
+          "full_name": "handbrake"
+        }
+      },
+      "iina": {
+        "version": "1.3.4,140",
+        "options": {
+          "full_name": "iina"
+        }
+      },
+      "keka": {
+        "version": "1.3.8",
+        "options": {
+          "full_name": "keka"
+        }
+      },
+      "kitty": {
+        "version": "0.34.1",
+        "options": {
+          "full_name": "kitty"
+        }
+      },
+      "logseq": {
+        "version": "0.10.8",
+        "options": {
+          "full_name": "logseq"
+        }
+      },
+      "notion": {
+        "version": "3.5.0",
+        "options": {
+          "full_name": "notion"
+        }
+      },
+      "ogdesign-eagle": {
+        "version": "3.0,44",
+        "options": {
+          "full_name": "ogdesign-eagle"
+        }
+      },
+      "only-switch": {
+        "version": "2.5.0",
+        "options": {
+          "full_name": "only-switch"
+        }
+      },
+      "opencat": {
+        "version": "2.13.0,469",
+        "options": {
+          "full_name": "opencat"
+        }
+      },
+      "openineditor-lite": {
+        "version": "1.2.6",
+        "options": {
+          "full_name": "openineditor-lite"
+        }
+      },
+      "openinterminal-lite": {
+        "version": "1.2.6",
+        "options": {
+          "full_name": "openinterminal-lite"
+        }
+      },
+      "pictureview": {
+        "version": "2.3.4",
+        "options": {
+          "full_name": "pictureview"
+        }
+      },
+      "pitch": {
+        "version": "2.19.2,stable.4,6551596",
+        "options": {
+          "full_name": "pitch"
+        }
+      },
+      "popclip": {
+        "version": "2024.3.2",
+        "options": {
+          "full_name": "popclip"
+        }
+      },
+      "raycast": {
+        "version": "1.71.4",
+        "options": {
+          "full_name": "raycast"
+        }
+      },
+      "screen-studio": {
+        "version": "2.22.7",
+        "options": {
+          "full_name": "screen-studio"
+        }
+      },
+      "spotify": {
+        "version": "1.2.35.663,b699649e,5769",
+        "options": {
+          "full_name": "spotify"
+        }
+      },
+      "squirrel": {
+        "version": "0.16.2",
+        "options": {
+          "full_name": "squirrel"
+        }
+      },
+      "surge": {
+        "version": "5.6.1,2612,3e4b35f5fc8b259427c0866969610132",
+        "options": {
+          "full_name": "surge"
+        }
+      },
+      "tencent-meeting": {
+        "version": "3.25.10.459,069b2a04d6157b3fe6d0c7ac835cf21a",
+        "options": {
+          "full_name": "tencent-meeting"
+        }
+      },
+      "visual-studio-code": {
+        "version": "1.88.1",
+        "options": {
+          "full_name": "visual-studio-code"
+        }
+      },
+      "zed": {
+        "version": "0.131.6",
+        "options": {
+          "full_name": "zed"
+        }
+      }
+    },
+    "mas": {
+      "1Password for Safari": {
+        "id": "1569813296",
+        "version": "2.22.1"
+      },
+      "Adobe Lightroom": {
+        "id": "1451544217",
+        "version": "7.2"
+      },
+      "Bear": {
+        "id": "1091189122",
+        "version": "2.1.8"
+      },
+      "Bob": {
+        "id": "1630034110",
+        "version": "1.9.2"
+      },
+      "Command X": {
+        "id": "6448461551",
+        "version": "1.4.1"
+      },
+      "Compressor": {
+        "id": "424390742",
+        "version": "4.7"
+      },
+      "DingTalk": {
+        "id": "1435447041",
+        "version": "7.5.11"
+      },
+      "Eagle for Safari": {
+        "id": "1526651672",
+        "version": "3.0.19"
+      },
+      "Final Cut Pro": {
+        "id": "424389933",
+        "version": "10.7.1"
+      },
+      "Immersive Translate": {
+        "id": "6447957425",
+        "version": "1.4.11"
+      },
+      "Infuse": {
+        "id": "1136220934",
+        "version": "7.7.3"
+      },
+      "Keynote": {
+        "id": "409183694",
+        "version": "14.0"
+      },
+      "LocalSend": {
+        "id": "1661733229",
+        "version": "1.14.0"
+      },
+      "Logic Pro": {
+        "id": "634148309",
+        "version": "10.8.1"
+      },
+      "MainStage": {
+        "id": "634159523",
+        "version": "3.6.6"
+      },
+      "Minimal Theme for Twitter / X": {
+        "id": "1668204600",
+        "version": "6.0.5"
+      },
+      "Motion": {
+        "id": "434290957",
+        "version": "5.7"
+      },
+      "Numbers": {
+        "id": "409203825",
+        "version": "14.0"
+      },
+      "Omnivore": {
+        "id": "1564031042",
+        "version": "1.38.0"
+      },
+      "Pages": {
+        "id": "409201541",
+        "version": "14.0"
+      },
+      "Parallels Desktop": {
+        "id": "1085114709",
+        "version": "1.9.2"
+      },
+      "Pixelmator Pro": {
+        "id": "1289583905",
+        "version": "3.5.8"
+      },
+      "Reeder": {
+        "id": "1529448980",
+        "version": "5.4"
+      },
+      "RunCat": {
+        "id": "1429033973",
+        "version": "11.3"
+      },
+      "Sequel Ace": {
+        "id": "1518036000",
+        "version": "4.0.15"
+      },
+      "ServerCat": {
+        "id": "1501532023",
+        "version": "1.10.0"
+      },
+      "Tampermonkey": {
+        "id": "1482490089",
+        "version": "4.20.6188"
+      },
+      "Telegram": {
+        "id": "747648890",
+        "version": "10.10.2"
+      },
+      "TestFlight": {
+        "id": "899247664",
+        "version": "3.5.1"
+      },
+      "Vimari": {
+        "id": "1480933944",
+        "version": "2.1.1"
+      },
+      "WeChat": {
+        "id": "836500024",
+        "version": "3.8.7"
+      },
+      "Wipr": {
+        "id": "1320666476",
+        "version": "1.54"
+      }
+    },
+    "vscode": {
+      "antfu.icons-carbon": null,
+      "antfu.theme-vitesse": null,
+      "arcticicestudio.nord-visual-studio-code": null,
+      "codeium.codeium": null,
+      "dongfg.vscode-beancount-formatter": null,
+      "github.github-vscode-theme": null,
+      "lencerf.beancount": null,
+      "mefengl.vscode-i-dont-care-about-commit-message": null,
+      "miguelsolorio.symbols": null,
+      "ms-python.debugpy": null,
+      "ms-python.python": null,
+      "ms-python.vscode-pylance": null,
+      "teabyii.ayu": null,
+      "tonka3000.raycast": null
+    }
+  },
+  "system": {
+    "macos": {
+      "sonoma": {
+        "HOMEBREW_VERSION": "4.2.18",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "15.3.0.0.1.1708646388",
+        "Xcode": "15.1",
+        "macOS": "14.4.1"
+      }
+    }
+  }
+}
