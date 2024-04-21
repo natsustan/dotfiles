@@ -1,7 +1,5 @@
-tap "afutured/openai-translator"
 tap "buo/cask-upgrade"
 tap "deb-sig/tap"
-tap "gcenx/wine"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
@@ -65,7 +63,6 @@ mas "Keynote", id: 409183694
 mas "LocalSend", id: 1661733229
 mas "Logic Pro", id: 634148309
 mas "MainStage", id: 634159523
-mas "Minimal Theme for Twitter / X", id: 1668204600
 mas "Motion", id: 434290957
 mas "Numbers", id: 409203825
 mas "Omnivore", id: 1564031042
@@ -76,23 +73,13 @@ mas "Reeder", id: 1529448980
 mas "RunCat", id: 1429033973
 mas "Sequel Ace", id: 1518036000
 mas "ServerCat", id: 1501532023
-mas "Tampermonkey", id: 1482490089
 mas "Telegram", id: 747648890
-mas "TestFlight", id: 899247664
-mas "Vimari", id: 1480933944
 mas "WeChat", id: 836500024
 mas "Wipr", id: 1320666476
 vscode "antfu.icons-carbon"
 vscode "antfu.theme-vitesse"
-vscode "arcticicestudio.nord-visual-studio-code"
-vscode "codeium.codeium"
-vscode "dongfg.vscode-beancount-formatter"
 vscode "github.github-vscode-theme"
 vscode "lencerf.beancount"
 vscode "mefengl.vscode-i-dont-care-about-commit-message"
 vscode "miguelsolorio.symbols"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "teabyii.ayu"
 vscode "tonka3000.raycast"

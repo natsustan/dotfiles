@@ -5,7 +5,7 @@ export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152
 source ~/.config/fish/alias.fish
 
 # Configure Jump
-status --is-interactive; and source (jump shell fish | psub)
+#status --is-interactive; and source (jump shell fish | psub)
 
 # ENV PATH
 set -x PATH /opt/homebrew/bin $PATH
