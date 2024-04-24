@@ -52,6 +52,7 @@ local app2Ime = {
   { '/Applications/OpenCat.app',                  'Chinese' },
   { '/Applications/ServerCat.app',                'English' },
   { '/Applications/Arc.app',                      'Chinese' },
+  { '/Applications/Alfred 5.app',                 'English' },
 }
 
 function updateFocusAppInputMethod()

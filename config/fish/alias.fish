@@ -6,7 +6,7 @@ fileicon set /Applications/Notion.app $HOME/dotfiles/macOSicons/Notion.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
 sudo fileicon set /Applications/Sequel\ Ace.app $HOME/dotfiles/macOSicons/Sequel_Pro.icns &&
 sudo fileicon set /Applications/DingTalk.app $HOME/dotfiles/macOSicons/Dingtalk.icns"
-
+#alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 alias bi='brew install'
 alias bu='brew uninstall'
@@ -25,7 +25,6 @@ alias rm='rm -i'
 
 alias vi="nvim"
 alias vim="nvim"
-
 
 # ls
 alias l='ls -l'

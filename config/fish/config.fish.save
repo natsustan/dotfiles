@@ -1,6 +1,5 @@
 set -g fish_greeting
-set -g theme_dracula
-
+0;9u
 export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
 source ~/.config/fish/alias.fish
