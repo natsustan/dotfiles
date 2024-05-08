@@ -4,6 +4,8 @@ fileicon set /Applications/Spotify.app $HOME/dotfiles/macOSicons/Spotify.icns &&
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
 fileicon set /Applications/Notion.app $HOME/dotfiles/macOSicons/Notion.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
+fileicon set /Applications/Capture\ One.app $HOME/dotfiles/macOSicons/CaptureOne.icns &&
+fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/LogseqDark.icns &&
 sudo fileicon set /Applications/Sequel\ Ace.app $HOME/dotfiles/macOSicons/Sequel_Pro.icns &&
 sudo fileicon set /Applications/DingTalk.app $HOME/dotfiles/macOSicons/Dingtalk.icns"
 #alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"

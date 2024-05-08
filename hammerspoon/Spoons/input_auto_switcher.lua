@@ -42,7 +42,7 @@ local app2Ime = {
   { '/Users/spkz/Applications/Notion.app',        'Chinese' },
   { '/Users/spkz/Applications/Twitter.app',       'Chinese' },
   { '/Applications/Microsoft Powerpoint.app',     'Chinese' },
-  { '/Applications/Microsoft Excel.app',          'Chinese' },
+  { '/Applications/Microsoft Excel.app',          'English' },
   { '/Applications/Microsoft Word.app',           'Chinese' },
   { '/Applications/Visual Studio Code.app',       'English' },
   { '/Applications/Figma.app',                    'Chinese' },

@@ -6,7 +6,6 @@
     devenv.url = "github:cachix/devenv/latest";
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
-
   };
 
   outputs = { self, nixpkgs,devenv,disko }: {
@@ -22,6 +21,7 @@
         neovim
         neofetch
         peco
+	starship
       ];
     };
   };
