@@ -23,6 +23,7 @@
         peco
 	starship
 	nodejs_20
+	nodePackages.pnpm
       ];
     };
   };
