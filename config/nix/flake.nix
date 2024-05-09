@@ -22,6 +22,7 @@
         neofetch
         peco
 	starship
+	nodejs_20
       ];
     };
   };
