@@ -24,6 +24,12 @@
 	starship
 	nodejs_20
 	nodePackages.pnpm
+	php
+	pandoc # alfred-gpt-dependencies
+	mpv # alfred-gpt-dependencies
+	duti # alfred-gpt-dependencies
+	sox # alfred-gpt-dependencies
+	jq # alfred-gpt-dependencies
       ];
     };
   };
