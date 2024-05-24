@@ -1,4 +1,4 @@
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && bash rime-install iDvel/rime-ice:others/recipes/cn_dicts && bash rime-install iDvel/rime-ice:others/recipes/en_dicts && bash rime-install iDvel/rime-ice:others/recipes/opencc"
 alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/iTerm.icns &&
 fileicon set /Applications/Spotify.app $HOME/dotfiles/macOSicons/Spotify.icns &&
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
@@ -21,10 +21,6 @@ alias cp='cp -i'
 alias mv="mv -i"
 alias rm='rm -i'
 
-#alias vz="vim ~/.zshrc"
-#alias sz="source ~/.zshrc"
-#alias gp="cd ~/Projects"
-
 alias vi="nvim"
 alias vim="nvim"
 
@@ -37,4 +33,4 @@ alias lt='ls --tree'
 # misc
 alias reload='exec fish'
 
-alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --sync'
+alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
