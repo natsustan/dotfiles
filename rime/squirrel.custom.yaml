@@ -1,13 +1,11 @@
 patch:
-  style:
-    color_scheme: mac_purple
-    color_scheme_dark: mac_purple_dark
+  style/color_scheme: mac_purple_light
+  style/color_scheme_dark: mac_purple_dark
+  style/inline_preedit: true  # 行内显示预编辑区：true 单行；false 双行
 
-    inline_preedit: true  # 行内显示预编辑区：true 单行；false 双行
-
-  preset_color_schemes:
-    mac_purple:
-      name: 紫色
+  preset_color_schemes/+:
+    mac_purple_light:
+      name: 紫色 Light
       horizontal: true             # true横排，false竖排
       candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
       corner_radius: 5                             # 窗口圆角
@@ -31,7 +29,7 @@ patch:
       hilited_comment_text_color: 0xD8A7AE    # 注解文字高亮
 
     mac_purple_dark:
-      name: 紫色
+      name: 紫色 Dark
       horizontal: true             # true横排，false竖排
       candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
       corner_radius: 5                             # 窗口圆角

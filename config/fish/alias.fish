@@ -36,3 +36,5 @@ alias lt='ls --tree'
 
 # misc
 alias reload='exec fish'
+
+alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --sync'
