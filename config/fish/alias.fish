@@ -7,7 +7,8 @@ fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icn
 fileicon set /Applications/Capture\ One.app $HOME/dotfiles/macOSicons/CaptureOne.icns &&
 fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/LogseqDark.icns &&
 sudo fileicon set /Applications/Sequel\ Ace.app $HOME/dotfiles/macOSicons/Sequel_Pro.icns &&
-sudo fileicon set /Applications/DingTalk.app $HOME/dotfiles/macOSicons/Dingtalk.icns"
+sudo fileicon set /Applications/DingTalk.app $HOME/dotfiles/macOSicons/Dingtalk.icns &&
+fileicon set /Applications/calibre.app $Home/dotfiles/macOSicons/calibre.icns"
 #alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 alias bi='brew install'

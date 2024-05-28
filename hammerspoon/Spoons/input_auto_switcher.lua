@@ -37,6 +37,7 @@ local app2Ime = {
   { '/Applications/MindNode.app',                 'Chinese' },
   { '/Applications/Obsidian.app',                 'Chinese' },
   { '/Applications/Heptabase.app',                'Chinese' },
+  { '/Applications/Tana.app',                     'Chinese' },
   -- Tool
   { '/Users/spkz/Applications/ChatGPT.app',       'Chinese' },
   { '/Users/spkz/Applications/Notion.app',        'Chinese' },

@@ -31,6 +31,7 @@
 	sox # alfred-gpt-dependencies
 	jq # alfred-gpt-dependencies
 	yarn
+	go
       ];
     };
   };
