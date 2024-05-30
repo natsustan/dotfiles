@@ -7,12 +7,15 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
-  "project_panel": {
+  "collaboration_panel": {
     "dock": "right"
+  },
+  "project_panel": {
+    "dock": "left"
   },
   "base_keymap": "VSCode",
   "theme": {
-    "light": "Ayu Light",
+    "light": "Nordfox",
     "dark": "One Dark Pro"
   },
   "tab_size": 2,
@@ -20,8 +23,9 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 15,
-  "buffer_font_size": 12,
+  "ui_font_family": "JetBrains Mono",
+  "ui_font_size": 14.5,
+  "buffer_font_size": 12.5,
   "cursor_blink": true,
   "format_on_save": "on", /// 保存时自动格式化
   "shell": "system",
@@ -29,7 +33,7 @@
     "shell": {
       "program": "/Users/spkz/.nix-profile/bin/fish"
     },
-    "font_family": "FiraCode Nerd Font Mono"
+    "font_family": "JetBrains Mono"
   },
   "dock": "right",
   "assistant.openai_api_url": "https://oneapi.gptnb.me/v1" /// Default: https://api.openai.com/v1
