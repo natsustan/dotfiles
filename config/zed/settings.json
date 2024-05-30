@@ -21,7 +21,7 @@
     "metrics": false
   },
   "ui_font_size": 15,
-  "buffer_font_size": 13,
+  "buffer_font_size": 12,
   "cursor_blink": true,
   "format_on_save": "on", /// 保存时自动格式化
   "shell": "system",
