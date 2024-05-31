@@ -11,7 +11,7 @@
     "dock": "right"
   },
   "project_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "base_keymap": "VSCode",
   "theme": {

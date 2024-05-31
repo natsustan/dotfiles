@@ -1,53 +1,148 @@
 patch:
-  style/color_scheme: mac_purple_light
-  style/color_scheme_dark: mac_purple_dark
-  style/inline_preedit: true  # 行内显示预编辑区：true 单行；false 双行
+  style/color_scheme: custom_purple_light
+  style/color_scheme_dark: custom_blue_drak
+  style/inline_preedit: true # 行内显示预编辑区：true 单行；false 双行
 
-  preset_color_schemes/+:
-    mac_purple_light:
-      name: 紫色 Light
-      horizontal: true             # true横排，false竖排
-      candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-      corner_radius: 5                             # 窗口圆角
-      hilited_corner_radius: 5                     # 高亮圆角
-      line_spacing: 10                             # 行间距(适用于竖排)
-      border_height: 4                             # 窗口上下高度，大于圆角半径才生效
-      border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-      font_face: "PingFangSC"                      # 候选词字体
-      font_point: 16                               # 候选字大小
-      label_font_point: 13                         # 候选编号大小
-      text_color: 0x424242                    # 拼音行文字颜色
-      back_color: 0xFFFFFF                    # 候选条背景色
-      border_color: 0xFFFFFF                  # 边框色
-      label_color: 0x999999                   # 预选栏编号颜色
-      candidate_text_color: 0x482C30          # 预选项文字颜色
-      comment_text_color: 0x999999            # 拼音等提示文字颜色
-      hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
-      hilited_candidate_back_color: 0xA94452  # 第一候选项背景色
-      hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
-      hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
-      hilited_comment_text_color: 0xD8A7AE    # 注解文字高亮
+  style/text_orientation: horizontal # horizontal | vertical
+  style/candidate_list_layout: linear # stacked | linear
+  style/candidate_format: "[label] [candidate] [comment]"
 
-    mac_purple_dark:
-      name: 紫色 Dark
-      horizontal: true             # true横排，false竖排
-      candidate_format: "%c %@ "   # 用 1/6 em 空格 U+2005 来控制编号 %c 和候选词 %@ 前后的空间
-      corner_radius: 5                             # 窗口圆角
-      hilited_corner_radius: 5                     # 高亮圆角
-      line_spacing: 10                             # 行间距(适用于竖排)
-      border_height: 4                             # 窗口上下高度，大于圆角半径才生效
-      border_width: 4                              # 窗口左右宽度，大于圆角半径才生效
-      font_face: "PingFangSC"                      # 候选词字体
-      font_point: 16                               # 候选字大小
-      label_font_point: 13                         # 候选编号大小
-      text_color: 0x424242                    # 拼音行文字颜色
-      back_color: 0x323434                    # 候选条背景色
-      border_color: 0x323434                  # 边框色
-      label_color: 0x999999                   # 预选栏编号颜色
-      candidate_text_color: 0xFFFFFF          # 预选项文字颜色
-      comment_text_color: 0x999999            # 拼音等提示文字颜色
-      hilited_text_color: 0x999999            # 高亮拼音 (需要开启内嵌编码)
-      hilited_candidate_back_color: 0xA94452  # 第一候选项背景色
-      hilited_candidate_text_color: 0xFFFFFF  # 第一候选项文字颜色
-      hilited_candidate_label_color: 0xFFFFFF # 第一候选项编号颜色
-      hilited_comment_text_color: 0xD8A7AE    # 注解文字高亮
+  preset_color_schemes/custom_purple_light:
+    name: "紫色 Light"
+    font_face: "PingFangSC-Regular"
+    font_point: 17.0
+    label_font_face: "PingFangSC-Regular"
+    label_font_point: 14.0
+    comment_font_face: "PingFangSC-Regular"
+    comment_font_point: 14.0
+    candidate_list_layout: linear
+    text_orientation: horizontal
+    inline_preedit: true
+    corner_radius: 4.0
+    hilited_corner_radius: 4.0
+    border_height: 4.0
+    border_width: 4.0
+    line_spacing: 8.0
+    color_space: display_p3
+    back_color: 0xFFFFFF
+    candidate_text_color: 0x462C30
+    comment_text_color: 0x3F000000
+    label_color: 0x999999
+    hilited_candidate_back_color: 0xA34450
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x3F000000
+    hilited_candidate_label_color: 0xFDFDFD
+    text_color: 0x3F000000
+    hilited_text_color: 0xD8000000
+
+  preset_color_schemes/custom_purple_dark:
+    name: 紫色 Dark
+    font_face: "PingFangSC-Regular"
+    font_point: 17.0
+    label_font_face: "PingFangSC-Regular"
+    label_font_point: 14.0
+    comment_font_face: "PingFangSC-Regular"
+    comment_font_point: 14.0
+    candidate_list_layout: linear
+    text_orientation: horizontal
+    inline_preedit: true
+    corner_radius: 4.0
+    hilited_corner_radius: 4.0
+    border_height: 4.0
+    border_width: 8.0
+    line_spacing: 8.0
+    color_space: display_p3
+    back_color: 0x000000
+    candidate_text_color: 0xFFFFFF
+    comment_text_color: 0xCCFFFFFF
+    label_color: 0x837275
+    hilited_candidate_back_color: 0xA34450
+    hilited_candidate_text_color: 0xFFFFFF
+    hilited_comment_text_color: 0x3F000000
+    hilited_candidate_label_color: 0xE0C1C5
+    text_color: 0x3F000000
+    hilited_text_color: 0x000000
+
+  preset_color_schemes/custom_blue_light:
+    name: "蓝 Light"
+    font_face: "PingFangSC-Regular"
+    font_point: 17.0
+    label_font_face: "PingFangSC-Regular"
+    label_font_point: 13.0
+    comment_font_face: "PingFangSC-Regular"
+    comment_font_point: 14.0
+    candidate_list_layout: linear
+    text_orientation: horizontal
+    inline_preedit: true
+    corner_radius: 4.0
+    hilited_corner_radius: 4.0
+    border_height: 4.0
+    border_width: 4.0
+    line_spacing: 8.0
+    color_space: display_p3
+    back_color: 0xFFFFFF
+    candidate_text_color: 0x000000
+    comment_text_color: 0x3F000000
+    label_color: 0x717070
+    hilited_candidate_back_color: 0xFCF0E8
+    hilited_candidate_text_color: 0xDD6D41
+    hilited_comment_text_color: 0x3F000000
+    hilited_candidate_label_color: 0xC3603A
+    text_color: 0x3F000000
+    hilited_text_color: 0xD8000000
+
+  preset_color_schemes/custom_blue_drak:
+    name: "蓝"
+    font_face: "PingFangSC-Regular"
+    font_point: 17.0
+    label_font_face: "PingFangSC-Regular"
+    label_font_point: 15.0
+    comment_font_face: "PingFangSC-Regular"
+    comment_font_point: 15.0
+    candidate_list_layout: linear
+    text_orientation: horizontal
+    inline_preedit: true
+    corner_radius: 4.0
+    hilited_corner_radius: 4.0
+    border_height: 4.0
+    border_width: 8.0
+    line_spacing: 8.0
+    color_space: display_p3
+    back_color: 0x323434
+    candidate_text_color: 0xFFFFFF
+    comment_text_color: 0xCCFFFFFF
+    label_color: 0x837275
+    hilited_candidate_back_color: 0xCEB772
+    hilited_candidate_text_color: 0xE6FFFFFF
+    hilited_comment_text_color: 0x3F000000
+    hilited_candidate_label_color: 0xE0C1C5
+    text_color: 0x4AF572
+    hilited_text_color: 0xFFFFFF
+
+  preset_color_schemes/custom_grey:
+    name: "灰"
+    font_face: "PingFangSC-Regular"
+    font_point: 17.0
+    label_font_face: "PingFangSC-Regular"
+    label_font_point: 14.0
+    comment_font_face: "PingFangSC-Regular"
+    comment_font_point: 14.0
+    candidate_list_layout: linear
+    text_orientation: horizontal
+    inline_preedit: true
+    corner_radius: 4.0
+    hilited_corner_radius: 4.0
+    border_height: 4.0
+    border_width: 4.0
+    line_spacing: 8.0
+    color_space: display_p3
+    back_color: 0xF4EFEC
+    candidate_text_color: 0xBC9F8D
+    comment_text_color: 0x3F000000
+    label_color: 0xC5B0A1
+    hilited_candidate_back_color: 0xE7DEDA
+    hilited_candidate_text_color: 0xA4806C
+    hilited_comment_text_color: 0x3F000000
+    hilited_candidate_label_color: 0xA4806C
+    text_color: 0x3F000000
+    hilited_text_color: 0xD8000000
