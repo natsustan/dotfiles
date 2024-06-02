@@ -12,7 +12,7 @@ patch:
     font_face: "PingFangSC-Regular"
     font_point: 17.0
     label_font_face: "PingFangSC-Regular"
-    label_font_point: 14.0
+    label_font_point: 12.0
     comment_font_face: "PingFangSC-Regular"
     comment_font_point: 14.0
     candidate_list_layout: linear
@@ -40,7 +40,7 @@ patch:
     font_face: "PingFangSC-Regular"
     font_point: 17.0
     label_font_face: "PingFangSC-Regular"
-    label_font_point: 14.0
+    label_font_point: 12.0
     comment_font_face: "PingFangSC-Regular"
     comment_font_point: 14.0
     candidate_list_layout: linear
@@ -68,7 +68,7 @@ patch:
     font_face: "PingFangSC-Regular"
     font_point: 17.0
     label_font_face: "PingFangSC-Regular"
-    label_font_point: 13.0
+    label_font_point: 12.0
     comment_font_face: "PingFangSC-Regular"
     comment_font_point: 14.0
     candidate_list_layout: linear
@@ -92,11 +92,11 @@ patch:
     hilited_text_color: 0xD8000000
 
   preset_color_schemes/custom_blue_drak:
-    name: "蓝"
+    name: "蓝 Dark"
     font_face: "PingFangSC-Regular"
     font_point: 17.0
     label_font_face: "PingFangSC-Regular"
-    label_font_point: 15.0
+    label_font_point: 12.0
     comment_font_face: "PingFangSC-Regular"
     comment_font_point: 15.0
     candidate_list_layout: linear
@@ -111,11 +111,11 @@ patch:
     back_color: 0x323434
     candidate_text_color: 0xFFFFFF
     comment_text_color: 0xCCFFFFFF
-    label_color: 0x837275
+    label_color: 0xFFFFFF
     hilited_candidate_back_color: 0xCEB772
     hilited_candidate_text_color: 0xE6FFFFFF
     hilited_comment_text_color: 0x3F000000
-    hilited_candidate_label_color: 0xE0C1C5
+    hilited_candidate_label_color: 0xFFFFFF
     text_color: 0x4AF572
     hilited_text_color: 0xFFFFFF
 
@@ -124,7 +124,7 @@ patch:
     font_face: "PingFangSC-Regular"
     font_point: 17.0
     label_font_face: "PingFangSC-Regular"
-    label_font_point: 14.0
+    label_font_point: 12.0
     comment_font_face: "PingFangSC-Regular"
     comment_font_point: 14.0
     candidate_list_layout: linear
