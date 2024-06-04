@@ -1,4 +1,6 @@
 patch:
+  show_notifications_when: never
+
   style/color_scheme: custom_purple_light
   style/color_scheme_dark: custom_blue_drak
   style/inline_preedit: true # 行内显示预编辑区：true 单行；false 双行

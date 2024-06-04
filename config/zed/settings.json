@@ -15,8 +15,8 @@
   },
   "base_keymap": "VSCode",
   "theme": {
-    "light": "Nordfox",
-    "dark": "One Dark Pro"
+    "light": "Dawnfox",
+    "dark": "Nordfox"
   },
   "tab_size": 2,
   "telemetry": {
