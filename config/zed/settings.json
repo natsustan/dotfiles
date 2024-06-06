@@ -35,6 +35,7 @@
     },
     "font_family": "JetBrains Mono"
   },
+  "vim_mode": true,
   "dock": "right",
   "assistant.openai_api_url": "https://oneapi.gptnb.me/v1" /// Default: https://api.openai.com/v1
 }
