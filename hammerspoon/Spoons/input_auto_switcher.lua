@@ -31,6 +31,7 @@ local app2Ime = {
   { '/Applications/Slack.app',                    'Chinese' },
   -- Note-taking
   { '/Applications/Notion.app',                   'Chinese' },
+  { '/Applications/Drafts.app',                   'Chinese' },
   { '/Applications/Logseq.app',                   'Chinese' },
   { '/Applications/Craft.app',                    'Chinese' },
   { '/Applications/Things3.app',                  'Chinese' },
