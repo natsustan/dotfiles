@@ -22,6 +22,7 @@ cask "bruno"
 cask "calibre"
 cask "downie"
 cask "figma"
+cask "firefox"
 cask "font-fira-code-nerd-font"
 cask "font-inconsolata"
 cask "font-jetbrains-mono"
@@ -40,6 +41,7 @@ cask "linear-linear"
 cask "logseq"
 cask "mos"
 cask "notion"
+cask "obsidian"
 cask "ogdesign-eagle"
 cask "only-switch"
 cask "opencat"
@@ -48,6 +50,7 @@ cask "pitch"
 cask "popclip"
 cask "raycast"
 cask "rectangle"
+cask "reflect"
 cask "screen-studio"
 cask "spotify"
 cask "squirrel"
@@ -66,13 +69,13 @@ mas "Drafts", id: 1435957248
 mas "Eagle for Safari", id: 1526651672
 mas "Final Cut Pro", id: 424389933
 mas "Immersive Translate", id: 6447957425
-mas "Infuse", id: 1136220934
 mas "Keynote", id: 409183694
 mas "Lark", id: 6449830127
 mas "LocalSend", id: 1661733229
 mas "Logic Pro", id: 634148309
 mas "MainStage", id: 634159523
 mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "Motion", id: 434290957
 mas "Numbers", id: 409203825
@@ -85,6 +88,7 @@ mas "Resume Maker", id: 6476400184
 mas "RunCat", id: 1429033973
 mas "Sequel Ace", id: 1518036000
 mas "ServerCat", id: 1501532023
+mas "Squirrel Designer", id: 1530616498
 mas "Tampermonkey", id: 1482490089
 mas "Telegram", id: 747648890
 mas "TestFlight", id: 899247664
