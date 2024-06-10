@@ -2,7 +2,7 @@ patch:
   show_notifications_when: never
 
   style/color_scheme: custom_purple_light
-  style/color_scheme_dark: custom_blue_drak
+  style/color_scheme_dark: custom_purple_dark
   style/inline_preedit: true # 行内显示预编辑区：true 单行；false 双行
 
   style/text_orientation: horizontal # horizontal | vertical
@@ -11,11 +11,11 @@ patch:
 
   preset_color_schemes/custom_purple_light:
     name: "紫色 Light"
-    font_face: "PingFangSC-Regular"
+    font_face: "PingFangSC"
     font_point: 17.0
-    label_font_face: "PingFangSC-Regular"
+    label_font_face: "PingFangSC"
     label_font_point: 12.0
-    comment_font_face: "PingFangSC-Regular"
+    comment_font_face: "PingFangSC"
     comment_font_point: 14.0
     candidate_list_layout: linear
     text_orientation: horizontal
@@ -39,11 +39,11 @@ patch:
 
   preset_color_schemes/custom_purple_dark:
     name: 紫色 Dark
-    font_face: "PingFangSC-Regular"
+    font_face: "PingFangSC"
     font_point: 17.0
-    label_font_face: "PingFangSC-Regular"
+    label_font_face: "PingFangSC"
     label_font_point: 12.0
-    comment_font_face: "PingFangSC-Regular"
+    comment_font_face: "PingFangSC"
     comment_font_point: 14.0
     candidate_list_layout: linear
     text_orientation: horizontal
@@ -67,11 +67,11 @@ patch:
 
   preset_color_schemes/custom_blue_light:
     name: "蓝 Light"
-    font_face: "PingFangSC-Regular"
+    font_face: "PingFangSC"
     font_point: 17.0
-    label_font_face: "PingFangSC-Regular"
+    label_font_face: "PingFangSC"
     label_font_point: 12.0
-    comment_font_face: "PingFangSC-Regular"
+    comment_font_face: "PingFangSC"
     comment_font_point: 14.0
     candidate_list_layout: linear
     text_orientation: horizontal
@@ -95,11 +95,11 @@ patch:
 
   preset_color_schemes/custom_blue_drak:
     name: "蓝 Dark"
-    font_face: "PingFangSC-Regular"
+    font_face: "PingFangSC"
     font_point: 17.0
-    label_font_face: "PingFangSC-Regular"
+    label_font_face: "PingFangSC"
     label_font_point: 12.0
-    comment_font_face: "PingFangSC-Regular"
+    comment_font_face: "PingFangSC"
     comment_font_point: 15.0
     candidate_list_layout: linear
     text_orientation: horizontal
@@ -123,11 +123,11 @@ patch:
 
   preset_color_schemes/custom_grey:
     name: "灰"
-    font_face: "PingFangSC-Regular"
+    font_face: "PingFangSC"
     font_point: 17.0
-    label_font_face: "PingFangSC-Regular"
+    label_font_face: "PingFangSC"
     label_font_point: 12.0
-    comment_font_face: "PingFangSC-Regular"
+    comment_font_face: "PingFangSC"
     comment_font_point: 14.0
     candidate_list_layout: linear
     text_orientation: horizontal
