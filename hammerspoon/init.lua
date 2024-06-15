@@ -8,6 +8,6 @@ hs.alert.defaultStyle.radius = 10                            -- 圆角大小
 require("Spoons.auto_hs_reload")
 require("Spoons.double_cmd_q")
 require("Spoons.input_auto_switcher")
-require ("Spoons.app_launcher")
+-- require ("Spoons.app_launcher")
 -- require("Spoons.openInEditorLiteIconSwitcher")
 -- require ("Spoons.autoBetterDisplay")
