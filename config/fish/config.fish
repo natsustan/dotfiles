@@ -1,0 +1,20 @@
+set -g fish_greeting
+
+source ~/.config/fish/alias.fish
+
+# ENV PATH
+set -x PATH /opt/homebrew/bin $PATH
+set -x PATH /Users/spike/.nix-profile/bin/ $PATH
+set -x PATH /nix/var/nix/profiles/default/bin/ $PATH
+set -x PATH /Users/spike/Library/Python/3.9/bin $PATH
+
+export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
+
+starship init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/Users/spike/Library/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

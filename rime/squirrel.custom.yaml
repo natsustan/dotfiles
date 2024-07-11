@@ -1,5 +1,5 @@
 patch:
-  show_notifications_when: always  # 状态通知 always | appropriate | never
+  show_notifications_when: never  # 状态通知 always | appropriate | never
 
   style/color_scheme: custom_purple_light
   style/color_scheme_dark: custom_purple_dark
