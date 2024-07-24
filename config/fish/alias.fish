@@ -1,15 +1,14 @@
 alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
 alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/iTerm.icns &&
-fileicon set /Applications/Spotify.app $HOME/dotfiles/macOSicons/Spotify.icns &&
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
-fileicon set /Applications/Notion.app $HOME/dotfiles/macOSicons/Notion.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
-fileicon set /Applications/Capture\ One.app $HOME/dotfiles/macOSicons/CaptureOne.icns &&
 fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
-sudo fileicon set /Applications/Sequel\ Ace.app $HOME/dotfiles/macOSicons/Sequel_Pro.icns &&
 fileicon set /Applications/calibre.app $HOME/dotfiles/macOSicons/calibre.icns &&
-sudo fileicon set /Applications/Craft.app $HOME/dotfiles/macOSicons/Craft.icns"
-#alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
+fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icns &&
+sudo fileicon set /Applications/Sequel\ Ace.app $HOME/dotfiles/macOSicons/Sequel_Pro.icns"
+
+# fileicon set /Applications/Notion.app $HOME/dotfiles/macOSicons/Notion.icns &&
+# fileicon set /Applications/Spotify.app $HOME/dotfiles/macOSicons/Spotify.icns &&
 
 alias bi='brew install'
 alias bu='brew uninstall'

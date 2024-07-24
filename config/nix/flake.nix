@@ -16,22 +16,22 @@
     in pkgs.buildEnv {
       name = "macOS";
       paths = with pkgs; [
-        fish
-        mas
-        neovim
+        fish # fish shell
+        mas # mac app store cli
+        neovim # vim
         neofetch
-        peco
-        starship
+        peco # Simplistic interactive filtering tool
+        starship # the prompt for shell
         nodejs_20
         nodePackages.pnpm
-        php
-        pandoc # alfred-gpt-dependencies
-        mpv # alfred-gpt-dependencies
-        duti # alfred-gpt-dependencies
-        sox # alfred-gpt-dependencies
-        jq # alfred-gpt-dependencies
-        yarn
-        go
+	# php
+        # pandoc # alfred-gpt-dependencies
+        # mpv # alfred-gpt-dependencies
+        # duti # alfred-gpt-dependencies
+        # sox # alfred-gpt-dependencies
+        # jq # alfred-gpt-dependencies
+        # yarn
+        # go
         fava # web interface for beancount
       ];
     };

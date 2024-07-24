@@ -12,6 +12,11 @@ export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152
 
 starship init fish | source
 
+# ip
+function ip
+    ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'
+end
+
 # pnpm
 set -gx PNPM_HOME "/Users/spike/Library/pnpm"
 if not string match -q -- $PNPM_HOME $PATH
