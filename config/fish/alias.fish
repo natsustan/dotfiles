@@ -3,9 +3,7 @@ alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/iTerm
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
 fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
-fileicon set /Applications/calibre.app $HOME/dotfiles/macOSicons/calibre.icns &&
-fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icns &&
-sudo fileicon set /Applications/Sequel\ Ace.app $HOME/dotfiles/macOSicons/Sequel_Pro.icns"
+fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icns"
 
 # fileicon set /Applications/Notion.app $HOME/dotfiles/macOSicons/Notion.icns &&
 # fileicon set /Applications/Spotify.app $HOME/dotfiles/macOSicons/Spotify.icns &&

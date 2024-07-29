@@ -40,6 +40,7 @@ local app2Ime = {
   { '/Applications/Heptabase.app',                'Chinese' },
   { '/Applications/Tana.app',                     'Chinese' },
   -- Tool
+  { '/Applications/Raycast.app',                  'English' },
   { '/Users/spkz/Applications/ChatGPT.app',       'Chinese' },
   { '/Users/spkz/Applications/Notion.app',        'Chinese' },
   { '/Users/spkz/Applications/Twitter.app',       'Chinese' },

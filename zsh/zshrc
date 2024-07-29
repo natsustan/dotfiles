@@ -1,17 +1,17 @@
+export PATH=$HOME/.nix-profile/bin:$PATH
 
-# Set up shell to use Starship
-#eval "$(starship init zsh)"
-
-# User configuration
-
-export HOMEBREW_NO_AUTO_UPDATE=1
 
 export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
 # my alias
 alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
-alias icon="fileicon set /Applications/Alacritty.app/ /Users/spkz/dotfiles/macOSicons/iTerm.icns && fileicon set /Applications/Spotify.app /Users/spkz/dotfiles/macOSicons/Spotify.icns && fileicon set /Applications/Figma.app /Users/spkz/dotfiles/macOSicons/Figma.icns"
+alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/iTerm.icns &&
+fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
+fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
+fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
+fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icns"
 
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 alias bi='brew install'
 alias bu='brew uninstall'
@@ -26,7 +26,15 @@ alias rm='rm -i'
 
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
-alias gp="cd ~/Projects"
 
-# alias vi="nvim"
-# alias vim="nvim"
+alias vi="nvim"
+alias vim="nvim"
+
+alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
+
+source $HOME/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.nix-profile/share/zsh-z/zsh-z.plugin.zsh
+
+# Set up shell to use Starship
+eval "$(starship init zsh)"

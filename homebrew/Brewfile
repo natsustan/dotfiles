@@ -6,11 +6,7 @@ tap "homebrew/bundle"
 tap "homebrew/services"
 tap "nikolaeu/numi"
 tap "owo-network/brew"
-brew "autocorrect"
 brew "fileicon"
-brew "neofetch"
-brew "owo-network/brew/deeplx"
-cask "alfred"
 cask "betterdisplay"
 cask "boltai"
 cask "chatgpt"
@@ -35,6 +31,7 @@ cask "jordanbaird-ice"
 cask "keka"
 cask "kitty"
 cask "linear-linear"
+cask "logi-options-plus"
 cask "logseq"
 cask "notion"
 cask "obsidian"
@@ -46,10 +43,33 @@ cask "screen-studio"
 cask "sf-symbols"
 cask "spotify"
 cask "squirrel"
-cask "surge"
 cask "tencent-meeting"
 cask "visual-studio-code"
 cask "zed"
+mas "Bear", id: 1091189122
+mas "Command X", id: 6448461551
+mas "Compressor", id: 424390742
+mas "DingTalk", id: 1435447041
+mas "Eagle for Safari", id: 1526651672
+mas "Final Cut Pro", id: 424389933
+mas "Immersive Translate", id: 6447957425
+mas "Keynote", id: 409183694
+mas "Logic Pro", id: 634148309
+mas "MainStage", id: 634159523
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Motion", id: 434290957
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Parallels Desktop", id: 1085114709
+mas "RunCat", id: 1429033973
+mas "Sequel Ace", id: 1518036000
+mas "ServerCat", id: 1501532023
+mas "Telegram", id: 747648890
+mas "Vimari", id: 1480933944
+mas "WeChat", id: 836500024
+mas "Wipr", id: 1320666476
 vscode "antfu.file-nesting"
 vscode "antfu.icons-carbon"
 vscode "antfu.theme-vitesse"
@@ -63,5 +83,3 @@ vscode "mefengl.vscode-i-dont-care-about-commit-message"
 vscode "miguelsolorio.symbols"
 vscode "ms-python.debugpy"
 vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "vscodevim.vim"
