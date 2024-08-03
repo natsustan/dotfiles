@@ -7,9 +7,11 @@ tap "homebrew/services"
 tap "nikolaeu/numi"
 tap "owo-network/brew"
 brew "fileicon"
+brew "owo-network/brew/deeplx"
 cask "betterdisplay"
 cask "boltai"
 cask "chatgpt"
+cask "cleanshot"
 cask "downie"
 cask "figma"
 cask "firefox"
@@ -33,9 +35,11 @@ cask "kitty"
 cask "linear-linear"
 cask "logi-options-plus"
 cask "logseq"
+cask "notchnook"
 cask "notion"
 cask "obsidian"
 cask "ogdesign-eagle"
+cask "orbstack"
 cask "pictureview"
 cask "popclip"
 cask "raycast"
@@ -46,7 +50,9 @@ cask "squirrel"
 cask "tencent-meeting"
 cask "visual-studio-code"
 cask "zed"
+mas "APTV", id: 1630403500
 mas "Bear", id: 1091189122
+mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
 mas "Compressor", id: 424390742
 mas "DingTalk", id: 1435447041
@@ -63,22 +69,25 @@ mas "Motion", id: 434290957
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Parallels Desktop", id: 1085114709
+mas "Reeder", id: 1529448980
 mas "RunCat", id: 1429033973
 mas "Sequel Ace", id: 1518036000
 mas "ServerCat", id: 1501532023
+mas "Tampermonkey", id: 1482490089
 mas "Telegram", id: 747648890
+mas "TestFlight", id: 899247664
+mas "Userscripts-Mac-App", id: 1463298887
 mas "Vimari", id: 1480933944
 mas "WeChat", id: 836500024
 mas "Wipr", id: 1320666476
 vscode "antfu.file-nesting"
 vscode "antfu.icons-carbon"
 vscode "antfu.theme-vitesse"
+vscode "bbenoist.nix"
 vscode "catppuccin.catppuccin-vsc-icons"
 vscode "codeium.codeium"
 vscode "dbaeumer.vscode-eslint"
-vscode "dongfg.vscode-beancount-formatter"
 vscode "github.github-vscode-theme"
-vscode "lencerf.beancount"
 vscode "mefengl.vscode-i-dont-care-about-commit-message"
 vscode "miguelsolorio.symbols"
 vscode "ms-python.debugpy"

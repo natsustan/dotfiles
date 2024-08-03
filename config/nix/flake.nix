@@ -2,7 +2,7 @@
   description = "Nix for macOS configuration";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-24.05-darwin";
     devenv.url = "github:cachix/devenv/latest";
     disko = {
       url = "github:nix-community/disko";
@@ -19,15 +19,16 @@
         name = "macOS";
         paths = with pkgs; [
           starship
-	  zsh-autosuggestions
+          zsh-autosuggestions
           zsh-syntax-highlighting
           zsh-z
-	  fish
-	  fishPlugins.z
+          fish
+          fishPlugins.z
           autocorrect
           mas
           neovim
           neofetch
+          pyenv
           peco
           nodejs_20
           nodePackages.pnpm
@@ -35,4 +36,3 @@
       };
     };
 }
-
