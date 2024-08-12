@@ -3,13 +3,6 @@ export PATH=$HOME/.nix-profile/bin:$PATH
 export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
 # my alias
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
-alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/iTerm.icns &&
-fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
-fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
-fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
-fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icns"
-
 alias bi='brew install'
 alias bu='brew uninstall'
 alias bs='brew search'
@@ -21,8 +14,20 @@ alias cp='cp -i'
 alias mv="mv -i"
 alias rm='rm -i'
 
-alias l="ls" # List files in current directory
-alias ll="ls -al" # List all files in current directory in long list format
+alias ls='exa -F'
+alias l="exa -l"
+alias la="exa -a"
+alias ll="exa -la"
+alias lt="ls -lhtrF"
+alias l.="ls -lhtrdF .*"
+alias lla='ls -la'
+
+alias cd..="cd .."
+alias cd...="cd ../.."
+alias cd....="cd ../../.."
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
 
 alias vz="vim ~/.zshrc"
 alias sz="source ~/.zshrc"
@@ -30,6 +35,15 @@ alias sz="source ~/.zshrc"
 alias vi="nvim"
 alias vim="nvim"
 
+# update app
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/iTerm.icns &&
+fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
+fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
+fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
+fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icns"
+
+# deploy rime inpit 
 alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
 
 # reload plugins from nix

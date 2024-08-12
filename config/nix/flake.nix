@@ -22,8 +22,7 @@
           zsh-autosuggestions
           zsh-syntax-highlighting
           zsh-z
-          fish
-          fishPlugins.z
+	  eza
           autocorrect
           mas
           neovim
