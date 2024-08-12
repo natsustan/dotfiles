@@ -46,6 +46,8 @@ fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icn
 # deploy rime inpit 
 alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
 
+# alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
+
 # reload plugins from nix
 source $HOME/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

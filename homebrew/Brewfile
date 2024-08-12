@@ -1,13 +1,6 @@
-tap "afutured/openai-translator"
-tap "buo/cask-upgrade"
-tap "deb-sig/tap"
-tap "gcenx/wine"
 tap "homebrew/bundle"
 tap "homebrew/services"
-tap "nikolaeu/numi"
-tap "owo-network/brew"
 brew "fileicon"
-brew "owo-network/brew/deeplx"
 cask "betterdisplay"
 cask "boltai"
 cask "bruno"
@@ -53,7 +46,6 @@ cask "spotify"
 cask "squirrel"
 cask "tencent-meeting"
 cask "visual-studio-code"
-cask "whisky"
 mas "APTV", id: 1630403500
 mas "Bear", id: 1091189122
 mas "Bob", id: 1630034110
