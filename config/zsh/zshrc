@@ -41,12 +41,12 @@ alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/iTerm
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
 fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
-fileicon set /Applications/GitHub\ Desktop.app/ ~/dotfiles/macOSicons/github.icns"
+fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/github.icns"
 
 # deploy rime inpit 
 alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
 
-# alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
+alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 # reload plugins from nix
 source $HOME/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
