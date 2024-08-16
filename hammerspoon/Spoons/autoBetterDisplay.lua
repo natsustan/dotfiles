@@ -3,19 +3,23 @@ local screenWatcher = nil
 local betterdisplayAppName = "BetterDisplay"
 local betterdisplayAppPath = "/Applications/BetterDisplay.app"
 
--- 当屏幕配置变更时触发的函数
+local previousScreenCount = #hs.screen.allScreens()
+
 local function screenChangedCallback()
-  local screens = hs.screen.allScreens()
-  if #screens > 1 then   -- 如果连接了扩展屏幕(屏幕数量大于1)
-    -- 打开betterdisplay应用
+  local currentScreenCount = #hs.screen.allScreens()
+  
+  if currentScreenCount > 1 and previousScreenCount <= 1 then
+    -- 打开 BetterDisplay 应用
     hs.application.launchOrFocus(betterdisplayAppName)
-  else   -- 如果没有连接扩展屏幕(屏幕数量等于1)
-    -- 关闭betterdisplay应用
+  elseif currentScreenCount == 1 and previousScreenCount > 1 then
+    -- 关闭 BetterDisplay 应用
     local app = hs.application.find(betterdisplayAppName)
     if app then
       app:kill()
     end
   end
+  
+  previousScreenCount = currentScreenCount
 end
 
 -- 初始化屏幕监视器
@@ -24,7 +28,7 @@ screenWatcher = hs.screen.watcher.new(screenChangedCallback)
 -- 启动屏幕监视器
 screenWatcher:start()
 
--- 在Hammerspoon重新载入配置时停止屏幕监视器
+-- 在 Hammerspoon 重新载入配置时停止屏幕监视器
 hs.shutdownCallback = function()
   if screenWatcher then
     screenWatcher:stop()
