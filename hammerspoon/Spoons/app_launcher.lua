@@ -2,10 +2,7 @@ launcherHotkey = {'option'}
 
 applist = {
     {shortcut = 'F', appname = 'Finder'},
-    {shortcut = 'A', appname = 'OpenCat'},
-    {shortcut = 'B', appname = 'Bear'},
     {shortcut = 'L', appname = 'Logseq'},
-    {shortcut = 'C', appname = 'Visual Studio Code'},
     {shortcut = 'W', appname = 'WeChat'},
     {shortcut = 'N', appname = 'Notion'},
 }
