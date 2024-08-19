@@ -1,2 +1,6 @@
 var:
-  last_build_time: 1723781539
+  last_build_time: 1724056054
+  previously_selected_schema: rime_ice
+  schema_access_time:
+    japanese: 1724056165
+    rime_ice: 1724056216

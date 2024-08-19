@@ -1,6 +1,7 @@
 patch:
   schema_list:
     - schema: rime_ice # 雾凇拼音（全拼）
+    - schema: japanese
 
   ascii_composer/good_old_caps_lock: false # true | false
   ascii_composer/switch_key/Caps_Lock: commit_code # commit_code | commit_text | clear
