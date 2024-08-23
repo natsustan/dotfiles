@@ -5,6 +5,7 @@ local appsToAutoQuit = {
     "Reminders",
     "Messages",
     "Dictionary",
+    "Shortcuts",
 }
 
 -- 设置无活动时间阈值（以秒为单位）

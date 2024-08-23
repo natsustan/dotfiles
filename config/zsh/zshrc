@@ -44,7 +44,8 @@ alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/kitty
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
 fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
-fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/GitHub\ Desktop.icns"
+fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/GitHub\ Desktop.icns &&
+fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns"
 
 # deploy rime inpit 
 alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
