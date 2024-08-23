@@ -5,7 +5,6 @@ local appsToAutoQuit = {
     "Reminders",
     "Messages",
     "Dictionary",
-    -- 在这里添加更多你想要自动退出的应用程序
 }
 
 -- 设置无活动时间阈值（以秒为单位）
