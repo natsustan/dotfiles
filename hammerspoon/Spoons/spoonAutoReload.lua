@@ -17,4 +17,4 @@ configWatcher = hs.pathwatcher.new(hs.configdir, reload)
 
 configWatcher:start()
 
-hs.alert.show("🔨 Hammerspoon Config Reloaded", 1)
+hs.alert.show("🔨 Hammerspoon Config Reloaded", 3)
