@@ -4,12 +4,12 @@ local appsToAutoQuit = {
     "Mail",
     "Reminders",
     "Messages",
-    "Dictionary",
+    -- "Dictionary",
     "Shortcuts",
 }
 
 -- 设置无活动时间阈值（以秒为单位）
-local inactivityThreshold = 300 -- 5分钟
+local inactivityThreshold = 60 -- 5分钟
 
 -- 创建一个表来存储每个应用程序的最后活动时间
 local lastActivityTime = {}
@@ -26,7 +26,9 @@ local function checkAndQuitInactiveApps()
         local app = hs.application.get(appName)
         if app then
             local lastActive = lastActivityTime[appName] or 0
+            print(string.format("检查应用: %s, 最后活动时间: %s, 当前时间: %s", appName, os.date("%Y-%m-%d %H:%M:%S", lastActive), os.date("%Y-%m-%d %H:%M:%S", currentTime)))
             if currentTime - lastActive > inactivityThreshold then
+                print(string.format("退出应用: %s", appName))
                 app:kill()
                 hs.alert.show(appName .. " Auto Quit")
             end
@@ -50,3 +52,10 @@ autoQuitTimer:start()
 
 -- 打印提示信息
 print("Auto Quit Started")
+print(string.format("定时器状态: %s", autoQuitTimer:running() and "运行中" or "未运行"))
+
+-- 添加一个手动触发检查的函数
+function manualCheckAndQuit()
+    print("手动触发检查")
+    checkAndQuitInactiveApps()
+end

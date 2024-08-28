@@ -23,6 +23,7 @@ cask "font-fira-code-nerd-font"
 cask "font-inconsolata"
 cask "font-input"
 cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
 cask "font-lxgw-wenkai"
 cask "font-oppo-sans"
 cask "font-sf-compact"
@@ -49,7 +50,9 @@ cask "orbstack"
 cask "pictureview"
 cask "popclip"
 cask "raycast"
+cask "rectangle"
 cask "screen-studio"
+cask "setapp"
 cask "sf-symbols"
 cask "spotify"
 cask "squirrel"
@@ -61,6 +64,7 @@ mas "Bear", id: 1091189122
 mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
 mas "Compressor", id: 424390742
+mas "DaVinci Resolve", id: 571213070
 mas "Developer", id: 640199958
 mas "DingTalk", id: 1435447041
 mas "Eagle for Safari", id: 1526651672
