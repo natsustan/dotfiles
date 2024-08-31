@@ -19,6 +19,7 @@ cask "cursor"
 cask "downie"
 cask "figma"
 cask "firefox"
+cask "font-blex-mono-nerd-font"
 cask "font-fira-code-nerd-font"
 cask "font-inconsolata"
 cask "font-input"
@@ -85,7 +86,6 @@ mas "Pages", id: 409201541
 mas "Parallels Desktop", id: 1085114709
 mas "Pixelmator Pro", id: 1289583905
 mas "Playgrounds", id: 1496833156
-mas "Puzzle DragonsS", id: 1636844853
 mas "Reeder", id: 1529448980
 mas "RunCat", id: 1429033973
 mas "Sequel Ace", id: 1518036000
