@@ -13,7 +13,7 @@ hs.hotkey.bind({ 'control', 'cmd' }, ".", function()
       .. "IM Source ID:  " .. imSourceId
 
   -- 显示信息
-  hs.alert.show(info, 3)
+  hs.alert.show(info, 2)
 
   -- 将信息复制到剪贴板
   hs.pasteboard.setContents(info)

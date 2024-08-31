@@ -3,7 +3,7 @@
 local quitModal = hs.hotkey.modal.new('cmd', 'q')
 
 function quitModal:entered()
-  hs.alert.show("Press ⌘Command-Q Again to Quit", 1)
+  hs.alert.show("Press ⌘+Q Again to Quit", 1)
   hs.timer.doAfter(1, function() quitModal:exit() end)
 end
 
