@@ -18,7 +18,7 @@ local app2Ime = {
   -- System
   { 'Spotlight', 'English' },
   { 'Safari', 'Chinese' },
-  { 'Finder', 'Chinese' },
+  { 'Finder', 'English' },
   { 'Notes', 'Chinese' },
   { 'Calendar', 'Chinese' },
   { 'Reminders', 'Chinese' },
@@ -41,7 +41,7 @@ local app2Ime = {
   { 'Heptabase', 'Chinese' },
   { 'Tana', 'Chinese' },
   -- Tool
-  { 'Raycast', 'English' },
+  -- { 'Raycast', 'English' },
   { 'ChatGPT', 'Chinese' },
   { 'Twitter', 'Chinese' },
   { 'Microsoft PowerPoint', 'Chinese' },
@@ -53,7 +53,7 @@ local app2Ime = {
   { 'OpenCat', 'Chinese' },
   { 'ServerCat', 'English' },
   { 'Arc', 'Chinese' },
-  { 'Alfred 5', 'English' },
+  -- { 'Alfred 5', 'English' },
 }
 
 function updateFocusAppInputMethod()
