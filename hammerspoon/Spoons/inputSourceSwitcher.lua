@@ -7,8 +7,8 @@ local function English()
 end
 
 local function Chinese()
-  -- hs.keycodes.currentSourceID("com.apple.inputmethod.SCIM.ITABC")
-  hs.keycodes.currentSourceID("im.rime.inputmethod.Squirrel.Hans")
+  hs.keycodes.currentSourceID("com.apple.inputmethod.SCIM.ITABC")
+  -- hs.keycodes.currentSourceID("im.rime.inputmethod.Squirrel.Hans")
 end
 
 
@@ -56,6 +56,8 @@ local app2Ime = {
   { 'ServerCat', 'English' },
   { 'Arc', 'Chinese' },
   -- { 'Alfred 5', 'English' },
+  { '阴阳师', 'Chinese' },
+  { '钉钉', 'Chinese' },
 }
 
 function updateFocusAppInputMethod()

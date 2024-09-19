@@ -4,7 +4,7 @@ applist = {
     {shortcut = 'F', appname = 'Finder'},
     {shortcut = 'L', appname = 'Logseq'},
     {shortcut = 'W', appname = 'WeChat'},
-    {shortcut = 'N', appname = 'Notion'},
+    {shortcut = 'N', appname = 'Notes'},
     {shortcut = 'E', appname = 'Eagle'},
 }
 
