@@ -6,6 +6,7 @@ applist = {
     {shortcut = 'W', appname = 'WeChat'},
     {shortcut = 'N', appname = 'Notes'},
     {shortcut = 'E', appname = 'Eagle'},
+    {shortcut = 'I', appname = 'iPhone Mirroring'},
 }
 
 hs.fnutils.each(applist, function(entry)
