@@ -1,18 +1,15 @@
 live_config_reload = true
 
-import = ["~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"]
-
-# 指定 Alacritty 启动时使用 Fish Shell
-[shell]
-program = "/Users/spkz/.nix-profile/bin/fish"
-args = ["-l"]
+import = [
+    "~/.config/alacritty/themes/themes/solarized_osaka.toml"
+]
 
 [env]
 TERM = "xterm-256color"
 
 [font]
-size = 12.5
-normal = { family = "FiraCode Nerd Font Mono", style = "Regular" }
+size = 12
+normal = { family = "JetbrainsMono Nerd Font" }
 
 [mouse]
 hide_when_typing = true
@@ -20,6 +17,6 @@ hide_when_typing = true
 [window]
 decorations = "buttonless"
 dynamic_padding = false
-opacity = 0.9
-padding = { x = 20, y = 20 }
+opacity = 0.85
+padding = { x = 15, y = 15 }
 blur = true

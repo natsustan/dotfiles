@@ -1,7 +1,6 @@
-export PATH=$HOME/.nix-profile/bin:$PATH
+# export PATH=$HOME/.nix-profile/bin:$PATH
 
 export PATH="/usr/local/bin:$PATH"
-
 
 export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
@@ -40,16 +39,14 @@ alias vim="nvim"
 
 # update app
 alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
-alias icon="fileicon set /Applications/kitty.app $HOME/dotfiles/macOSicons/kitty.icns &&
+alias icon="fileicon set /Applications/alacritty.app $HOME/dotfiles/macOSicons/kitty.icns &&
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
-fileicon set /Applications/Logseq.app $HOME/dotfiles/macOSicons/Logseq.icns &&
 fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/GitHub\ Desktop.icns &&
-fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns &&
-fileicon set /Applications/DaVinci\ Resolve.app $HOME/dotfiles/macOSicons/DaVinci_Resolve.icns"
+fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns"
 
 # deploy rime inpit 
-alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
+# alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
 
 alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
