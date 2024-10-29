@@ -17,3 +17,16 @@ require ("Spoons.inputSourceSwitcher")
 hs.loadSpoon("ShiftIt")
 spoon.ShiftIt:bindHotkeys({})
 spoon.ShiftIt:setWindowCyclingSizes({ 50, 25, 33, 67 }, { 50 })
+
+-- 加载插件
+hs.loadSpoon("AppAutoQuits")
+
+-- 设置需要自动退出的应用列表
+spoon.AppAutoQuits
+    :setApps({
+        "Preview", -- Preview.app
+        "QuickTime Player",
+        "Calendar", -- Finder.app
+        "TextEdit",
+    })
+    :start()

@@ -1,8 +1,13 @@
+tap "buo/cask-upgrade"
 tap "homebrew/bundle"
+tap "homebrew/services"
+tap "owo-network/brew"
 brew "fileicon"
+brew "owo-network/brew/deeplx"
 cask "alacritty"
 cask "alfred"
 cask "appcleaner"
+cask "arc"
 cask "boltai"
 cask "cleanshot"
 cask "cursor"
@@ -15,16 +20,19 @@ cask "handbrake"
 cask "iina"
 cask "jordanbaird-ice"
 cask "keka"
+cask "logi-options+"
+cask "logseq"
 cask "notion"
+cask "ogdesign-eagle"
+cask "playcover-community"
 cask "popclip"
 cask "spotify"
 cask "surge"
 cask "tencent-meeting"
 cask "zed"
-mas "APTV", id: 1630403500
+mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
 mas "Compressor", id: 424390742
-mas "CotEditor", id: 1024640650
 mas "DingTalk", id: 1435447041
 mas "Eagle for Safari", id: 1526651672
 mas "Final Cut Pro", id: 424389933
@@ -37,7 +45,10 @@ mas "Microsoft Word", id: 462054704
 mas "Motion", id: 434290957
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Parallels Desktop", id: 1085114709
+mas "Pixelmator Pro", id: 1289583905
 mas "Sequel Ace", id: 1518036000
+mas "ServerCat", id: 1501532023
 mas "Telegram", id: 747648890
 mas "Vimari", id: 1480933944
 mas "WeChat", id: 836500024
