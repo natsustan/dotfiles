@@ -1,5 +1,8 @@
 -- Automatically switch the input source when switching applications.
 
+-- 启用 Spotlight 支持，以检查应用程序的替代名称
+hs.application.enableSpotlightForNameSearches(true)
+
 -- 自动切换输入法
 local function English()
   -- ABC
@@ -18,7 +21,7 @@ local app2Ime = {
   -- System
   { 'Spotlight', 'English' },
   { 'Safari', 'Chinese' },
-  { 'Finder', 'English' },
+  { 'Finder', 'Chinese' },
   { 'Notes', 'Chinese' },
   { 'Calendar', 'Chinese' },
   { 'Reminders', 'Chinese' },
@@ -29,21 +32,13 @@ local app2Ime = {
   { 'DingTalk', 'Chinese' },
   { 'Telegram', 'Chinese' },
   { 'WeChat', 'Chinese' },
-  { 'Slack', 'Chinese' },
   -- Note-taking
   { 'Notion', 'Chinese' },
-  { 'Drafts', 'Chinese' },
   { 'Logseq', 'Chinese' },
-  -- { 'Craft', 'Chinese' },
-  { 'Things3', 'Chinese' },
   { 'MindNode', 'Chinese' },
   { 'Obsidian', 'Chinese' },
-  -- { 'Heptabase', 'Chinese' },
-  -- { 'Tana', 'Chinese' },
+  { 'Ia Writer', 'Chinese' },
   -- Tool
-  -- { 'Raycast', 'English' },
-  { 'ChatGPT', 'Chinese' },
-  { 'Twitter', 'Chinese' },
   { 'Microsoft PowerPoint', 'Chinese' },
   { 'Microsoft Excel', 'Chinese' },
   { 'Microsoft Word', 'Chinese' },
@@ -51,13 +46,19 @@ local app2Ime = {
   { 'Cursor', 'English' },
   { 'Zed', 'English' },
   { 'Figma', 'Chinese' },
-  { 'Bear', 'Chinese' },
-  { 'OpenCat', 'Chinese' },
   { 'ServerCat', 'English' },
   { 'Arc', 'Chinese' },
-  -- { 'Alfred 5', 'English' },
+  { 'Ghostty', 'English' },
   { '阴阳师', 'Chinese' },
+  { '阴阳师S', 'Chinese' },
+  { '浙政钉', 'Chinese' },
   { '钉钉', 'Chinese' },
+  { 'Pitch', 'Chinese' },
+  { 'FireFox', 'Chinese' },
+  { 'Delta', 'English' },
+  { 'ProNotes', 'English' },
+  { 'ChatWise', 'Chinese' },
+  { 'com.netease.onmyoji', 'Chinese' },
 }
 
 function updateFocusAppInputMethod()
@@ -69,7 +70,7 @@ function updateFocusAppInputMethod()
     local appName = app[1]
     local expectedIme = app[2]
 
-    if focusAppName == appName then
+    if focusAppName == appName or bundleID == appName then
       ime = expectedIme
       break
     end

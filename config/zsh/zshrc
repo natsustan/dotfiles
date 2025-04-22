@@ -1,4 +1,4 @@
-# export PATH=$HOME/.nix-profile/bin:$PATH
+export PATH=$HOME/.nix-profile/bin:$PATH
 
 export PATH="/usr/local/bin:$PATH"
 
@@ -38,14 +38,18 @@ alias vi="nvim"
 alias vim="nvim"
 
 # update app
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+# alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade"
 alias icon="fileicon set /Applications/alacritty.app $HOME/dotfiles/macOSicons/kitty.icns &&
 fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
 fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
 fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/GitHub\ Desktop.icns &&
-fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns"
+fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns &&
+fileicon set /Applications/Sideloadly.app $HOME/dotfiles/macOSicons/sideloadly.icns &&
+fileicon set /Applications/ChatWise.app $HOME/dotfiles/macOSicons/ChatWise.icns &&
+sudo fileicon set /Applications/Tunnelblick.app $HOME/dotfiles/macOSicons/tunnelbrick.icns"
 
-# deploy rime inpit 
+# deploy rime input method
 # alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
 
 alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
@@ -54,6 +58,10 @@ alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 source $HOME/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $HOME/.nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $HOME/.nix-profile/share/zsh-z/zsh-z.plugin.zsh
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
 
 # Set up shell to use Starship
 eval "$(starship init zsh)"

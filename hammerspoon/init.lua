@@ -6,7 +6,7 @@ hs.alert.defaultStyle.radius = 10                            -- 圆角大小
 
 -- Load Spoons files
 require ("Spoons.appLauncher")
--- require ("Spoons.appInfo")
+require ("Spoons.appInfo")
 require ("Spoons.autoReload")
 require ("Spoons.doubleQToQuit")
 require ("Spoons.inputSourceSwitcher")
@@ -18,15 +18,24 @@ hs.loadSpoon("ShiftIt")
 spoon.ShiftIt:bindHotkeys({})
 spoon.ShiftIt:setWindowCyclingSizes({ 50, 25, 33, 67 }, { 50 })
 
--- 加载插件
-hs.loadSpoon("AppAutoQuits")
 
--- 设置需要自动退出的应用列表
+hs.loadSpoon("AppAutoQuits")
 spoon.AppAutoQuits
     :setApps({
-        "Preview", -- Preview.app
+        "Preview",
+        "Shortcuts",
         "QuickTime Player",
-        "Calendar", -- Finder.app
+        "Calendar",
         "TextEdit",
+        "Microsoft Word",
+        "Microsoft Excel",
+        "Microsoft PowerPoint",
+        "Messages",
+        "Passwords",
+        "Numbers",
+        "Keynote",
+        "Downie",
+        "Pages",
+        "Firefox"
     })
     :start()

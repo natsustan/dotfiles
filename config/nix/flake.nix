@@ -22,7 +22,7 @@
           zsh-autosuggestions
           zsh-syntax-highlighting
           zsh-z
-	  eza
+	        eza
           autocorrect
           mas
           neovim
@@ -31,6 +31,7 @@
           peco
           nodejs_20
           nodePackages.pnpm
+          rust
         ];
       };
     };
