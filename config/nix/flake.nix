@@ -22,11 +22,12 @@
           zsh-autosuggestions
           zsh-syntax-highlighting
           zsh-z
-	        eza
+	  eza
           autocorrect
           mas
           neovim
           neofetch
+	  ffmpeg-full
           pyenv
           peco
           nodejs_20

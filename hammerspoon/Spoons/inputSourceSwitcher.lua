@@ -34,7 +34,9 @@ local app2Ime = {
   { 'WeChat', 'Chinese' },
   -- Note-taking
   { 'Notion', 'Chinese' },
+  { 'Bear', 'Chinese' },
   { 'Logseq', 'Chinese' },
+  { 'Craft', 'Chinese' },
   { 'MindNode', 'Chinese' },
   { 'Obsidian', 'Chinese' },
   { 'Ia Writer', 'Chinese' },
@@ -44,13 +46,12 @@ local app2Ime = {
   { 'Microsoft Word', 'Chinese' },
   { 'Visual Studio Code', 'English' },
   { 'Cursor', 'English' },
+  { 'Brave Browser', 'Chinese' },
   { 'Zed', 'English' },
   { 'Figma', 'Chinese' },
   { 'ServerCat', 'English' },
   { 'Arc', 'Chinese' },
   { 'Ghostty', 'English' },
-  { '阴阳师', 'Chinese' },
-  { '阴阳师S', 'Chinese' },
   { '浙政钉', 'Chinese' },
   { '钉钉', 'Chinese' },
   { 'Pitch', 'Chinese' },
@@ -58,7 +59,6 @@ local app2Ime = {
   { 'Delta', 'English' },
   { 'ProNotes', 'English' },
   { 'ChatWise', 'Chinese' },
-  { 'com.netease.onmyoji', 'Chinese' },
 }
 
 function updateFocusAppInputMethod()
