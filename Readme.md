@@ -54,22 +54,17 @@ defaults write org.hammerspoon.Hammerspoon MJConfigFile "~/dotfiles/hammerspoon/
 ln -s ~/dotfiles/firefox/chrome ~/Library/Application\ Support/Firefox/Profiles/xxx.default-release/
 ```
 
-### Tmux
-
-```
-ln -s ~/dotfiles/tmux/tmux.conf ~/.tmux.conf
-```
-
-### kitty
-
-```
-ln -s ~/dotfiles/config/kitty ~/.config/
-```
 
 ### git
 
 ```
 git config --global core.excludesfile ~/dotfiles/git/gitignore_global
+```
+
+### ghostty
+
+```
+ln -s ~/dotfiles/config/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
 ```
 
 ### Others

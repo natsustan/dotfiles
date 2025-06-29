@@ -10,8 +10,8 @@ require ("Spoons.appInfo")
 require ("Spoons.autoReload")
 require ("Spoons.doubleQToQuit")
 require ("Spoons.inputSourceSwitcher")
--- require ("Spoons.autoQuits")
--- require ("Spoons.autoBetterDisplay")
+require ("Spoons.autoBetterDisplay")
+require ("Spoons.autoProNotes")
 -- require ("Spoons.kittyKeepCenter")
 
 hs.loadSpoon("ShiftIt")
@@ -34,8 +34,7 @@ spoon.AppAutoQuits
         "Passwords",
         "Numbers",
         "Keynote",
-        "Downie",
         "Pages",
-        "Firefox"
+        "PictureView"
     })
     :start()
