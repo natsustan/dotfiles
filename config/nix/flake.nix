@@ -31,6 +31,7 @@
           pyenv
           peco
           nodejs_20
+          nodejs_22
           nodePackages.pnpm
           rust
         ];

@@ -65,3 +65,4 @@ eval "$(pyenv init -)"
 
 # Set up shell to use Starship
 eval "$(starship init zsh)"
+eval "$(/opt/homebrew/bin/mise activate zsh)"
