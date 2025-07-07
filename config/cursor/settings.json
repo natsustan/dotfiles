@@ -1,0 +1,36 @@
+{
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontFamily": "Input Mono, monospace",
+    "editor.guides.bracketPairs": "active",
+    "editor.lineNumbers": "interval",
+    "editor.renderWhitespace": "boundary",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "GitHub Dark",
+    "workbench.editor.tabActionLocation": "right",
+    "workbench.fontAliasing": "antialiased",
+    "workbench.iconTheme": "catppuccin-mocha",
+    "workbench.list.smoothScrolling": true,
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
+    "workbench.preferredLightColorTheme": "GitHub Light",
+    "workbench.productIconTheme": "icons-carbon",
+    "workbench.sideBar.location": "right",
+    "workbench.tree.expandMode": "singleClick",
+    "workbench.tree.indent": 10,
+
+    // ==========  Global Level Config, needs to put in User Settings ========== 
+    // "window.dialogStyle": "custom",
+    "window.nativeTabs": true, // this is great, macOS only
+    "window.title": "${rootName}", // this make tabs more readable
+    "window.titleBarStyle": "custom",
+    "extensions.autoUpdate": "onlyEnabledExtensions",
+    "window.customTitleBarVisibility": "never",
+    "editor.tabSize": 2,
+    "workbench.colorCustomizations": {
+
+    },
+    "editor.accessibilitySupport": "off",
+    "files.associations": {
+        "*.dconf": "ini"
+    },
+    "git.enableSmartCommit": true,
+}
