@@ -31,12 +31,19 @@ Use `control + ~` to adjust Traditional/Simplified Chinese. -->
 ln -s ~/dotfiles/config/alacritty ~/.config
 ``` -->
 
+### fish 
+
+```
+ln -s ~/dotfiles/config/fish/config.fish ~/.config/fish/
+ln -s ~/dotfiles/config/fish/alias.fish ~/.config/fish/
+```
+
 ### zsh
 
 #### Symlink
 
 ```
-ln -s ~/dotfiles/zsh/zshrc ~/.zshrc
+ln -s ~/dotfiles/config/zsh/zshrc ~/.zshrc
 ```
 
 ### hammerspoon

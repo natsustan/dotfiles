@@ -1,12 +1,8 @@
-# Set up shell to use homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH=$HOME/.nix-profile/bin:$PATH
 
-# Set up shell to use mise
-eval "$(/opt/homebrew/bin/mise activate zsh)"
+export PATH="/usr/local/bin:$PATH"
 
-# Set up shell to use Starship
-eval "$(starship init zsh)"
-
+export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
 
 # my alias
 alias bi='brew install'
@@ -57,3 +53,16 @@ sudo fileicon set /Applications/Tunnelblick.app $HOME/dotfiles/macOSicons/tunnel
 # alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
 
 alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
+
+# reload plugins from nix
+source $HOME/.nix-profile/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source $HOME/.nix-profile/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.nix-profile/share/zsh-z/zsh-z.plugin.zsh
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+
+# Set up shell to use Starship
+eval "$(starship init zsh)"
+eval "$(/opt/homebrew/bin/mise activate zsh)"

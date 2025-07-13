@@ -34,3 +34,4 @@ font-thicken = true
 font-family = Zed Mono
 macos-icon = retro
 macos-icon-frame = aluminum
+keybind = shift+enter=text:\n

@@ -5,18 +5,16 @@
     "editor.lineNumbers": "interval",
     "editor.renderWhitespace": "boundary",
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "GitHub Dark",
     "workbench.editor.tabActionLocation": "right",
     "workbench.fontAliasing": "antialiased",
-    "workbench.iconTheme": "catppuccin-mocha",
     "workbench.list.smoothScrolling": true,
-    "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.preferredLightColorTheme": "GitHub Light",
-    "workbench.productIconTheme": "icons-carbon",
+    "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.sideBar.location": "right",
     "workbench.tree.expandMode": "singleClick",
     "workbench.tree.indent": 10,
-
+    // set default shell
+    "terminal.integrated.defaultProfile.osx": "fish",
     // ==========  Global Level Config, needs to put in User Settings ========== 
     // "window.dialogStyle": "custom",
     "window.nativeTabs": true, // this is great, macOS only
@@ -33,4 +31,5 @@
         "*.dconf": "ini"
     },
     "git.enableSmartCommit": true,
+    "git.autofetch": true,
 }
