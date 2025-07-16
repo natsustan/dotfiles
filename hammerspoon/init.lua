@@ -26,9 +26,11 @@ spoon.Vifari:start() -- this will add hooks. `:stop()` to remove hooks
 spoon.Vifari:start({
     -- example your local config here
     scrollStep = 150,  -- Change scroll step
+    showMenuBarIcon = false,
     mapping = {
-        ["j"] = "cmdScrollDownFast",  -- Change existing mapping
-        ["n"] = { "cmd", "n" },       -- Add new mapping
+        -- ["k"] = "cmdScrollUp",
+        -- ["j"] = "cmdScrollDownFast",  -- Change existing mapping
+        -- ["n"] = { "cmd", "n" },       -- Add new mapping
         ["x"] = false,                -- Disable a mapping
     }
 })

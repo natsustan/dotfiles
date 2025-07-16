@@ -63,7 +63,12 @@ local app2Ime = {
 
 function updateFocusAppInputMethod()
   local ime = 'English'
-  local focusApp = hs.window.frontmostWindow():application()
+  local frontWindow = hs.window.frontmostWindow()
+  if not frontWindow then return end
+
+  local focusApp = frontWindow:application()
+  if not focusApp then return end
+
   local focusAppName = focusApp:name()
   
   for _, app in ipairs(app2Ime) do
