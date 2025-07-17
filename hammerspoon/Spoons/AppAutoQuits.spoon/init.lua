@@ -33,9 +33,14 @@ end
 function obj:checkAndQuitApp(appName)
     local app = hs.application.get(appName)
     if app then
-        local windows = app:allWindows()
-        if #windows == 0 then
-            app:kill()
+        -- 使用pcall安全地获取窗口信息
+        local success, windows = pcall(function() return app:allWindows() end)
+        if success and windows and #windows == 0 then
+            -- 使用pcall安全地退出应用
+            local quitSuccess, quitResult = pcall(function() app:kill() end)
+            if not quitSuccess then
+                print(string.format("退出应用 %s 失败: %s", appName, quitResult))
+            end
         end
     end
 end
@@ -44,17 +49,22 @@ end
 function obj:start()
     -- 监控窗口关闭事件
     self.windowFilter:subscribe(hs.window.filter.windowDestroyed, function(window)
-        local app = window:application()
-        if app then
-            local appName = app:name()
-            -- 检查是否在监控列表中
-            for _, targetApp in ipairs(self.apps) do
-                if appName == targetApp then
-                    -- 延迟检查，确保窗口确实已关闭
-                    hs.timer.doAfter(0.5, function()
-                        self:checkAndQuitApp(appName)
-                    end)
-                    break
+        if window then
+            -- 使用pcall安全地获取应用信息
+            local success, app = pcall(function() return window:application() end)
+            if success and app then
+                local appNameSuccess, appName = pcall(function() return app:name() end)
+                if appNameSuccess and appName then
+                    -- 检查是否在监控列表中
+                    for _, targetApp in ipairs(self.apps) do
+                        if appName == targetApp then
+                            -- 延迟检查，确保窗口确实已关闭
+                            hs.timer.doAfter(0.5, function()
+                                self:checkAndQuitApp(appName)
+                            end)
+                            break
+                        end
+                    end
                 end
             end
         end

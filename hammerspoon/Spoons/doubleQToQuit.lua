@@ -9,7 +9,17 @@ end
 
 local function doQuit()
   local app = hs.application.frontmostApplication()
-  app:kill()
+  if app then
+    -- 添加安全检查
+    local appName = app:name()
+    if appName and appName ~= "SystemUIServer" then
+      app:kill()
+    else
+      hs.alert.show("无法获取应用程序信息", 1)
+    end
+  else
+    hs.alert.show("无法获取前台应用程序", 1)
+  end
 end
 
 quitModal:bind('cmd', 'q', doQuit)

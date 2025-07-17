@@ -16,7 +16,12 @@ local lastActivityTime = {}
 
 -- 创建一个函数来更新应用程序的最后活动时间
 local function updateLastActivityTime(app)
-    lastActivityTime[app:name()] = os.time()
+    if app then
+        local success, appName = pcall(function() return app:name() end)
+        if success and appName then
+            lastActivityTime[appName] = os.time()
+        end
+    end
 end
 
 -- 创建一个函数来检查并退出不活跃的应用程序
@@ -29,8 +34,13 @@ local function checkAndQuitInactiveApps()
             print(string.format("检查应用: %s, 最后活动时间: %s, 当前时间: %s", appName, os.date("%Y-%m-%d %H:%M:%S", lastActive), os.date("%Y-%m-%d %H:%M:%S", currentTime)))
             if currentTime - lastActive > inactivityThreshold then
                 print(string.format("退出应用: %s", appName))
-                app:kill()
-                hs.alert.show(appName .. " Auto Quit")
+                -- 使用pcall安全地退出应用
+                local success, result = pcall(function() app:kill() end)
+                if success then
+                    hs.alert.show(appName .. " Auto Quit")
+                else
+                    print(string.format("退出应用失败: %s, 错误: %s", appName, result))
+                end
             end
         end
     end
