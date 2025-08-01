@@ -73,7 +73,7 @@ local config = {
   -- chars that are acceptable for vimLoop
   -- feel free to add more if needed, and ping me on GH to add to the repo
   -- \x7f is delete (backspace) on MacBook keyboard
-  acceptableChars = "[%a%d%[%]%$\x7f\"\\']",
+  acceptableChars = "[%a%d%[%]%$\x7f\"\\'{}()@#$%^&*_+=|\\:;\"'<>?,./~`]",
 }
 
 --------------------------------------------------------------------------------

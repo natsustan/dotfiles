@@ -39,9 +39,9 @@ require ("Spoons.autoProNotes")
 -- require ("Spoons.kittyKeepCenter")
 
 -- disable ShiftIt
--- hs.loadSpoon("ShiftIt")
--- spoon.ShiftIt:bindHotkeys({})
--- spoon.ShiftIt:setWindowCyclingSizes({ 50, 25, 33, 67 }, { 50 })
+hs.loadSpoon("ShiftIt")
+spoon.ShiftIt:bindHotkeys({})
+spoon.ShiftIt:setWindowCyclingSizes({ 50, 25, 33, 67 }, { 50 })
 
 -- Vifari
 hs.loadSpoon("Vifari")
@@ -50,13 +50,18 @@ spoon.Vifari:start() -- this will add hooks. `:stop()` to remove hooks
 -- or if you want to customize it
 spoon.Vifari:start({
     -- example your local config here
-    scrollStep = 150,  -- Change scroll step
+    scrollStep = 100,  -- Change scroll step
     showMenuBarIcon = false,
     mapping = {
         -- ["k"] = "cmdScrollUp",
         -- ["j"] = "cmdScrollDownFast",  -- Change existing mapping
         -- ["n"] = { "cmd", "n" },       -- Add new mapping
+        -- Disable a mapping
+        ["\x7f"] = false,             -- Disable a mapping
         ["x"] = false,                -- Disable a mapping
+        -- 覆盖默认的历史导航映射
+        ["["] = { "shift", "[" },              -- history back
+        ["]"] = { "shift", "]" },              -- history forward
     }
 })
 
