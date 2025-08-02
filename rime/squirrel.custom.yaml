@@ -12,7 +12,7 @@ patch:
   preset_color_schemes/custom_purple_light:
     name: "紫色 Light"
     font_face: "PingFangSC"
-    font_point: 17.0
+    font_point: 15.0
     label_font_face: "PingFangSC"
     label_font_point: 12.0
     comment_font_face: "PingFangSC"
