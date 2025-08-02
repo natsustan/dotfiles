@@ -8,7 +8,7 @@ My macOS Configuration Files
 cd ~/dotfiles/homebrew && brew bundle
 ```
 
-<!-- ### Rime
+### Rime
 
 Rime, a powerful Chinese Input Method Engine.
 
@@ -21,15 +21,7 @@ ln -s ~/dotfiles/rime ~/Library
 
 #### Tips
 
-Use `control + ~` to adjust Traditional/Simplified Chinese. -->
-
-<!-- ### Alacritty
-
-#### Symlink
-
-```
-ln -s ~/dotfiles/config/alacritty ~/.config
-``` -->
+Use `control + ~` to adjust Traditional/Simplified Chinese.
 
 ### fish 
 
