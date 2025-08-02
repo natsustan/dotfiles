@@ -2,8 +2,8 @@ patch:
   show_notifications_when: never  # 状态通知 always | appropriate | never
 
   style:
-    color_scheme: wechat_light
-    color_scheme_dark: wechat_dark
+    color_scheme: custom_purple_light
+    color_scheme_dark: custom_purple_dark
 
     # 候选列表布局
     candidate_list_layout: linear # stacked | linear
@@ -22,7 +22,7 @@ patch:
     line_spacing: 5
     spacing: 10
     font_face: 'PingFangSC'
-    font_point: 15
+    font_point: 16
     label_font_point: 12
     comment_font_point: 12
 

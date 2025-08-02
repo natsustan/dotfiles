@@ -1,8 +1,8 @@
 var:
-  last_build_time: 1754125345
+  last_build_time: 1754128463
   option:
     full_shape: false
   previously_selected_schema: rime_ice
   schema_access_time:
-    japanese: 1724135127
-    rime_ice: 1724135149
+    japanese: 1754126735
+    rime_ice: 1754126747
