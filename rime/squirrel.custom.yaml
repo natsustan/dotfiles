@@ -1,150 +1,208 @@
 patch:
   show_notifications_when: never  # 状态通知 always | appropriate | never
 
-  style/color_scheme: custom_purple_light
-  style/color_scheme_dark: custom_purple_dark
-  style/inline_preedit: true # 行内显示预编辑区：true 单行；false 双行
+  style:
+    color_scheme: wechat_light
+    color_scheme_dark: wechat_dark
 
-  style/text_orientation: horizontal # horizontal | vertical
-  style/candidate_list_layout: linear # stacked | linear
-  style/candidate_format: "[label] [candidate] [comment]"
+    # 候选列表布局
+    candidate_list_layout: linear # stacked | linear
 
-  preset_color_schemes/custom_purple_light:
-    name: "紫色 Light"
-    font_face: "PingFangSC"
-    font_point: 15.0
-    label_font_face: "PingFangSC"
-    label_font_point: 12.0
-    comment_font_face: "PingFangSC"
-    comment_font_point: 14.0
-    candidate_list_layout: linear
-    text_orientation: horizontal
+    # 候选格式
+    candidate_format: "[label] [candidate] [comment]"
+
+    # 预设选项
+    # 预设选项：（可被皮肤覆盖；如果皮肤没写，则默认使用这些属性。）
+    text_orientation: horizontal  # horizontal | vertical
     inline_preedit: true
-    corner_radius: 4.0
-    hilited_corner_radius: 4.0
-    border_height: 4.0
-    border_width: 4.0
-    line_spacing: 8.0
-    color_space: display_p3
-    back_color: 0xFFFFFF
-    candidate_text_color: 0x462C30
-    comment_text_color: 0x3F000000
-    label_color: 0x999999
-    hilited_candidate_back_color: 0xA34450
-    hilited_candidate_text_color: 0xFFFFFF
-    hilited_comment_text_color: 0x3F000000
-    hilited_candidate_label_color: 0xFDFDFD
-    text_color: 0x3F000000
-    hilited_text_color: 0xD8000000
+    corner_radius: 10
+    hilited_corner_radius: 0
+    border_height: 0
+    border_width: 0
+    line_spacing: 5
+    spacing: 10
+    font_face: 'PingFangSC'
+    font_point: 15
+    label_font_point: 12
+    comment_font_point: 12
 
-  preset_color_schemes/custom_purple_dark:
-    name: 紫色 Dark
-    font_face: "PingFangSC"
-    font_point: 15.0
-    label_font_face: "PingFangSC"
-    label_font_point: 12.0
-    comment_font_face: "PingFangSC"
-    comment_font_point: 14.0
-    candidate_list_layout: linear
-    text_orientation: horizontal
-    inline_preedit: true
-    corner_radius: 4.0
-    hilited_corner_radius: 4.0
-    border_height: 4.0
-    border_width: 8.0
-    line_spacing: 8.0
-    color_space: display_p3
-    back_color: 0x000000
-    candidate_text_color: 0xFFFFFF
-    comment_text_color: 0xCCFFFFFF
-    label_color: 0x837275
-    hilited_candidate_back_color: 0xA34450
-    hilited_candidate_text_color: 0xFFFFFF
-    hilited_comment_text_color: 0x3F000000
-    hilited_candidate_label_color: 0xE0C1C5
-    text_color: 0x3F000000
-    hilited_text_color: 0x000000
+  preset_color_schemes:
+    custom_purple_light:
+      name: "紫色 Light"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+      corner_radius: 4.0
+      hilited_corner_radius: 4.0
+      border_height: 4.0
+      border_width: 4.0
+      line_spacing: 8.0
+      color_space: display_p3
+      back_color: 0xFFFFFF
+      candidate_text_color: 0x462C30
+      comment_text_color: 0x3F000000
+      label_color: 0x999999
+      hilited_candidate_back_color: 0xA34450
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0x3F000000
+      hilited_candidate_label_color: 0xFDFDFD
+      text_color: 0x3F000000
+      hilited_text_color: 0xD8000000
 
-  preset_color_schemes/custom_blue_light:
-    name: "蓝 Light"
-    font_face: "PingFangSC"
-    font_point: 17.0
-    label_font_face: "PingFangSC"
-    label_font_point: 12.0
-    comment_font_face: "PingFangSC"
-    comment_font_point: 14.0
-    candidate_list_layout: linear
-    text_orientation: horizontal
-    inline_preedit: true
-    corner_radius: 4.0
-    hilited_corner_radius: 4.0
-    border_height: 4.0
-    border_width: 4.0
-    line_spacing: 8.0
-    color_space: display_p3
-    back_color: 0xFFFFFF
-    candidate_text_color: 0x000000
-    comment_text_color: 0x3F000000
-    label_color: 0x717070
-    hilited_candidate_back_color: 0xFCF0E8
-    hilited_candidate_text_color: 0xDD6D41
-    hilited_comment_text_color: 0x3F000000
-    hilited_candidate_label_color: 0xC3603A
-    text_color: 0x3F000000
-    hilited_text_color: 0xD8000000
+    custom_purple_dark:
+      name: 紫色 Dark
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+      corner_radius: 4.0
+      hilited_corner_radius: 4.0
+      border_height: 4.0
+      border_width: 8.0
+      line_spacing: 8.0
+      color_space: display_p3
+      back_color: 0x000000
+      candidate_text_color: 0xFFFFFF
+      comment_text_color: 0xCCFFFFFF
+      label_color: 0x837275
+      hilited_candidate_back_color: 0xA34450
+      hilited_candidate_text_color: 0xFFFFFF
+      hilited_comment_text_color: 0x3F000000
+      hilited_candidate_label_color: 0xE0C1C5
+      text_color: 0x3F000000
+      hilited_text_color: 0x000000
 
-  preset_color_schemes/custom_blue_drak:
-    name: "蓝 Dark"
-    font_face: "PingFangSC"
-    font_point: 17.0
-    label_font_face: "PingFangSC"
-    label_font_point: 12.0
-    comment_font_face: "PingFangSC"
-    comment_font_point: 15.0
-    candidate_list_layout: linear
-    text_orientation: horizontal
-    inline_preedit: true
-    corner_radius: 4.0
-    hilited_corner_radius: 4.0
-    border_height: 4.0
-    border_width: 8.0
-    line_spacing: 8.0
-    color_space: display_p3
-    back_color: 0x323434
-    candidate_text_color: 0xFFFFFF
-    comment_text_color: 0xCCFFFFFF
-    label_color: 0xFFFFFF
-    hilited_candidate_back_color: 0xCEB772
-    hilited_candidate_text_color: 0xE6FFFFFF
-    hilited_comment_text_color: 0x3F000000
-    hilited_candidate_label_color: 0xFFFFFF
-    text_color: 0x4AF572
-    hilited_text_color: 0xFFFFFF
+    custom_blue_light:
+      name: "蓝 Light"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+      corner_radius: 4.0
+      hilited_corner_radius: 4.0
+      border_height: 4.0
+      border_width: 4.0
+      line_spacing: 8.0
+      color_space: display_p3
+      back_color: 0xFFFFFF
+      candidate_text_color: 0x000000
+      comment_text_color: 0x3F000000
+      label_color: 0x717070
+      hilited_candidate_back_color: 0xFCF0E8
+      hilited_candidate_text_color: 0xDD6D41
+      hilited_comment_text_color: 0x3F000000
+      hilited_candidate_label_color: 0xC3603A
+      text_color: 0x3F000000
+      hilited_text_color: 0xD8000000
 
-  preset_color_schemes/custom_grey:
-    name: "灰"
-    font_face: "PingFangSC"
-    font_point: 17.0
-    label_font_face: "PingFangSC"
-    label_font_point: 12.0
-    comment_font_face: "PingFangSC"
-    comment_font_point: 14.0
-    candidate_list_layout: linear
-    text_orientation: horizontal
-    inline_preedit: true
-    corner_radius: 4.0
-    hilited_corner_radius: 4.0
-    border_height: 4.0
-    border_width: 4.0
-    line_spacing: 8.0
-    color_space: display_p3
-    back_color: 0xF4EFEC
-    candidate_text_color: 0xBC9F8D
-    comment_text_color: 0x3F000000
-    label_color: 0xC5B0A1
-    hilited_candidate_back_color: 0xE7DEDA
-    hilited_candidate_text_color: 0xA4806C
-    hilited_comment_text_color: 0x3F000000
-    hilited_candidate_label_color: 0xA4806C
-    text_color: 0x3F000000
-    hilited_text_color: 0xD8000000
+    custom_blue_drak:
+      name: "蓝 Dark"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+      corner_radius: 4.0
+      hilited_corner_radius: 4.0
+      border_height: 4.0
+      border_width: 8.0
+      line_spacing: 8.0
+      color_space: display_p3
+      back_color: 0x323434
+      candidate_text_color: 0xFFFFFF
+      comment_text_color: 0xCCFFFFFF
+      label_color: 0xFFFFFF
+      hilited_candidate_back_color: 0xCEB772
+      hilited_candidate_text_color: 0xE6FFFFFF
+      hilited_comment_text_color: 0x3F000000
+      hilited_candidate_label_color: 0xFFFFFF
+      text_color: 0x4AF572
+      hilited_text_color: 0xFFFFFF
+
+    custom_grey:
+      name: "灰"
+      candidate_list_layout: linear
+      text_orientation: horizontal
+      inline_preedit: true
+      corner_radius: 4.0
+      hilited_corner_radius: 4.0
+      border_height: 4.0
+      border_width: 4.0
+      line_spacing: 8.0
+      color_space: display_p3
+      back_color: 0xF4EFEC
+      candidate_text_color: 0xBC9F8D
+      comment_text_color: 0x3F000000
+      label_color: 0xC5B0A1
+      hilited_candidate_back_color: 0xE7DEDA
+      hilited_candidate_text_color: 0xA4806C
+      hilited_comment_text_color: 0x3F000000
+      hilited_candidate_label_color: 0xA4806C
+      text_color: 0x3F000000
+      hilited_text_color: 0xD8000000
+
+    wechat_light:
+      name: "微信浅色／Wechat Light"
+      author: 小码哥
+      candidate_format: "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
+      candidate_list_layout: linear   # 候选排布：层叠 stacked | 行 linear
+      text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+      inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
+      translucency: false             # 磨砂： false | true
+      mutual_exclusive: false         # 色不叠加： false | true
+      border_height: 1                # 外边框 高
+      border_width: 1                 # 外边框 宽
+      corner_radius: 5                # 外边框 圆角半径
+      hilited_corner_radius: 5       # 选中框 圆角半径
+      surrounding_extra_expansion: 0 # 候选项背景相对大小？
+      shadow_size: 0                 # 阴影大小
+      line_spacing: 5                # 行间距
+      base_offset: 0                 # 字基高
+      alpha: 1                       # 透明度，0~1
+      spacing: 10                    # 拼音与候选项之间的距离 （inline_preedit: false）
+      color_space: srgb                       # 色彩空间： srgb | display_p3
+      back_color: 0xFFFFFF                    # 底色
+      hilited_candidate_back_color: 0x79af22  # 选中底色
+      label_color: 0x999999                   # 序号颜色
+      hilited_candidate_label_color: 0xFFFFFF # 选中序号颜色
+      candidate_text_color: 0x3c3c3c          # 文字颜色
+      hilited_candidate_text_color: 0xFFFFFF  # 选中文字颜色
+      comment_text_color: 0x999999            # 注颜色
+      hilited_comment_text_color: 0x999999    # 选中注颜色
+      text_color: 0x424242                    # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0x999999            # 选中拼音颜色 （inline_preedit: false）
+      candidate_back_color: 0xFFFFFF          # 候选项底色
+      # preedit_back_color:                   # 拼音底色 （inline_preedit: false）
+      hilited_back_color: 0x79af22            # 选中拼音底色 （inline_preedit: false）
+      border_color: 0xFFFFFF                  # 外边框颜色
+  
+    wechat_dark:
+      name: "微信深色／Wechat Dark"
+      author: 小码哥
+      candidate_format: "%c\u2005%@\u2005" # 编号 %c 和候选词 %@ 前后的空间
+      candidate_list_layout: linear   # 候选排布：层叠 stacked | 行 linear
+      text_orientation: horizontal    # 行文向： 横 horizontal | 纵 vertical
+      inline_preedit: true            # 拼音位于： 候选框 false | 行内 true
+      translucency: false             # 磨砂： false | true
+      mutual_exclusive: false         # 色不叠加： false | true
+      border_height: 1                # 外边框 高
+      border_width: 1                 # 外边框 宽
+      corner_radius: 5                # 外边框 圆角半径
+      hilited_corner_radius: 5       # 选中框 圆角半径
+      surrounding_extra_expansion: 0 # 候选项背景相对大小？
+      shadow_size: 0                 # 阴影大小
+      line_spacing: 5                # 行间距
+      base_offset: 0                 # 字基高
+      alpha: 1                       # 透明度，0~1
+      spacing: 10                    # 拼音与候选项之间的距离 （inline_preedit: false）
+      color_space: srgb                       # 色彩空间： srgb | display_p3
+      back_color: 0x151515                    # 底色
+      hilited_candidate_back_color: 0x79af22  # 选中底色
+      label_color: 0x999999                   # 序号颜色
+      hilited_candidate_label_color: 0xFFFFFF # 选中序号颜色
+      candidate_text_color: 0xbbbbbb          # 文字颜色
+      hilited_candidate_text_color: 0xFFFFFF  # 选中文字颜色
+      comment_text_color: 0x999999            # 注颜色
+      hilited_comment_text_color: 0xFFFFFF    # 选中注颜色
+      text_color: 0xbbbbbb                    # 拼音颜色 （inline_preedit: false）
+      hilited_text_color: 0x999999            # 选中拼音颜色 （inline_preedit: false）
+      candidate_back_color: 0x151515          # 候选项底色
+      # preedit_back_color:                   # 拼音底色 （inline_preedit: false）
+      hilited_back_color: 0x79af22            # 选中拼音底色 （inline_preedit: false）
+      border_color: 0x292929                  # 外边框颜色
