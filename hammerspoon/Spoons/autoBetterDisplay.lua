@@ -1,3 +1,7 @@
+-- 自动打开 BetterDisplay 应用
+-- 当屏幕数量大于 1 时，自动打开 BetterDisplay 应用
+-- 当屏幕数量等于 1 时，自动关闭 BetterDisplay 应用
+
 -- 监听系统屏幕配置变更事件
 local screenWatcher = nil
 local betterdisplayAppName = "BetterDisplay"

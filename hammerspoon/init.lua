@@ -34,7 +34,7 @@ require ("Spoons.appInfo")
 require ("Spoons.autoReload")
 require ("Spoons.doubleQToQuit")
 require ("Spoons.inputSourceSwitcher")
-require ("Spoons.autoBetterDisplay")
+require ("Spoons.autoBetterDisplayV2")
 require ("Spoons.autoProNotes")
 -- require ("Spoons.kittyKeepCenter")
 
