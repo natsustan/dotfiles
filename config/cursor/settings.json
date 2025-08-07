@@ -16,16 +16,13 @@
     // set default shell
     "terminal.integrated.defaultProfile.osx": "fish",
     // ==========  Global Level Config, needs to put in User Settings ========== 
-    // "window.dialogStyle": "custom",
+    "window.dialogStyle": "custom",
     "window.nativeTabs": true, // this is great, macOS only
     "window.title": "${rootName}", // this make tabs more readable
     "window.titleBarStyle": "custom",
     "extensions.autoUpdate": "onlyEnabledExtensions",
     "window.customTitleBarVisibility": "never",
     "editor.tabSize": 2,
-    "workbench.colorCustomizations": {
-
-    },
     "editor.accessibilitySupport": "off",
     "files.associations": {
         "*.dconf": "ini"
@@ -35,4 +32,6 @@
     "git.confirmSync": false,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
+    // beancount Config
+    "beancount.mainBeanFile": "main.bean",
 }

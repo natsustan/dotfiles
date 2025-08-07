@@ -39,9 +39,9 @@ require ("Spoons.autoProNotes")
 -- require ("Spoons.kittyKeepCenter")
 
 -- disable ShiftIt
-hs.loadSpoon("ShiftIt")
-spoon.ShiftIt:bindHotkeys({})
-spoon.ShiftIt:setWindowCyclingSizes({ 50, 25, 33, 67 }, { 50 })
+-- hs.loadSpoon("ShiftIt")
+-- spoon.ShiftIt:bindHotkeys({})
+-- spoon.ShiftIt:setWindowCyclingSizes({ 50, 25, 33, 67 }, { 50 })
 
 -- Vifari
 hs.loadSpoon("Vifari")

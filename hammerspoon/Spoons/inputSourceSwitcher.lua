@@ -10,8 +10,8 @@ local function English()
 end
 
 local function Chinese()
-  -- hs.keycodes.currentSourceID("com.apple.inputmethod.SCIM.ITABC")
-  hs.keycodes.currentSourceID("im.rime.inputmethod.Squirrel.Hans")
+  hs.keycodes.currentSourceID("com.apple.inputmethod.SCIM.ITABC")
+  -- hs.keycodes.currentSourceID("im.rime.inputmethod.Squirrel.Hans")
 end
 
 

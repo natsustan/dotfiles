@@ -7,15 +7,18 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "terminal": {
+    "dock": "right"
+  },
   "collaboration_panel": {
     "dock": "right"
   },
   "project_panel": {
-    "dock": "right"
+    "dock": "left"
   },
   "base_keymap": "VSCode",
   "theme": {
-    "light": "Ayu Light",
+    "light": "Solarized Dark",
     "dark": "Solarized Dark"
   },
   "icon_theme": "Catppuccin Mocha",

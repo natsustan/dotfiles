@@ -51,7 +51,6 @@ patch:
 
     custom_purple_dark:
       name: 紫色 Dark
-      font_face: 'LXGW WenKai'
       candidate_list_layout: linear
       text_orientation: horizontal
       inline_preedit: true
