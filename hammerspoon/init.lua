@@ -82,7 +82,8 @@ spoon.AppAutoQuits
         "Numbers",
         "Keynote",
         "Pages",
-        "PictureView"
+        "PictureView",
+        "Surge Dashboard"
     })
     :start()
  
