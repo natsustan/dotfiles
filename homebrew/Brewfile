@@ -7,6 +7,7 @@ cask "1password-cli"
 cask "alfred"
 cask "appcleaner"
 cask "arc"
+cask "battle-net"
 cask "betterdisplay"
 cask "brave-browser"
 cask "bruno"
@@ -17,12 +18,14 @@ cask "downie"
 cask "figma"
 cask "font-google-sans-code"
 cask "font-hanamin"
+cask "font-ibm-plex-sans"
 cask "font-input"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-lxgw-wenkai"
 cask "font-sf-pro"
 cask "font-smiley-sans"
 cask "font-zed-mono"
+cask "font-zhuque-fangsong"
 cask "foobar2000"
 cask "ghostty"
 cask "github"
@@ -35,6 +38,7 @@ cask "mos"
 cask "notion"
 cask "ogdesign-eagle"
 cask "one-switch"
+cask "orbstack"
 cask "pictureview"
 cask "playcover-community"
 cask "popclip"
@@ -42,6 +46,7 @@ cask "pronotes"
 cask "raycast"
 cask "screen-studio"
 cask "sf-symbols"
+cask "spotify"
 cask "squirrel-app"
 cask "steermouse"
 cask "thebrowsercompany-dia"
@@ -55,9 +60,7 @@ mas "Command X", id: 6448461551
 mas "DingTalk", id: 1435447041
 mas "Eagle for Safari", id: 1526651672
 mas "Final Cut Pro", id: 424389933
-mas "Folo", id: 6739802604
 mas "iA Writer", id: 775737590
-mas "Immersive Translate", id: 6447957425
 mas "Infuse", id: 1136220934
 mas "Keynote", id: 409183694
 mas "LocalSend", id: 1661733229
@@ -72,20 +75,22 @@ mas "Pixelmator Pro", id: 1289583905
 mas "RunCat", id: 1429033973
 mas "Sequel Ace", id: 1518036000
 mas "ServerCat", id: 1501532023
-mas "Squirrel Designer", id: 1530616498
 mas "Tampermonkey", id: 6738342400
 mas "Telegram", id: 747648890
 mas "TencentMeeting", id: 1484048379
 mas "Things", id: 904280696
+mas "Trancy", id: 6475386403
 mas "uBlock Origin Lite", id: 6745342698
 mas "WeChat", id: 836500024
 mas "Windows App", id: 1295203466
+mas "Xcode", id: 497799835
 vscode "antfu.icons-carbon"
 vscode "antfu.slidev"
 vscode "antfu.theme-vitesse"
 vscode "anthropic.claude-code"
+vscode "anysphere.cursorpyright"
 vscode "catppuccin.catppuccin-vsc-icons"
-vscode "ginfuru.ginfuru-better-solarized-dark-theme"
 vscode "github.github-vscode-theme"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
 vscode "vue.volar"
-vscode "yossisa.cursor-usage"

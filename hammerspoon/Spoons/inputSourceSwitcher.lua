@@ -30,7 +30,6 @@ local app2Ime = {
   { 'Keynote', 'Chinese' },
   -- IM
   { 'DingTalk', 'Chinese' },
-  { 'Telegram', 'Chinese' },
   { 'WeChat', 'Chinese' },
   -- Note-taking
   { 'Notion', 'Chinese' },
