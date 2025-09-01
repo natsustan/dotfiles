@@ -12,14 +12,13 @@
     "workbench.preferredLightColorTheme": "Vitesse Light",
     "workbench.preferredDarkColorTheme": "GitHub Dark",
     "workbench.productIconTheme": "icons-carbon",
-    "workbench.sideBar.location": "right",
     "workbench.tree.expandMode": "singleClick",
     "workbench.startupEditor": "newUntitledFile",
     "workbench.tree.indent": 10,
     // ==========  Global Level Config, needs to put in User Settings ========== 
     "window.dialogStyle": "native",
-    "window.nativeTabs": true, // this is great, macOS only
-    "window.title": "${rootName}",
+    // "window.nativeTabs": true, // this is great, macOS only
+    // "window.title": "${rootName}",
     "extensions.autoUpdate": "onlyEnabledExtensions",
     "editor.tabSize": 2,
     "editor.accessibilitySupport": "off",
@@ -34,6 +33,12 @@
     "cursor.composer.shouldChimeAfterChatFinishes": true,
     // set default shell
     "terminal.integrated.defaultProfile.osx": "fish",
-    "window.customTitleBarVisibility": "never",
     "git.openRepositoryInParentFolders": "always",
+    // extensions
+    "beancount.mainBeanFile": "main.bean",
+    "beancountFormatter.fixedCJKWidth":true,
+    "beancountFormatter.prefixWidth": 80,
+    "window.confirmBeforeClose": "keyboardOnly",
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    // "beancountFormatter.numWidth": 200
 }

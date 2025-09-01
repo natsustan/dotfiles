@@ -18,8 +18,9 @@
   },
   "base_keymap": "VSCode",
   "theme": {
-    "light": "Solarized Dark",
-    "dark": "Solarized Dark"
+    "mode": "system",
+    "light": "macOS Classic Light",
+    "dark": "macOS Classic Dark"
   },
   "icon_theme": "Catppuccin Mocha",
   "tab_size": 2,

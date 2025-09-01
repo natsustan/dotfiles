@@ -29,13 +29,13 @@ local function getSafeFocusedWindow()
 end
 
 -- Load Spoons files
-require ("Spoons.appLauncher")
-require ("Spoons.appInfo")
+-- require ("Spoons.appLauncher")
+-- require ("Spoons.appInfo")
 require ("Spoons.autoReload")
 require ("Spoons.doubleQToQuit")
 -- require ("Spoons.inputSourceSwitcher")
-require ("Spoons.autoBetterDisplayV2")
-require ("Spoons.autoProNotes")
+-- require ("Spoons.autoBetterDisplayV2")
+-- require ("Spoons.autoProNotes")
 -- require ("Spoons.kittyKeepCenter")
 
 -- disable ShiftIt
@@ -44,26 +44,26 @@ require ("Spoons.autoProNotes")
 -- spoon.ShiftIt:setWindowCyclingSizes({ 50, 25, 33, 67 }, { 50 })
 
 -- Vifari
-hs.loadSpoon("Vifari")
-spoon.Vifari:start() -- this will add hooks. `:stop()` to remove hooks
+-- hs.loadSpoon("Vifari")
+-- spoon.Vifari:start() -- this will add hooks. `:stop()` to remove hooks
 
 -- or if you want to customize it
-spoon.Vifari:start({
-    -- example your local config here
-    scrollStep = 100,  -- Change scroll step
-    showMenuBarIcon = false,
-    mapping = {
-        -- ["k"] = "cmdScrollUp",
-        -- ["j"] = "cmdScrollDownFast",  -- Change existing mapping
-        -- ["n"] = { "cmd", "n" },       -- Add new mapping
-        -- Disable a mapping
-        ["\x7f"] = false,             -- Disable a mapping
-        ["x"] = false,                -- Disable a mapping
-        -- 覆盖默认的历史导航映射
-        ["["] = { "shift", "[" },              -- history back
-        ["]"] = { "shift", "]" },              -- history forward
-    }
-})
+-- spoon.Vifari:start({
+--     -- example your local config here
+--     scrollStep = 100,  -- Change scroll step
+--     showMenuBarIcon = false,
+--     mapping = {
+--         -- ["k"] = "cmdScrollUp",
+--         -- ["j"] = "cmdScrollDownFast",  -- Change existing mapping
+--         -- ["n"] = { "cmd", "n" },       -- Add new mapping
+--         -- Disable a mapping
+--         ["\x7f"] = false,             -- Disable a mapping
+--         ["x"] = false,                -- Disable a mapping
+--         -- 覆盖默认的历史导航映射
+--         ["["] = { "shift", "[" },              -- history back
+--         ["]"] = { "shift", "]" },              -- history forward
+--     }
+-- })
 
 -- AppAutoQuits
 hs.loadSpoon("AppAutoQuits")

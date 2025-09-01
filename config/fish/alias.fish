@@ -36,5 +36,8 @@ alias lt='ls --tree'
 alias vz='vim ~/.config/fish/config.fish'
 alias sz='source ~/.config/fish/config.fish'
 
+# deploy rime input method
+alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
+
 # ip
 # alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
