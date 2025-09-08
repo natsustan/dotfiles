@@ -38,7 +38,7 @@
     "beancount.mainBeanFile": "main.bean",
     "beancountFormatter.fixedCJKWidth":true,
     "beancountFormatter.prefixWidth": 80,
-    "window.confirmBeforeClose": "keyboardOnly",
     "diffEditor.hideUnchangedRegions.enabled": true,
+    "window.commandCenter": true,
     // "beancountFormatter.numWidth": 200
 }
