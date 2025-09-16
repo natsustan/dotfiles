@@ -6,7 +6,6 @@ window-padding-y = 6
 window-padding-balance = true
 background-opacity = 0.98
 background-blur = 20
-theme = solarized-osaka-night
 background = #1a1b25
 foreground = #c2caf1
 selection-background = #2a3454

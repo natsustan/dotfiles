@@ -14,30 +14,21 @@ patch:
     # 预设选项
     # 预设选项：（可被皮肤覆盖；如果皮肤没写，则默认使用这些属性。）
     text_orientation: horizontal  # horizontal | vertical
+    candidate_list_layout: linear
     inline_preedit: true
-    corner_radius: 10
-    hilited_corner_radius: 0
-    border_height: 0
-    border_width: 0
-    line_spacing: 5
-    spacing: 10
+    corner_radius: 4
+    border_height: 4.0
+    hilited_corner_radius: 4.0
+    border_width: 4.0
+    line_spacing: 12
     font_face: 'PingFangSC'
     font_point: 16
-    label_font_point: 12
-    comment_font_point: 12
+    label_font_point: 10.0
+    color_space: display_p3
 
   preset_color_schemes:
     custom_purple_light:
       name: "紫色 Light"
-      candidate_list_layout: linear
-      text_orientation: horizontal
-      inline_preedit: true
-      corner_radius: 4.0
-      hilited_corner_radius: 4.0
-      border_height: 4.0
-      border_width: 4.0
-      line_spacing: 8.0
-      color_space: display_p3
       back_color: 0xFFFFFF
       candidate_text_color: 0x462C30
       comment_text_color: 0x3F000000
@@ -53,13 +44,6 @@ patch:
       name: 紫色 Dark
       candidate_list_layout: linear
       text_orientation: horizontal
-      inline_preedit: true
-      corner_radius: 4.0
-      hilited_corner_radius: 4.0
-      border_height: 4.0
-      border_width: 8.0
-      line_spacing: 8.0
-      color_space: display_p3
       back_color: 0x000000
       candidate_text_color: 0xFFFFFF
       comment_text_color: 0xCCFFFFFF

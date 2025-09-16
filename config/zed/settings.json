@@ -8,29 +8,36 @@
 // from the command palette or from `Zed` application menu.
 {
   "terminal": {
-    "dock": "right"
+    "dock": "bottom"
   },
-  "collaboration_panel": {
-    "dock": "right"
-  },
+  // "collaboration_panel": {
+  //   "dock": "right"
+  // },
   "project_panel": {
     "dock": "left"
   },
   "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
-    "light": "macOS Classic Light",
-    "dark": "macOS Classic Dark"
+    "light": "Vercel Light",
+    "dark": "Vercel Dark"
   },
-  "icon_theme": "Catppuccin Mocha",
+  // "icon_theme": "Catppuccin Mocha",
   "tab_size": 2,
   "telemetry": {
     "diagnostics": false,
     "metrics": false
   },
-  // "ui_font_family": "JetBrainsMono Nerd Font Mono",
   "ui_font_size": 15,
   "buffer_font_size": 12.5,
-  "cursor_blink": true,
-  "format_on_save": "on"
+  "cursor_blink": false,
+  "format_on_save": "off",
+  "inline_code_actions": false,
+  "git": {
+    "inline_blame": null
+  },
+  "toolbar": {
+    "breadcrumbs": false,
+    "quick_actions": false
+  }
 }

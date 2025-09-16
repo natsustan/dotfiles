@@ -3,7 +3,7 @@ patch:
     - schema: rime_ice
 
   menu:
-    page_size: 7  # 候选词个数
+    page_size: 6  # 候选词个数
 
   ascii_composer/good_old_caps_lock: false # true | false
   ascii_composer/switch_key/Caps_Lock: commit_code # commit_code | commit_text | clear
