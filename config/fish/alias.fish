@@ -1,4 +1,4 @@
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
 alias icon="fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
 fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/GitHub\ Desktop.icns &&
 fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns &&
