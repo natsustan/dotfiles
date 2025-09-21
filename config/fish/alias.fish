@@ -3,6 +3,7 @@ alias icon="fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma
 fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/GitHub\ Desktop.icns &&
 fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns &&
 fileicon set /Applications/ChatWise.app $HOME/dotfiles/macOSicons/ChatWise.icns &&
+fileicon set /Applications/Visual\ Studio\ Code.app $HOME/dotfiles/macOSicons/vscode.icns &&
 sudo fileicon set /Applications/Tunnelblick.app $HOME/dotfiles/macOSicons/tunnelbrick.icns"
 
 alias bi='brew install'
