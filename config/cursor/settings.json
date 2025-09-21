@@ -40,6 +40,7 @@
     "beancountFormatter.prefixWidth": 80,
     "diffEditor.hideUnchangedRegions.enabled": true,
     "window.commandCenter": true,
+    "editor.rulers": [],
     "cursor.composer.usageSummaryDisplay": "always",
     // "beancountFormatter.numWidth": 200
 }
