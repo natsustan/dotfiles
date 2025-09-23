@@ -73,6 +73,10 @@ spoon.AppAutoQuits
         "Pages",
         "PictureView",
         "Surge Dashboard",
-        "Journal"
+        "Journal",
+        "Fork",
+        "Activity Monitor",
+        "Shortcuts",
+        "1Password"
     })
     :start()
