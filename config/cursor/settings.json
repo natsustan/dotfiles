@@ -42,5 +42,6 @@
     "window.commandCenter": true,
     "editor.rulers": [],
     "cursor.composer.usageSummaryDisplay": "always",
+    "workbench.sideBar.location": "right",
     // "beancountFormatter.numWidth": 200
 }

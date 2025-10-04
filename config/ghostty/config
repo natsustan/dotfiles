@@ -1,7 +1,7 @@
 theme = Xcode Dark
-window-padding-x = 6
-window-padding-y = 6
-window-padding-balance = true
+# window-padding-x = 6
+# window-padding-y = 6
+# window-padding-balance = true
 background-opacity = 0.98
 background-blur = 20
 font-size = 12
@@ -9,4 +9,4 @@ font-family = "JetBrainsMono Nerd Font"
 macos-icon = official
 macos-icon-frame = plastic
 quit-after-last-window-closed = true
-window-save-state = never
+# window-save-state = never

@@ -7,20 +7,23 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "collaboration_panel": {
+    "dock": "left"
+  },
   "terminal": {
-    "dock": "bottom"
+    "dock": "left"
   },
   // "collaboration_panel": {
   //   "dock": "right"
   // },
   "project_panel": {
-    "dock": "left"
+    "dock": "right"
   },
   "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
-    "light": "Vercel Light",
-    "dark": "Vercel Dark"
+    "light": "Vitesse Refined Light",
+    "dark": "Vitesse Refined Dark"
   },
   // "icon_theme": "Catppuccin Mocha",
   "tab_size": 2,
