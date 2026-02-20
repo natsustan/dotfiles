@@ -1,12 +1,27 @@
-theme = Xcode Dark
-# window-padding-x = 6
-# window-padding-y = 6
-# window-padding-balance = true
-background-opacity = 0.98
+theme = dark:Raycast Dark,light:Snazzy Soft
+
+# Windows
+window-theme = ghostty
+window-padding-x = 6
+window-padding-y = 6
+background-opacity = 0.9
 background-blur = 20
+resize-overlay = never
+gtk-toolbar-style = flat
+
+# Font
 font-size = 12
-font-family = "JetBrainsMono Nerd Font"
-macos-icon = official
-macos-icon-frame = plastic
+font-family = Berkeley Mono
+
+# Cursor styling
+cursor-style = "block"
+cursor-style-blink = false
+
 quit-after-last-window-closed = true
-# window-save-state = never
+window-save-state = never
+
+cursor-color = #FFB929
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor
+custom-shader = ~/.config/ghostty/shaders/cursor-trail.glsl
