@@ -7,23 +7,230 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  // "cursor_shape": "block",
+  "ui_font_family": ".ZedSans",
+  "agent_buffer_font_size": 12.0,
+  "agent_ui_font_size": 14.0,
+  "document_symbols": "on",
+  "language_models": {
+    "openai_compatible": {
+      // "Kimi For Coding": {
+      //   "api_url": "https://api.kimi.com/coding/v1",
+      //   "available_models": [
+      //     {
+      //       "name": "kimi-for-coding",
+      //       "max_tokens": 200000,
+      //       "max_output_tokens": 32000,
+      //       "max_completion_tokens": 200000,
+      //       "capabilities": {
+      //         "tools": true,
+      //         "images": false,
+      //         "parallel_tool_calls": false,
+      //         "prompt_cache_key": false,
+      //         "chat_completions": true
+      //       }
+      //     }
+      //   ]
+      // },
+      "Zhipu GLM Coding Plan": {
+        "api_url": "https://open.bigmodel.cn/api/coding/paas/v4",
+        "available_models": [
+          {
+            "name": "GLM-4.7",
+            "max_tokens": 131072,
+            "max_output_tokens": 131072,
+            "max_completion_tokens": 131072,
+            "capabilities": {
+              "tools": true,
+              "images": true,
+              "parallel_tool_calls": true,
+              "prompt_cache_key": false,
+              "chat_completions": true
+            }
+          }
+        ]
+      }
+    }
+  },
+  "active_pane_modifiers": {
+    "inactive_opacity": 1.0
+  },
+  "use_system_window_tabs": true,
+  "preview_tabs": {
+    "enabled": true
+  },
+  "outline_panel": {
+    "button": false,
+    "dock": "left"
+  },
+  "restore_on_startup": "launchpad",
+  "soft_wrap": "none",
+  "show_wrap_guides": false,
+  "git_panel": {
+    "tree_view": true,
+    "dock": "right"
+  },
+  "buffer_font_family": "Berkeley Mono",
+  "audio": {
+    "experimental.legacy_audio_compatible": true,
+    "experimental.denoise": false,
+    "experimental.auto_speaker_volume": false
+  },
+  "centered_layout": {
+    "left_padding": 0.2
+  },
+  "tabs": {
+    "close_position": "left",
+    "file_icons": false,
+    "git_status": false
+  },
+  "tab_bar": {
+    "show_pinned_tabs_in_separate_row": false,
+    "show_tab_bar_buttons": true,
+    "show_nav_history_buttons": true,
+    "show": true
+  },
+  "title_bar": {
+    "show_user_menu": false,
+    "show_menus": false,
+    "show_sign_in": false,
+    "show_user_picture": false,
+    "show_onboarding_banner": true,
+    "show_branch_icon": false,
+    "show_project_items": true,
+    "show_branch_name": true
+  },
+  "debugger": {
+    "dock": "left",
+    "button": false
+  },
+  "search": {
+    "button": true
+  },
+  "diagnostics": {
+    "button": true
+  },
+  "status_bar": {
+    "active_encoding_button": "non_utf8",
+    "active_language_button": true,
+    "cursor_position_button": true
+  },
+  "ui_font_weight": 400.0,
+  "on_last_window_closed": "quit_app",
+  "when_closing_with_no_tabs": "close_window",
+  "agent_servers": {
+    "pi-acp": {
+      "type": "registry"
+    },
+    "kimi": {
+      "type": "registry"
+    },
+    "factory-droid": {
+      "type": "registry"
+    },
+    "Droid": {
+      "default_model": "gpt-5.2-codex",
+      "type": "extension",
+      "default_mode": "spec",
+      "favorite_models": [],
+      "default_config_options": {},
+      "favorite_config_option_values": {}
+    },
+    "opencode": {
+      "default_model": "zhipuai-coding-plan/glm-4.7",
+      "type": "extension",
+      "favorite_models": [
+        "openai/gpt-5.2-codex",
+        "zhipuai-coding-plan/glm-4.7",
+        "openai/gpt-5.2",
+        "google/gemini-3-pro-preview",
+        "google/gemini-3-flash-preview",
+        "google/antigravity-claude-opus-4-5-thinking",
+        "google/antigravity-claude-sonnet-4-5-thinking"
+      ],
+      "default_config_options": {},
+      "favorite_config_option_values": {}
+    },
+    "claude": {
+      "default_config_options": {
+        "mode": "bypassPermissions"
+      },
+    }
+  },
+  "edit_predictions": {
+    "provider": "zed",
+    "mode": "eager"
+  },
+  "icon_theme": "Zed (Default)",
+  "context_servers": {
+    "chrome-devtools": {
+      "enabled": true,
+      "command": "npx",
+      "args": [
+        "-y",
+        "chrome-devtools-mcp@latest"
+      ]
+    },
+    "mcp-server-context7": {
+      "enabled": true,
+      "settings": {
+        "context7_api_key": "ctx7sk-47024eb0-698a-4b42-b6c6-123b405aaea1"
+      }
+    }
+  },
+  "agent": {
+    "tool_permissions": {
+      "default": "allow"
+    },
+    "favorite_models": [
+      {
+        "provider": "openrouter",
+        "model": "openrouter/pony-alpha"
+      }
+    ],
+    "default_width": 640.0,
+    "default_profile": "write",
+    "play_sound_when_agent_done": true,
+    "notify_when_agent_waiting": "primary_screen",
+    "dock": "left",
+    "default_model": {
+      "provider": "openrouter",
+      "model": "openrouter/pony-alpha"
+    },
+    "model_parameters": []
+  },
   "collaboration_panel": {
+    "button": false,
     "dock": "left"
   },
   "terminal": {
+    "font_size": 12.0,
+    "option_as_meta": true,
+    "copy_on_select": true,
+    "scrollbar": {
+      "show": "never"
+    },
+    "toolbar": {
+      "breadcrumbs": false
+    },
+    "button": true,
     "dock": "left"
   },
-  // "collaboration_panel": {
-  //   "dock": "right"
-  // },
   "project_panel": {
+    "scrollbar": {
+      "show": "auto"
+    },
+    "folder_icons": true,
+    "file_icons": true,
+    "hide_gitignore": false,
+    "button": true,
     "dock": "right"
   },
   "base_keymap": "VSCode",
   "theme": {
     "mode": "system",
-    "light": "Vitesse Refined Light",
-    "dark": "Vitesse Refined Dark"
+    "light": "Cursor Light",
+    "dark": "Cursor Dark"
   },
   // "icon_theme": "Catppuccin Mocha",
   "tab_size": 2,
@@ -31,16 +238,22 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 15,
-  "buffer_font_size": 12.5,
-  "cursor_blink": false,
+  "ui_font_size": 14.0,
+  "buffer_font_size": 12.0,
+  "cursor_blink": true,
   "format_on_save": "off",
   "inline_code_actions": false,
   "git": {
+    "branch_picker": {
+      "show_author_name": false
+    },
+    "blame": {
+      "show_avatar": false
+    },
     "inline_blame": null
-  },
-  "toolbar": {
-    "breadcrumbs": false,
-    "quick_actions": false
   }
+  // "toolbar": {
+  //   "breadcrumbs": false,
+  //   "quick_actions": false
+  // }
 }
