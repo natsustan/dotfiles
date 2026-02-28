@@ -2,7 +2,7 @@
 // Trail shrinks from previous position toward current position (comet tail effect)
 
 // --- CONFIGURATION ---
-vec4 TRAIL_COLOR = vec4(1.0, 0.725, 0.161, 1.0); // #FFB929 yellow
+vec4 TRAIL_COLOR = iCurrentCursorColor;
 const float DURATION = 0.25; // kitty default decay range: 0.1~0.4s
 const float MAX_TRAIL_LENGTH = 0.2;
 const float THRESHOLD_MIN_DISTANCE = 1.0;
