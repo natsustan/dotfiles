@@ -1,111 +1,105 @@
 tap "buo/cask-upgrade"
-brew "autocorrect"
-brew "fileicon"
+tap "owo-network/brew"
+tap "steipete/tap"
+brew "cliproxyapi", restart_service: :changed
+brew "gh"
 brew "mas"
 brew "mise"
 cask "1password"
 cask "1password-cli"
-cask "alfred"
-cask "appcleaner"
-cask "arc"
+cask "antigravity"
 cask "betterdisplay"
+cask "blip"
 cask "bruno"
 cask "chatgpt"
 cask "chatwise"
 cask "cleanshot"
+cask "commander"
+cask "conductor"
 cask "cursor"
 cask "downie"
 cask "dropbox"
 cask "figma"
 cask "font-ia-writer-mono"
 cask "font-ia-writer-quattro"
-cask "font-input"
-cask "font-jetbrains-mono-nerd-font"
 cask "font-lxgw-wenkai"
-cask "font-sf-pro"
+cask "font-noto-sans-cjk"
+cask "font-noto-serif-cjk"
 cask "font-smiley-sans"
 cask "font-zed-mono"
-cask "font-zhuque-fangsong"
 cask "fork"
 cask "ghostty"
 cask "github"
 cask "google-chrome"
 cask "hammerspoon"
 cask "handbrake-app"
+cask "handy"
+cask "helium-browser"
 cask "iina"
 cask "input-source-pro"
 cask "jordanbaird-ice"
 cask "keka"
-cask "kekaexternalhelper"
-cask "keysmith"
-cask "logseq"
+cask "kitty"
 cask "mos"
+cask "notchnook"
 cask "notion"
-cask "obsidian"
 cask "ogdesign-eagle"
-cask "orbstack"
+cask "opencode-desktop"
 cask "pictureview"
-cask "playcover-community"
 cask "popclip"
 cask "pronotes"
 cask "raycast"
 cask "screen-studio"
 cask "sf-symbols"
+cask "shottr"
 cask "squirrel-app"
-cask "steam"
 cask "steermouse"
+cask "tencent-meeting"
 cask "thebrowsercompany-dia"
 cask "tunnelblick"
-cask "visual-studio-code"
+cask "windsurf"
+cask "yaak"
 cask "zed"
 mas "1Password for Safari", id: 1569813296
 mas "APTV", id: 1630403500
 mas "Bear", id: 1091189122
-mas "Boop", id: 1518425043
+mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
+mas "Compressor", id: 424390742
+mas "Cookie", id: 1559943673
+mas "DetailsPro", id: 1524366536
 mas "DingTalk", id: 1435447041
 mas "Eagle for Safari", id: 1526651672
 mas "Final Cut Pro", id: 424389933
+mas "Gifski", id: 1351639930
+mas "Googly Eyes", id: 6743048714
 mas "iA Writer", id: 775737590
 mas "Infuse", id: 1136220934
+mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
-mas "LocalSend", id: 1661733229
+mas "Logic Pro", id: 634148309
+mas "MainStage", id: 634159523
 mas "Microsoft Excel", id: 462058435
 mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
-mas "MindNode Next", id: 6446116532
 mas "Minimal Twitter", id: 1668204600
+mas "Mockup", id: 1527554407
+mas "Motion", id: 434290957
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Parallels Desktop", id: 1085114709
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
-mas "RunCat", id: 1429033973
-mas "Save to Raindrop.io", id: 1549370672
 mas "Sequel Ace", id: 1518036000
-mas "ServerCat", id: 1501532023
+mas "Shareful", id: 1522267256
 mas "Squirrel Designer", id: 1530616498
-mas "Tampermonkey", id: 6738342400
 mas "Telegram", id: 747648890
-mas "TencentMeeting", id: 1484048379
 mas "Things", id: 904280696
 mas "Trancy", id: 6475386403
 mas "uBlock Origin Lite", id: 6745342698
 mas "WeChat", id: 836500024
 mas "Windows App", id: 1295203466
-mas "Xcode", id: 497799835
-vscode "antfu.icons-carbon"
-vscode "antfu.slidev"
-vscode "antfu.theme-vitesse"
-vscode "anthropic.claude-code"
-vscode "anysphere.cursorpyright"
-vscode "catppuccin.catppuccin-vsc-icons"
-vscode "dongfg.vscode-beancount-formatter"
-vscode "github.github-vscode-theme"
-vscode "lencerf.beancount"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "openai.chatgpt"
-vscode "sweetpad.sweetpad"
-vscode "vadimcn.vscode-lldb"
-vscode "vue.volar"
+cargo "yazi-build"
+cargo "yazi-cli"
+cargo "yazi-fm"
+cargo "zellij"
