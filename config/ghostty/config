@@ -1,20 +1,26 @@
-# theme = dark:Raycast Dark,light:Nord
-theme = Solarized Osaka Night
+theme = Raycast Dark
+# theme = Xcode WWDC
+# theme = compline-dark
 macos-titlebar-style = tabs
-
 
 # Windows
 # window-theme = ghostty
 window-padding-x = 9
 window-padding-y = 9
-background-opacity = 0.85
-background-blur = 20
+background-opacity = 0.88
+background-blur = 14
 # resize-overlay = never
 # gtk-toolbar-style = flat
 
 # Font
 font-size = 12
 font-family = Berkeley Mono
+# font-family = iA Writer Quattro
+# 中文 fallback（固定中文就靠这一行）
+font-family = PingFang SC
+# font-codepoint-map = U+2042="Berkeley Mono"
+# font-codepoint-map = U+2514=Berkeley Mono
+# font-codepoint-map = U+2192="Berkeley Mono"
 
 # Cursor styling
 cursor-style = "block"
@@ -26,6 +32,9 @@ shell-integration-features = no-cursor
 custom-shader = ~/.config/ghostty/shaders/cursor-trail.glsl
 
 # Advanced
-selection-clear-on-copy = true
 quit-after-last-window-closed = true
 window-save-state = never
+copy-on-select = clipboard
+
+# tmux 中 Shift+Enter 换行
+keybind = shift+enter=text:\x1b\r

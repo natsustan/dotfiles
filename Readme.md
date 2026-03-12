@@ -63,6 +63,7 @@ git config --global core.excludesfile ~/dotfiles/git/gitignore_global
 ### ghostty
 
 ```
+ln -s ~/dotfiles/config/ghostty ~/.config/ghostty
 ln -s ~/dotfiles/config/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty/config
 ```
 
