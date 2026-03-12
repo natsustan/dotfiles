@@ -7,8 +7,6 @@ eval "$(/opt/homebrew/bin/mise activate zsh)"
 # Set up shell to use Starship
 eval "$(starship init zsh)"
 
-export PATH="$HOME/dotfiles/bin:$PATH"
-
 # my alias
 alias bi='brew install'
 alias bu='brew uninstall'

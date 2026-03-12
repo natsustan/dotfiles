@@ -38,6 +38,13 @@ ln -s ~/dotfiles/config/fish/alias.fish ~/.config/fish/
 ln -s ~/dotfiles/config/zsh/zshrc ~/.zshrc
 ```
 
+#### Commands
+
+```
+mkdir -p ~/.local/bin
+ln -s ~/dotfiles/bin/tdl ~/.local/bin/tdl
+```
+
 ### hammerspoon
 
 setting the location of configuration files
