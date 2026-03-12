@@ -1,0 +1,164 @@
+#!/bin/bash
+
+set -euo pipefail
+
+readonly SCRIPT_NAME="tdl"
+readonly SUPPORTED_AGENTS=("amp" "codex" "claude" "opencode" "pi" "droid")
+
+usage() {
+  cat <<'EOF'
+Usage: tdl [agent] [agent2]
+
+Supported agents:
+  amp
+  codex
+  claude
+  opencode
+  pi
+  droid
+
+Run from the project directory you want to open in tmux.
+EOF
+}
+
+fail() {
+  echo "$SCRIPT_NAME: $*" >&2
+  exit 1
+}
+
+require_command() {
+  command -v "$1" >/dev/null 2>&1 || fail "missing required command: $1"
+}
+
+is_supported_agent() {
+  local candidate="$1"
+
+  for agent in "${SUPPORTED_AGENTS[@]}"; do
+    [[ "$agent" == "$candidate" ]] && return 0
+  done
+
+  return 1
+}
+
+sanitize_session_name() {
+  local name="$1"
+  local sanitized
+
+  sanitized=$(printf '%s' "$name" | tr '.:' '--' | sed 's/[^[:alnum:]_-]/-/g')
+  sanitized=$(printf '%s' "$sanitized" | sed 's/--*/-/g; s/^-//; s/-$//')
+
+  [[ -n "$sanitized" ]] || sanitized="tdl"
+  printf '%s\n' "$sanitized"
+}
+
+unique_session_name() {
+  local base_name="$1"
+  local session_name="$base_name"
+  local suffix=2
+
+  while tmux has-session -t "$session_name" 2>/dev/null; do
+    session_name="${base_name}-${suffix}"
+    ((suffix++))
+  done
+
+  printf '%s\n' "$session_name"
+}
+
+rename_target_window() {
+  local pane_id="$1"
+  local window_id
+
+  window_id=$(tmux display-message -p -t "$pane_id" '#{window_id}')
+  tmux rename-window -t "$window_id" "$(basename "$PWD")"
+}
+
+build_layout() {
+  local root_pane="$1"
+  local current_dir="$2"
+  local agent_one="${3:-}"
+  local agent_two="${4:-}"
+  local right_pane terminal_pane yazi_pane second_agent_pane
+
+  rename_target_window "$root_pane"
+
+  right_pane=$(tmux split-window -h -p 35 -t "$root_pane" -c "$current_dir" -P -F '#{pane_id}')
+  terminal_pane=$(tmux split-window -v -p 20 -t "$right_pane" -c "$current_dir" -P -F '#{pane_id}')
+  yazi_pane=$(tmux split-window -v -p 20 -t "$right_pane" -c "$current_dir" -P -F '#{pane_id}')
+
+  tmux send-keys -t "$right_pane" "lazygit" C-m
+  tmux send-keys -t "$yazi_pane" "yazi" C-m
+
+  if [[ -n "$agent_one" && -n "$agent_two" ]]; then
+    second_agent_pane=$(tmux split-window -h -p 50 -t "$root_pane" -c "$current_dir" -P -F '#{pane_id}')
+    tmux send-keys -t "$root_pane" "$agent_one" C-m
+    tmux send-keys -t "$second_agent_pane" "$agent_two" C-m
+    tmux select-pane -t "$root_pane"
+    return
+  fi
+
+  if [[ -n "$agent_one" ]]; then
+    tmux send-keys -t "$root_pane" "$agent_one" C-m
+  fi
+
+  tmux select-pane -t "$root_pane"
+}
+
+main() {
+  local current_dir="$PWD"
+  local pane_count session_base session_name root_pane
+  local agents=()
+
+  require_command tmux
+  require_command lazygit
+  require_command yazi
+
+  while (($# > 0)); do
+    case "$1" in
+      -h|--help)
+        usage
+        exit 0
+        ;;
+      *)
+        agents+=("$1")
+        ;;
+    esac
+    shift
+  done
+
+  ((${#agents[@]} <= 2)) || {
+    usage >&2
+    fail "expected at most two agents"
+  }
+
+  if ((${#agents[@]} >= 1)); then
+    is_supported_agent "${agents[0]}" || {
+      usage >&2
+      fail "unsupported agent: ${agents[0]}"
+    }
+    require_command "${agents[0]}"
+  fi
+
+  if ((${#agents[@]} == 2)); then
+    is_supported_agent "${agents[1]}" || {
+      usage >&2
+      fail "unsupported agent: ${agents[1]}"
+    }
+    require_command "${agents[1]}"
+  fi
+
+  if [[ -n "${TMUX:-}" ]]; then
+    pane_count=$(tmux display-message -p -t "$TMUX_PANE" '#{window_panes}')
+    [[ "$pane_count" == "1" ]] || fail "current tmux window must contain exactly one pane"
+    build_layout "$TMUX_PANE" "$current_dir" "${agents[0]:-}" "${agents[1]:-}"
+    exit 0
+  fi
+
+  session_base=$(sanitize_session_name "$(basename "$current_dir")")
+  session_name=$(unique_session_name "$session_base")
+  root_pane=$(tmux new-session -d -P -F '#{pane_id}' -s "$session_name" -c "$current_dir")
+
+  build_layout "$root_pane" "$current_dir" "${agents[0]:-}" "${agents[1]:-}"
+  tmux attach-session -t "$session_name"
+}
+
+main "$@"
