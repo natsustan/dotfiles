@@ -15,9 +15,8 @@ background-blur = 14
 # Font
 font-size = 12
 font-family = Berkeley Mono
-# font-family = iA Writer Quattro
-# 中文 fallback（固定中文就靠这一行）
-font-family = PingFang SC
+font-family = iA Writer DUO
+# font-family = PingFang SC
 # font-codepoint-map = U+2042="Berkeley Mono"
 # font-codepoint-map = U+2514=Berkeley Mono
 # font-codepoint-map = U+2192="Berkeley Mono"

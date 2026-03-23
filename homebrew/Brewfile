@@ -1,26 +1,25 @@
 tap "buo/cask-upgrade"
 tap "owo-network/brew"
 tap "steipete/tap"
-brew "cliproxyapi", restart_service: :changed
 brew "gh"
 brew "mas"
 brew "mise"
 brew "mole"
 cask "1password"
-cask "1password-cli"
 cask "antigravity"
 cask "betterdisplay"
 cask "blip"
 cask "bruno"
 cask "chatgpt"
 cask "chatwise"
+cask "claude"
 cask "cleanshot"
+cask "codex-app"
 cask "commander"
 cask "conductor"
 cask "cursor"
 cask "downie"
 cask "dropbox"
-cask "figma"
 cask "font-ia-writer-duo"
 cask "font-ia-writer-mono"
 cask "font-ia-writer-quattro"
@@ -42,6 +41,7 @@ cask "input-source-pro"
 cask "jordanbaird-ice"
 cask "keka"
 cask "kitty"
+cask "miaoyan"
 cask "mos"
 cask "notchnook"
 cask "notion"
@@ -50,6 +50,7 @@ cask "pictureview"
 cask "popclip"
 cask "pronotes"
 cask "raycast"
+cask "reflect"
 cask "screen-studio"
 cask "sf-symbols"
 cask "shottr"
@@ -57,16 +58,18 @@ cask "squirrel-app"
 cask "steermouse"
 cask "tencent-meeting"
 cask "thebrowsercompany-dia"
+cask "utm"
 cask "windsurf"
 cask "yaak"
 cask "zed"
-mas "1Password for Safari", id: 1569813296
 mas "APTV", id: 1630403500
 mas "Bear", id: 1091189122
 mas "Bob", id: 1630034110
 mas "Command X", id: 6448461551
 mas "Compressor", id: 424390742
-mas "Cookie", id: 1559943673
+mas "CotEditor", id: 1024640650
+mas "Craft", id: 1487937127
+mas "Dark Reader for Safari", id: 1438243180
 mas "DetailsPro", id: 1524366536
 mas "DingTalk", id: 1435447041
 mas "Eagle for Safari", id: 1526651672
@@ -75,8 +78,8 @@ mas "Gifski", id: 1351639930
 mas "Googly Eyes", id: 6743048714
 mas "iA Writer", id: 775737590
 mas "Infuse", id: 1136220934
-mas "Keynote", id: 361285480
 mas "Keynote", id: 409183694
+mas "Keynote", id: 361285480
 mas "Logic Pro", id: 634148309
 mas "MainStage", id: 634159523
 mas "Microsoft Excel", id: 462058435
@@ -97,9 +100,12 @@ mas "Telegram", id: 747648890
 mas "Things", id: 904280696
 mas "Trancy", id: 6475386403
 mas "uBlock Origin Lite", id: 6745342698
+mas "Vimari", id: 1480933944
 mas "WeChat", id: 836500024
 mas "Windows App", id: 1295203466
+cargo "ripgrep"
 cargo "yazi-build"
 cargo "yazi-cli"
 cargo "yazi-fm"
 cargo "zellij"
+uv "kimi-cli"
