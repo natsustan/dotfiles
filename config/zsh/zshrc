@@ -1,13 +1,7 @@
-# Set up shell to use homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Set up shell to use mise
-eval "$(/opt/homebrew/bin/mise activate zsh)"
-
-# Set up shell to use Starship
+eval "$(/Users/spike/.local/bin/mise activate zsh)"
 eval "$(starship init zsh)"
 
-# my alias
 alias bi='brew install'
 alias bu='brew uninstall'
 alias bs='brew search'
@@ -34,25 +28,14 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 
-alias vz="vim ~/.zshrc"
-alias sz="source ~/.zshrc"
+alias config="vim ~/.zshrc"
+alias reload="source ~/.zshrc"
 
 alias vi="nvim"
 alias vim="nvim"
 
-# update app
-# alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade"
-alias icon="fileicon set /Applications/alacritty.app $HOME/dotfiles/macOSicons/kitty.icns &&
-fileicon set /Applications/Figma.app $HOME/dotfiles/macOSicons/Figma.icns &&
-fileicon set /Applications/HandBrake.app $HOME/dotfiles/macOSicons/handbrake.icns &&
-fileicon set /Applications/GitHub\ Desktop.app/ $HOME/dotfiles/macOSicons/GitHub\ Desktop.icns &&
-fileicon set /Applications/AppCleaner.app $HOME/dotfiles/macOSicons/AppCleaner.icns &&
-fileicon set /Applications/Sideloadly.app $HOME/dotfiles/macOSicons/sideloadly.icns &&
-fileicon set /Applications/ChatWise.app $HOME/dotfiles/macOSicons/ChatWise.icns &&
-sudo fileicon set /Applications/Tunnelblick.app $HOME/dotfiles/macOSicons/tunnelbrick.icns"
+alias up="brew update && brew upgrade && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 # deploy rime input method
 # alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
-
-alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
