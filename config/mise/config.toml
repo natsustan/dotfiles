@@ -1,0 +1,13 @@
+[tools]
+bun = "latest"
+fastfetch = "latest"
+gh = "latest"
+lazygit = "latest"
+node = "latest"
+ripgrep = "latest"
+yazi = "latest"
+tmux = "latest"
+eza = "latest"
+mas = "latest"
+"aqua:neovim/neovim" = "0.10.4"
+starship = "latest"
