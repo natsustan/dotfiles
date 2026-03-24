@@ -2,6 +2,8 @@
 ~/.local/bin/mise activate fish | source
 starship init fish | source
 
+set -U fish_greeting
+
 alias bi='brew install'
 alias bu='brew uninstall'
 alias bs='brew search'
@@ -37,3 +39,6 @@ alias vim='nvim'
 alias up='brew update && brew upgrade && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts'
 alias ip='ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk \'{print $2}\''
 
+alias claude='claude  --dangerously-skip-permissions'
+alias claudetg="claude --channels plugin:telegram@claude-plugins-official  --dangerously-skip-permissions"
+alias codex='codex --dangerously-bypass-approvals-and-sandbox'
