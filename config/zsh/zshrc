@@ -39,3 +39,7 @@ alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 # deploy rime input method
 # alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
+
+
+# Added by Antigravity CLI installer
+export PATH="/Users/spike/.local/bin:$PATH"
