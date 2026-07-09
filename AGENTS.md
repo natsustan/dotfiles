@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance to AI coding agents when working with this repository.
 
 ## Overview
 
@@ -36,6 +36,17 @@ tdl claude amp      # two agents side-by-side
 ```
 
 Supported agents: `amp`, `codex`, `claude`, `opencode`, `pi`, `droid`
+
+## tmux
+
+- Config lives at `config/tmux/tmux.conf` and is expected to be symlinked to `~/.config/tmux/tmux.conf`.
+- Prefix is `C-a`.
+- Default shell is fish.
+- Mouse, vi copy mode, large scrollback, focus events, and macOS clipboard integration are enabled.
+- Extended keys use CSI-u for better terminal/editor key handling.
+- `prefix + r` reloads the config from `~/.config/tmux/tmux.conf`.
+- Pane navigation uses `prefix + h/j/k/l`; splits use `prefix + |` and `prefix + -`.
+- `C-S-Left` and `C-S-Right` move windows left/right.
 
 ## Conventions
 
