@@ -43,6 +43,7 @@ ln -s ~/dotfiles/config/zsh/zshrc ~/.zshrc
 ```
 mkdir -p ~/.local/bin
 ln -s ~/dotfiles/bin/tdl ~/.local/bin/tdl
+ln -s ~/dotfiles/bin/detect-electron-apps-by-version.sh ~/.local/bin/detect-electron-apps-by-version.sh
 ```
 
 ### hammerspoon

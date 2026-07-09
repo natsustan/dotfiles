@@ -14,6 +14,7 @@ macOS dotfiles for `natsustan/dotfiles`. Configs are deployed via manual symlink
 - `rime/` — Chinese input method engine configs (ice schema)
 - `homebrew/` — Brewfile for declarative package management
 - `bin/` — custom scripts (notably `tdl`)
+- `agents/` — shared global agent instructions symlinked to agent-specific config paths
 - `macOSicons/` — custom app icons (.icns)
 
 ## Key Commands
