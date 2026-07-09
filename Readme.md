@@ -87,6 +87,14 @@ ln -s ~/dotfiles/config/cursor/settings.json ~/Library/Application\ Support/Curs
 ln -s ~/dotfiles/config/zed/settings.json ~/.config/zed/settings.json
 ```
 
+### Warp
+
+```
+mkdir -p ~/.warp
+ln -s ~/dotfiles/config/warp/settings.toml ~/.warp/settings.toml
+ln -s ~/dotfiles/config/warp/keybindings.yaml ~/.warp/keybindings.yaml
+```
+
 ### Agents
 
 ```
