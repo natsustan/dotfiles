@@ -86,6 +86,15 @@ ln -s ~/dotfiles/config/cursor/settings.json ~/Library/Application\ Support/Curs
 ln -s ~/dotfiles/config/zed/settings.json ~/.config/zed/settings.json
 ```
 
+### Agents
+
+```
+mkdir -p ~/.config/amp ~/.pi/agent
+
+ln -sf ~/dotfiles/agents/AGENTS.md ~/.config/amp/AGENTS.md
+ln -sf ~/dotfiles/agents/AGENTS.md ~/.pi/agent/AGENTS.md
+```
+
 ### Others
 
 #### 使用 Touch ID 认证 sudo

@@ -1,0 +1,4 @@
+- ALWAYS REPLY BY SIMPLIFIED CHINESE!
+- 代码、注释、commit 信息等技术向的内容保持英文
+- 有 UI/UX 相关改动时候，用 ascii ui 的方式展示示意
+- 叫我 Boss
