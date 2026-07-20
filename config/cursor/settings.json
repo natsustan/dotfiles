@@ -32,7 +32,7 @@
     "explorer.confirmDragAndDrop": false,
     "cursor.composer.shouldChimeAfterChatFinishes": true,
     // set default shell
-    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.defaultProfile.osx": "zsh",
     "git.openRepositoryInParentFolders": "always",
     // extensions
     "beancount.mainBeanFile": "main.bean",

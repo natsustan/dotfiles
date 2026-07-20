@@ -23,11 +23,10 @@ ln -s ~/dotfiles/rime ~/Library
 
 Use `control + ~` to adjust Traditional/Simplified Chinese.
 
-### fish 
+### fish
 
 ```
 ln -s ~/dotfiles/config/fish/config.fish ~/.config/fish/
-ln -s ~/dotfiles/config/fish/alias.fish ~/.config/fish/
 ```
 
 ### zsh
@@ -36,6 +35,7 @@ ln -s ~/dotfiles/config/fish/alias.fish ~/.config/fish/
 
 ```
 ln -s ~/dotfiles/config/zsh/zshrc ~/.zshrc
+chsh -s /bin/zsh
 ```
 
 #### Commands

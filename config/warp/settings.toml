@@ -1,5 +1,5 @@
 [appearance]
-spacing = "normal"
+spacing = "compact"
 
 [appearance.text]
 ai_font_name = "Berkeley Mono"
@@ -11,7 +11,7 @@ match_notebook_to_monospace_font_size = true
 
 [appearance.window]
 override_blur = 20
-override_opacity = 80
+override_opacity = 94
 open_windows_at_custom_size = false
 zoom_level = 100
 left_panel_visibility_across_tabs = true
@@ -20,12 +20,12 @@ left_panel_visibility_across_tabs = true
 enabled = true
 display_granularity = "tabs"
 tab_item_mode = "focused_session"
-view_mode = "expanded"
+view_mode = "compact"
 show_diff_stats = true
 primary_info = "working_directory"
 show_pr_link = true
 show_details_on_hover = false
-compact_subtitle = "branch"
+compact_subtitle = "command"
 hide_title_bar_search_bar = true
 use_latest_prompt_as_title = true
 show_panel_in_restored_windows = true
@@ -40,20 +40,21 @@ show_dock_icon = true
 
 [appearance.panes]
 should_dim_inactive_panes = false
+focus_pane_on_hover = false
 
 [appearance.input]
 input_mode = "pinned_to_bottom"
 
 [appearance.tabs]
-workspace_decoration_visibility = "on_hover"
+workspace_decoration_visibility = "hide_fullscreen"
 show_indicators_button = true
 tab_close_button_position = "right"
 
 [appearance.tabs.header_toolbar_chip_selection]
 
 [appearance.tabs.header_toolbar_chip_selection.custom]
-left = ["tabs_panel"]
-right = []
+left = ["tabs_panel", "tools_panel"]
+right = ["code_review", "notifications_mailbox"]
 
 [appearance.cursor]
 cursor_display_type = "block"
@@ -74,11 +75,12 @@ snackbar_enabled = false
 [code]
 
 [code.editor]
-show_code_review_button = false
+show_code_review_button = true
 show_project_explorer = false
 show_global_search = false
 open_file_editor = { external_editor = "zed" }
 prefer_markdown_viewer = false
+open_code_panels_file_editor = { external_editor = "zed" }
 
 [agents]
 cloud_conversation_storage_enabled = false
@@ -108,11 +110,7 @@ auto_toggle_composer = true
 [agents.third_party.cli_agent_toolbar_chip_selection_setting]
 
 [agents.third_party.cli_agent_toolbar_chip_selection_setting.custom]
-left = [
-  { context_chip = "working_directory" },
-  { context_chip = "shell_git_branch" },
-  { context_chip = "github_pull_request" },
-]
+left = [{ context_chip = "shell_git_branch" }, "share_session", { context_chip = "working_directory" }]
 right = ["voice_input"]
 
 [agents.voice]
@@ -183,3 +181,8 @@ is_settings_sync_enabled = true
 
 [text_editing]
 code_editor_line_number_mode = "absolute"
+
+[warpify]
+
+[warpify.ssh]
+enable_ssh_warpification = false
