@@ -40,11 +40,12 @@ chsh -s /bin/zsh
 
 #### Commands
 
+```bash
+chmod +x ~/dotfiles/bin/<command>
 ```
-mkdir -p ~/.local/bin
-ln -s ~/dotfiles/bin/tdl ~/.local/bin/tdl
-ln -s ~/dotfiles/bin/detect-electron-apps-by-version.sh ~/.local/bin/detect-electron-apps-by-version.sh
-```
+
+`~/dotfiles/bin` is added to `PATH` by the zsh and fish configs, so commands do not need individual symlinks.
+Shell functions that must modify the current shell, such as `ga` and `gd`, are sourced explicitly by the zsh config.
 
 ### hammerspoon
 

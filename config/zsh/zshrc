@@ -4,6 +4,7 @@ eval "$("$HOME/.local/bin/mise" activate zsh)"
 
 typeset -U path PATH
 path=(
+  "$HOME/dotfiles/bin"
   "$HOME/.local/bin"
   "$HOME/.opencode/bin"
   "$HOME/.grok/bin"
@@ -11,6 +12,7 @@ path=(
 )
 
 [[ -r "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+[[ -r "$HOME/dotfiles/bin/agent-git-trees.sh" ]] && source "$HOME/dotfiles/bin/agent-git-trees.sh"
 
 export EDITOR='nvim'
 export VISUAL='nvim'

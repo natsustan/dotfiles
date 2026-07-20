@@ -5,6 +5,7 @@ zoxide init fish | source
 source "$HOME/.cargo/env.fish"
 
 set -U fish_greeting
+fish_add_path "$HOME/dotfiles/bin"
 
 alias bi='brew install'
 alias bu='brew uninstall'
