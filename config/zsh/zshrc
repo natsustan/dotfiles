@@ -1,6 +1,40 @@
+# Toolchain
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(/Users/spike/.local/bin/mise activate zsh)"
+eval "$("$HOME/.local/bin/mise" activate zsh)"
+
+typeset -U path PATH
+path=(
+  "$HOME/.local/bin"
+  "$HOME/.opencode/bin"
+  "$HOME/.grok/bin"
+  $path
+)
+
+[[ -r "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+
+export EDITOR='nvim'
+export VISUAL='nvim'
+
+# History
+HISTFILE="$HOME/.zsh_history"
+HISTSIZE=50000
+SAVEHIST=10000
+setopt append_history share_history hist_ignore_dups hist_ignore_space
+
+# Completion
+autoload -Uz compinit
+compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+source <(fzf --zsh)
+
+eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
+
+# Proxy
+export https_proxy='http://127.0.0.1:6152'
+export http_proxy='http://127.0.0.1:6152'
+export all_proxy='socks5://127.0.0.1:6153'
 
 alias bi='brew install'
 alias bu='brew uninstall'
@@ -19,11 +53,7 @@ alias la="eza -a"
 alias ll="eza -la"
 alias lt="ls -lhtrF"
 alias l.="ls -lhtrdF .*"
-alias lla='ls -la'
 
-alias cd..="cd .."
-alias cd...="cd ../.."
-alias cd....="cd ../../.."
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
@@ -34,12 +64,16 @@ alias reload="source ~/.zshrc"
 alias vi="nvim"
 alias vim="nvim"
 
-alias up="brew update && brew upgrade && brew cleanup && mas upgrade && ~/.config/plum/rime-install iDvel/rime-ice:others/recipes/all_dicts"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && amp update && pi update && codex update"
 alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
-# deploy rime input method
-# alias rime='/Library/Input\ Methods/Squirrel.app/Contents/MacOS/Squirrel --reload'
+alias icon='fileicon set /Applications/kitty.app ~/dotfiles/macOSicons/kitty.icns && killall Dock'
 
+alias claude='claude --dangerously-skip-permissions'
+alias claudetg='claude --channels plugin:telegram@claude-plugins-official --dangerously-skip-permissions'
+alias codex='codex --dangerously-bypass-approvals-and-sandbox'
 
-# Added by Antigravity CLI installer
-export PATH="/Users/spike/.local/bin:$PATH"
+alias surge-cli='/Applications/Surge.app/Contents/Applications/surge-cli'
+
+source "$HOMEBREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
