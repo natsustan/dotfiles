@@ -12,7 +12,8 @@ ga() {
   local base="$(basename "$PWD")"
   local worktree_path="../${base}--${directory_branch}"
 
-  git worktree add -b "$branch" "$worktree_path"
+  git fetch origin main || return 1
+  git worktree add -b "$branch" "$worktree_path" origin/main || return 1
   mise trust "$worktree_path"
   cd "$worktree_path"
 }
