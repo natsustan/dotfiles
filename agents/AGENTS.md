@@ -5,4 +5,4 @@
 
 - 开分支的时候默认用 feat/ 而不是 feature/
 - When running Python commands, prefer `python3` over `python` unless the project explicitly requires `python`.
-
+- 开发工具多数通过 mise 安装
