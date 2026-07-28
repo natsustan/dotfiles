@@ -1,5 +1,5 @@
 # theme = Raycast Light
-# theme = Raycast Dark
+# theme = Cursor Dark
 theme = Xcode WWDC
 background = 242323
 
@@ -8,7 +8,7 @@ macos-titlebar-style = tabs
 # Windows
 window-padding-x = 9
 window-padding-y = 9
-background-opacity = 0.83
+background-opacity = 0.88
 background-blur = 20
 # resize-overlay = never
 # gtk-toolbar-style = flat

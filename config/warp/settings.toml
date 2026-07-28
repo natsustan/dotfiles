@@ -4,16 +4,16 @@ spacing = "compact"
 [appearance.text]
 ai_font_name = "Berkeley Mono"
 font_name = "Berkeley Mono"
-notebook_font_size = 14.0
-font_size = 12.0
+notebook_font_size = 12.0
+font_size = 13.0
 match_ai_font = true
 match_notebook_to_monospace_font_size = true
 
 [appearance.window]
 override_blur = 20
-override_opacity = 94
+override_opacity = 70
 open_windows_at_custom_size = false
-zoom_level = 100
+zoom_level = 90
 left_panel_visibility_across_tabs = true
 
 [appearance.vertical_tabs]
@@ -32,7 +32,8 @@ show_panel_in_restored_windows = true
 
 [appearance.themes]
 system_theme = false
-theme = "phenomenon"
+theme = "adeberry"
+selected_system_themes = { dark = "dark", light = "adeberry" }
 
 [appearance.icon]
 app_icon = "glitch"
@@ -53,8 +54,8 @@ tab_close_button_position = "right"
 [appearance.tabs.header_toolbar_chip_selection]
 
 [appearance.tabs.header_toolbar_chip_selection.custom]
-left = ["tabs_panel", "tools_panel"]
-right = ["code_review", "notifications_mailbox"]
+left = ["tabs_panel"]
+right = ["tools_panel", "code_review"]
 
 [appearance.cursor]
 cursor_display_type = "block"
@@ -76,8 +77,8 @@ snackbar_enabled = false
 
 [code.editor]
 show_code_review_button = true
-show_project_explorer = false
-show_global_search = false
+show_project_explorer = true
+show_global_search = true
 open_file_editor = { external_editor = "zed" }
 prefer_markdown_viewer = false
 open_code_panels_file_editor = { external_editor = "zed" }
@@ -93,7 +94,7 @@ show_agent_notifications = true
 should_force_disable_cloud_handoff = true
 agent_attribution_enabled = false
 should_show_oz_updates_in_zero_state = false
-show_conversation_history = false
+show_conversation_history = true
 
 [agents.warp_agent.input]
 nld_in_terminal_enabled = false
@@ -125,6 +126,7 @@ show_terminal_zero_state_block = false
 input_box_type_setting = "universal"
 honor_ps1 = false
 show_hint_text = false
+alias_expansion_enabled = true
 
 [privacy]
 telemetry_enabled = false
@@ -174,7 +176,7 @@ mode = "enabled"
 play_notification_sound = true
 
 [warp_drive]
-enabled = false
+enabled = true
 
 [account]
 is_settings_sync_enabled = true
