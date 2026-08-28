@@ -1,0 +1,64 @@
+#!/bin/bash
+
+set -euo pipefail
+
+if [[ "${1:-}" == "--refresh-tab-bar" ]]; then
+  [[ $# -eq 1 ]] || {
+    echo "Usage: kitty-theme [theme name] | --refresh-tab-bar" >&2
+    exit 1
+  }
+else
+  kitty +kitten themes "$@"
+fi
+
+config_dir="${KITTY_CONFIG_DIRECTORY:-${XDG_CONFIG_HOME:-$HOME/.config}/kitty}"
+theme_file="$config_dir/current-theme.conf"
+output_file="$config_dir/tab-bar-background.conf"
+
+python3 - "$theme_file" "$output_file" <<'PY'
+import re
+import sys
+from pathlib import Path
+
+theme_file = Path(sys.argv[1])
+output_file = Path(sys.argv[2])
+text = theme_file.read_text()
+
+
+def find_color(name, default=None):
+    match = re.search(rf"^{name}\s+#([0-9a-fA-F]{{6}})\s*$", text, re.MULTILINE)
+    if match:
+        return match.group(1)
+    if default is None:
+        raise SystemExit(f"Could not find a #RRGGBB {name} color in {theme_file}")
+    return default
+
+
+def rgb(hex_color):
+    return tuple(int(hex_color[index : index + 2], 16) for index in (0, 2, 4))
+
+
+def hex_color(color):
+    return "".join(f"{channel:02x}" for channel in color)
+
+
+def mix(start, end, amount):
+    return tuple(int(a + (b - a) * amount + 0.5) for a, b in zip(start, end))
+
+
+background = rgb(find_color("background"))
+foreground = rgb(find_color("foreground", "d4d4d4"))
+inactive_fg = mix(foreground, background, 0.45)
+
+output_file.write_text(
+    "# Generated from current-theme.conf. Do not edit manually.\n"
+    "tab_bar_background none\n"
+    f"tab_bar_margin_color #{hex_color(background)}\n"
+    f"inactive_tab_background #{hex_color(background)}\n"
+    f"active_tab_background #{hex_color(background)}\n"
+    f"inactive_tab_foreground #{hex_color(inactive_fg)}\n"
+    f"active_tab_foreground #{hex_color(foreground)}\n"
+)
+PY
+
+kitty @ load-config >/dev/null 2>&1 || true
