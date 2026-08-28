@@ -1,19 +1,21 @@
 [appearance]
-spacing = "compact"
+spacing = "normal"
 
 [appearance.text]
 ai_font_name = "Berkeley Mono"
 font_name = "Berkeley Mono"
 notebook_font_size = 12.0
-font_size = 13.0
+font_size = 12.0
 match_ai_font = true
 match_notebook_to_monospace_font_size = true
+enforce_minimum_contrast = "only_named_colors"
+font_weight = "normal"
 
 [appearance.window]
 override_blur = 20
-override_opacity = 70
+override_opacity = 90
 open_windows_at_custom_size = false
-zoom_level = 90
+zoom_level = 100
 left_panel_visibility_across_tabs = true
 
 [appearance.vertical_tabs]
@@ -24,16 +26,16 @@ view_mode = "compact"
 show_diff_stats = true
 primary_info = "working_directory"
 show_pr_link = true
-show_details_on_hover = false
+show_details_on_hover = true
 compact_subtitle = "command"
-hide_title_bar_search_bar = true
+hide_title_bar_search_bar = false
 use_latest_prompt_as_title = true
 show_panel_in_restored_windows = true
 
 [appearance.themes]
 system_theme = false
-theme = "adeberry"
-selected_system_themes = { dark = "dark", light = "adeberry" }
+theme = { custom = { name = "Panda Default", path = "panda-default.yaml" } }
+selected_system_themes = { dark = { custom = { name = "Panda Default", path = "panda-default.yaml" } }, light = "light" }
 
 [appearance.icon]
 app_icon = "glitch"
@@ -47,7 +49,7 @@ focus_pane_on_hover = false
 input_mode = "pinned_to_bottom"
 
 [appearance.tabs]
-workspace_decoration_visibility = "hide_fullscreen"
+workspace_decoration_visibility = "always_show"
 show_indicators_button = true
 tab_close_button_position = "right"
 
@@ -59,9 +61,14 @@ right = ["tools_panel", "code_review"]
 
 [appearance.cursor]
 cursor_display_type = "block"
+cursor_blink = "disabled"
 
 [appearance.full_screen_apps]
 alt_screen_padding = { custom = { uniform_padding = 0.0 } }
+
+[appearance.blocks]
+show_jump_to_bottom_of_block_button = false
+show_block_dividers = true
 
 [general]
 login_item = false
@@ -79,9 +86,9 @@ snackbar_enabled = false
 show_code_review_button = true
 show_project_explorer = true
 show_global_search = true
-open_file_editor = { external_editor = "zed" }
-prefer_markdown_viewer = false
-open_code_panels_file_editor = { external_editor = "zed" }
+open_file_editor = "warp"
+prefer_markdown_viewer = true
+open_code_panels_file_editor = "warp"
 
 [agents]
 cloud_conversation_storage_enabled = false
@@ -117,6 +124,45 @@ right = ["voice_input"]
 [agents.voice]
 voice_input_toggle_key = "fn"
 voice_input_enabled = true
+
+[agents.execution_profiles]
+
+[agents.execution_profiles.default]
+apply_code_diffs = "agent_decides"
+ask_user_question = "always_ask"
+autosync_plans_to_warp_drive = true
+command_allowlist = []
+command_denylist = [
+  'bash(\s.*)?',
+  'fish(\s.*)?',
+  'pwsh(\s.*)?',
+  'sh(\s.*)?',
+  'zsh(\s.*)?',
+  'curl(\s.*)?',
+  'eval(\s.*)?',
+  'exec(\s.*)?',
+  'source(\s.*)?',
+  'wget(\s.*)?',
+  'dig(\s.*)?',
+  'nslookup(\s.*)?',
+  'host(\s.*)?',
+  'ssh(\s.*)?',
+  'scp(\s.*)?',
+  'rsync(\s.*)?',
+  'telnet(\s.*)?',
+  'rm(\s.*)?',
+]
+computer_use = "never"
+directory_allowlist = []
+execute_commands = "always_ask"
+mcp_allowlist = []
+mcp_denylist = []
+mcp_permissions = "agent_decides"
+name = "Default"
+read_files = "agent_decides"
+run_agents = "always_ask"
+web_search_enabled = true
+write_to_pty = "always_ask"
 
 [terminal]
 osc52_clipboard_access = "write_only"
