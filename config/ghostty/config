@@ -1,14 +1,16 @@
 # theme = Raycast Light
-# theme = Cursor Dark
-theme = Xcode WWDC
+theme = Cursor Dark
+# theme = Xcode WWDC
 background = 242323
+palette = 8=#8a8a8a
 
 macos-titlebar-style = tabs
+# macos-titlebar-style = hidden
 
 # Windows
 window-padding-x = 9
 window-padding-y = 9
-background-opacity = 0.88
+background-opacity = 0.93
 background-blur = 20
 # resize-overlay = never
 # gtk-toolbar-style = flat
@@ -30,3 +32,4 @@ custom-shader = ~/.config/ghostty/shaders/cursor-trail.glsl
 quit-after-last-window-closed = true
 window-save-state = never
 copy-on-select = clipboard
+auto-update-channel = tip
