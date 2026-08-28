@@ -1,18 +1,21 @@
 # Toolchain
-eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$("$HOME/.local/bin/mise" activate zsh)"
+export HOMEBREW_PREFIX='/opt/homebrew'
 
-typeset -U path PATH
+typeset -U path PATH fpath FPATH
 path=(
   "$HOME/dotfiles/bin"
   "$HOME/.local/bin"
   "$HOME/.local/share/mise/shims"
   "$HOME/.opencode/bin"
   "$HOME/.grok/bin"
+  "$HOME/.bun/bin"
+  "$HOMEBREW_PREFIX/bin"
+  "$HOMEBREW_PREFIX/sbin"
   $path
 )
+fpath=("$HOMEBREW_PREFIX/share/zsh/site-functions" $fpath)
 
-[[ -r "$HOME/.cargo/env" ]] && source "$HOME/.cargo/env"
+# cargo/env is sourced in ~/.zshenv (applies to all shells, no need to repeat here)
 [[ -r "$HOME/dotfiles/bin/agent-git-trees.sh" ]] && source "$HOME/dotfiles/bin/agent-git-trees.sh"
 
 export EDITOR='nvim'
@@ -24,9 +27,14 @@ HISTSIZE=50000
 SAVEHIST=10000
 setopt append_history share_history hist_ignore_dups hist_ignore_space
 
-# Completion
+# Completion — rebuild dump at most once per day; otherwise load cached dump
 autoload -Uz compinit
-compinit
+_dump=("${HOME}/.zcompdump"(N.mh+23))
+if [[ ! -f ${HOME}/.zcompdump || ${#_dump} -gt 0 ]]; then
+  compinit -i -d "${HOME}/.zcompdump"
+else
+  compinit -C -d "${HOME}/.zcompdump"
+fi
 zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 source <(fzf --zsh)
@@ -67,7 +75,7 @@ alias reload="source ~/.zshrc"
 alias vi="nvim"
 alias vim="nvim"
 
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && amp update && pi update && codex update"
+alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && amp update && pi update && codex update && grok update"
 alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 alias icon='fileicon set /Applications/kitty.app ~/dotfiles/macOSicons/kitty.icns && killall Dock'
