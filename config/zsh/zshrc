@@ -75,13 +75,11 @@ alias reload="source ~/.zshrc"
 alias vi="nvim"
 alias vim="nvim"
 
-alias up="brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade && amp update && pi update && codex update && grok update"
+alias claude-2='CLAUDE_CONFIG_DIR=~/.claude-2 claude'
+
+alias up="codex update && amp update && pi update && grok update && opencode upgrade && brew update && brew upgrade && brew cu -a -y && brew cleanup && mas upgrade"
 alias ip="ifconfig | grep "inet " | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
-alias icon='fileicon set /Applications/kitty.app ~/dotfiles/macOSicons/kitty.icns && killall Dock'
-
-alias claude='claude --dangerously-skip-permissions'
-alias claudetg='claude --channels plugin:telegram@claude-plugins-official --dangerously-skip-permissions'
 alias codex='codex --dangerously-bypass-approvals-and-sandbox'
 
 alias surge-cli='/Applications/Surge.app/Contents/Applications/surge-cli'
