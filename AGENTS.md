@@ -13,7 +13,7 @@ macOS dotfiles for `natsustan/dotfiles`. Configs are deployed via manual symlink
 - `hammerspoon/` — macOS automation (Spoons: Vifari, DoubleQToQuit, AppAutoQuits, etc.)
 - `rime/` — Chinese input method engine configs (ice schema)
 - `homebrew/` — Brewfile for declarative package management
-- `bin/` — custom scripts (notably `tdl`)
+- `bin/` — custom scripts (`agent-git-trees.sh`, `detect-electron-apps-by-version.sh`)
 - `agents/` — shared global agent instructions symlinked to agent-specific config paths
 - `macOSicons/` — custom app icons (.icns)
 
@@ -26,17 +26,6 @@ cd ~/dotfiles/homebrew && brew bundle
 # Install tool runtimes (node, bun, neovim, starship, tmux, eza, lazygit, etc.)
 mise install
 ```
-
-## tdl — Tmux Dev Layout
-
-`bin/tdl` creates a tmux session with a predefined layout: main editor pane (left), lazygit + yazi + terminal (right). Supports up to two AI coding agents as arguments.
-
-```bash
-tdl claude          # single agent
-tdl claude amp      # two agents side-by-side
-```
-
-Supported agents: `amp`, `codex`, `claude`, `opencode`, `pi`, `droid`
 
 ## tmux
 
