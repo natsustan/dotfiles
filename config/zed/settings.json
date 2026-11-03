@@ -119,10 +119,21 @@
   "on_last_window_closed": "quit_app",
   "when_closing_with_no_tabs": "close_window",
   "agent_servers": {
+    "antigravity-acp": {
+      "default_config_options": {
+        "mode": "yolo",
+        "model": "gemini-3.8-flash-high"
+      },
+      "type": "registry"
+    },
     "codex-acp": {
       "type": "registry"
     },
     "amp-acp": {
+      "default_config_options": {
+        "amp-mode": "medium",
+        "permission": "bypass"
+      },
       "default_mode": "bypass",
       "type": "registry"
     },
@@ -212,7 +223,7 @@
       "breadcrumbs": false
     },
     "button": true,
-    "dock": "left"
+    "dock": "bottom"
   },
   "project_panel": {
     "scrollbar": {
