@@ -8,10 +8,10 @@ macos-titlebar-style = tabs
 # macos-titlebar-style = hidden
 
 # Windows
-window-padding-x = 9
-window-padding-y = 9
+window-padding-x = 4
+window-padding-y = 4
 background-opacity = 0.93
-background-blur = 20
+background-blur = 18
 # resize-overlay = never
 # gtk-toolbar-style = flat
 
