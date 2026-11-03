@@ -22,8 +22,6 @@ cask "alfred"
 cask "betterdisplay"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
-# Screen capturing tool
-cask "cleanshot"
 # OpenAI's Codex desktop app for managing coding agents
 cask "codex-app"
 # Claude code parallelisation
